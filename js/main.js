@@ -22,25 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     else              { sunIcon.style.display='none';  moonIcon.style.display='block'; }
   }
 
-  /* --- CUSTOM CURSOR --- */
-  const cursor = document.getElementById('cursor');
-  let mx=0, my=0, cx=0, cy=0;
 
-  document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
-
-  // Smooth lag effect
-  (function loop() {
-    cx += (mx - cx) * 0.18;
-    cy += (my - cy) * 0.18;
-    cursor.style.left = cx + 'px';
-    cursor.style.top  = cy + 'px';
-    requestAnimationFrame(loop);
-  })();
-
-  document.querySelectorAll('a,button,.feature-card,.gallery-item,.video-wrap,.info-block,.ctrl-btn').forEach(el => {
-    el.addEventListener('mouseenter', () => cursor.classList.add('big'));
-    el.addEventListener('mouseleave', () => cursor.classList.remove('big'));
-  });
 
   /* --- SCROLL REVEAL --- */
   const ro = new IntersectionObserver(entries => {
