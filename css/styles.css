@@ -24,7 +24,7 @@
   --bg2: #0d0d14;
   --bg3: #131320;
   --text: #f0f0ff;
-  --text2: #8888aa;
+  --text2: #aeb1c9;
   --primary: #ff1a35;
   --primary-glow: rgba(255,26,53,0.4);
   --primary-dim: rgba(255,26,53,0.08);
@@ -406,7 +406,7 @@ footer {
 .footer-bottom {
   display:flex; flex-direction:column; align-items:center; gap:16px;
   padding-top:24px; border-top:1px solid rgba(255,255,255,.08);
-  text-align:center; color:rgba(255,255,255,.35); font-size:.85rem;
+  text-align:center; color:rgba(255,255,255,.58); font-size:.85rem;
 }
 .badge-row { display:flex; gap:20px; align-items:center; flex-wrap:wrap; justify-content:center; }
 .green-badge {
@@ -509,8 +509,31 @@ footer {
 }
 .skip-link:focus { top:0; }
 :focus-visible {
-  outline:3px solid var(--primary);
-  outline-offset:3px; border-radius:4px;
+  outline:2px solid #fff;
+  outline-offset:2px;
+  border-radius:6px;
+  box-shadow:0 0 0 4px var(--primary);
 }
-a:focus-visible, button:focus-visible { outline:3px solid var(--primary); outline-offset:3px; }
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible,
+.gallery-item:focus-visible {
+  outline:2px solid #fff;
+  outline-offset:2px;
+  box-shadow:0 0 0 4px var(--primary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior:auto; }
+  *, *::before, *::after {
+    animation-duration:0.01ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:0.01ms !important;
+  }
+  .cyber-grid,
+  .hero-glow,
+  .hero-img-wrap {
+    animation:none !important;
+  }
+}
 .gallery-item { cursor:zoom-in; }
