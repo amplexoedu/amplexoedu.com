@@ -530,6 +530,23 @@ footer {
 }
 @media(max-width:768px){
   section { padding:64px 0; }
+  .hero-label-home {
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    gap:10px;
+    margin-bottom:24px;
+  }
+  .hero-label-home .hero-badge,
+  .hero-label-home .hero-badge.long {
+    width:100%;
+    max-width:360px;
+    justify-content:center;
+    text-align:center;
+    font-size:.95rem;
+    padding:10px 16px;
+    line-height:1.35;
+  }
   .ctrl-btn.nav-toggle { display:inline-flex; }
   .nav-controls { margin-left:auto; gap:8px; }
   .ctrl-btn.lang-btn { min-width:64px; padding:0 10px; }
