@@ -1,0 +1,165 @@
+/* =========================================
+   ESCOLA AZUL PAGE
+   ========================================= */
+
+.azul-hero {
+  min-height: 88vh;
+  background:
+    radial-gradient(900px 420px at 12% 0%, rgba(16, 114, 255, 0.18), transparent 62%),
+    radial-gradient(800px 380px at 88% 12%, rgba(0, 186, 255, 0.14), transparent 65%),
+    linear-gradient(180deg, rgba(3, 10, 20, 0.9), rgba(2, 8, 16, 0.55));
+}
+
+.azul-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.02) 20%, transparent 55%),
+    linear-gradient(0deg, rgba(5, 10, 18, 0.72), transparent 45%);
+}
+
+.azul-hero-inner {
+  align-items: center;
+}
+
+.azul-hero-copy {
+  position: relative;
+  z-index: 1;
+}
+
+.azul-hero-copy .hero-sub {
+  max-width: 62ch;
+}
+
+.azul-hero-media .hero-img-wrap {
+  border-color: rgba(72, 182, 255, 0.45);
+  box-shadow: 0 12px 46px rgba(0, 115, 181, 0.22);
+  background: rgba(4, 14, 26, 0.65);
+  cursor: zoom-in;
+}
+
+.azul-hero-media .hero-img-wrap img {
+  width: 100%;
+  height: auto;
+  max-height: 560px;
+  min-height: 0;
+  object-fit: contain;
+  object-position: center;
+}
+
+[data-theme="light"] .azul-hero {
+  background:
+    radial-gradient(980px 460px at 10% 0%, rgba(0, 128, 255, 0.18), transparent 62%),
+    radial-gradient(860px 420px at 90% 10%, rgba(0, 192, 255, 0.14), transparent 66%),
+    linear-gradient(180deg, #f3f9ff 0%, #e8f4ff 52%, #f7fbff 100%);
+}
+
+[data-theme="light"] .azul-hero::before {
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.35) 10%, transparent 55%),
+    linear-gradient(0deg, rgba(0, 40, 80, 0.04), transparent 45%);
+}
+
+[data-theme="light"] .azul-hero-media .hero-img-wrap {
+  background: rgba(255, 255, 255, 0.88);
+  border-color: rgba(0, 88, 153, 0.25);
+  box-shadow: 0 10px 34px rgba(0, 79, 133, 0.18);
+}
+
+[data-theme="light"] .azul-hero-media .hero-img-wrap::after {
+  background: none;
+}
+
+.azul-copy-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.azul-copy-grid .info-block h3 {
+  margin-bottom: 14px;
+}
+
+.azul-gallery {
+  margin-top: 42px;
+}
+
+.azul-gallery .gallery-item img {
+  filter: saturate(0.85) brightness(0.96);
+}
+
+.azul-gallery .gallery-item:hover img {
+  filter: saturate(1.08) brightness(1.04);
+}
+
+.azul-video-grid {
+  margin-top: 44px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.azul-video-card {
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  background: var(--card);
+  padding: 12px;
+  transition: 0.35s var(--ease);
+}
+
+.azul-video-card:hover {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-red);
+  transform: translateY(-4px);
+}
+
+.azul-video-card .video-wrap {
+  margin-bottom: 10px;
+}
+
+.azul-video-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.azul-video-link::after {
+  content: '↗';
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1200px) {
+  .azul-video-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1024px) {
+  .azul-hero {
+    min-height: auto;
+  }
+
+  .azul-copy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .azul-hero-media .hero-img-wrap img {
+    max-height: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  .azul-video-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .azul-video-card {
+    padding: 10px;
+  }
+}

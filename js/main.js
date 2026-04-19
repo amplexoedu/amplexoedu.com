@@ -30,14 +30,22 @@ document.addEventListener('DOMContentLoaded', () => {
   const lbNext    = document.getElementById('lb-next');
   const lbCaption = document.getElementById('lb-caption');
 
-  const galleryItems = [...document.querySelectorAll('.gallery-item')];
+  const galleryItems = [...document.querySelectorAll('.gallery-item, [data-lightbox-item]')];
   let currentIndex = 0;
 
+  function getItemImageData(item) {
+    const img = item.querySelector('img');
+    const src = item.dataset.lightboxSrc || img?.src || '';
+    const alt = item.dataset.lightboxAlt || img?.alt || 'Imagem ampliada';
+    return { src, alt };
+  }
+
   function openLightbox(index) {
+    if (!overlay || !galleryItems.length || !galleryItems[index]) return;
     currentIndex = index;
-    const img = galleryItems[index].querySelector('img');
-    lbImg.src = img.src;
-    lbImg.alt = img.alt;
+    const data = getItemImageData(galleryItems[index]);
+    lbImg.src = data.src;
+    lbImg.alt = data.alt;
     lbCaption.textContent = (index + 1) + ' / ' + galleryItems.length;
     overlay.classList.add('active');
     overlay.setAttribute('aria-hidden','false');
@@ -46,19 +54,27 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function closeLightbox() {
+    if (!overlay) return;
     overlay.classList.remove('active');
     overlay.setAttribute('aria-hidden','true');
     document.body.style.overflow = '';
-    galleryItems[currentIndex].focus();
+    galleryItems[currentIndex]?.focus();
   }
 
-  function showNext() { openLightbox((currentIndex + 1) % galleryItems.length); }
-  function showPrev() { openLightbox((currentIndex - 1 + galleryItems.length) % galleryItems.length); }
+  function showNext() {
+    if (!galleryItems.length) return;
+    openLightbox((currentIndex + 1) % galleryItems.length);
+  }
+  function showPrev() {
+    if (!galleryItems.length) return;
+    openLightbox((currentIndex - 1 + galleryItems.length) % galleryItems.length);
+  }
 
   galleryItems.forEach((item, i) => {
+    const data = getItemImageData(item);
     item.setAttribute('tabindex','0');
     item.setAttribute('role','button');
-    item.setAttribute('aria-label', 'Ver imagem ampliada: ' + (item.querySelector('img')?.alt || ''));
+    item.setAttribute('aria-label', 'Ver imagem ampliada: ' + data.alt);
     item.addEventListener('click', () => openLightbox(i));
     item.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLightbox(i); } });
   });
