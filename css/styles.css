@@ -392,6 +392,11 @@ img { display:block; max-width:100%; }
   margin-left:auto;
   margin-right:14px;
 }
+.nav-item {
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+}
 .nav-link {
   display:inline-flex;
   align-items:center;
@@ -412,6 +417,66 @@ img { display:block; max-width:100%; }
   border-color:var(--primary);
   color:var(--primary);
   box-shadow:0 0 16px var(--primary-dim);
+}
+
+.nav-item-has-submenu > .nav-link::after {
+  content:'▾';
+  margin-left:7px;
+  font-size:.62rem;
+  opacity:.8;
+}
+
+.nav-submenu {
+  position:absolute;
+  top:calc(100% + 10px);
+  left:0;
+  min-width:180px;
+  padding:8px;
+  border:1px solid var(--glass-border);
+  border-radius:10px;
+  background:var(--card);
+  box-shadow:var(--shadow);
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transform:translateY(-8px);
+  transition:.25s var(--ease);
+  z-index:1002;
+}
+
+.nav-item-has-submenu:hover > .nav-submenu,
+.nav-item-has-submenu:focus-within > .nav-submenu {
+  opacity:1;
+  visibility:visible;
+  pointer-events:auto;
+  transform:translateY(0);
+}
+
+.nav-sublink {
+  display:inline-flex;
+  align-items:center;
+  justify-content:flex-start;
+  width:100%;
+  padding:9px 10px;
+  border-radius:8px;
+  border:1px solid var(--glass-border);
+  background:var(--card);
+  color:var(--text2);
+  font-size:.74rem;
+  font-weight:700;
+  letter-spacing:.6px;
+  text-transform:uppercase;
+  transition:.3s var(--ease);
+}
+
+.nav-sublink:hover,
+.nav-sublink.active {
+  border-color:var(--primary);
+  color:var(--primary);
+  box-shadow:0 0 14px var(--primary-dim);
 }
 .nav-controls { display:flex; align-items:center; gap:12px; }
 .nav-toggle {
@@ -822,6 +887,39 @@ footer {
     padding:11px 12px;
     font-size:.78rem;
     letter-spacing:.5px;
+  }
+  .nav-item {
+    width:100%;
+    flex-direction:column;
+    align-items:stretch;
+  }
+  .nav-item-has-submenu > .nav-link::after {
+    margin-left:auto;
+  }
+  .nav-submenu {
+    position:static;
+    min-width:0;
+    margin-top:6px;
+    padding:0 0 0 12px;
+    border:none;
+    border-radius:0;
+    background:transparent;
+    box-shadow:none;
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto;
+    transform:none;
+  }
+  .nav-sublink {
+    width:100%;
+    justify-content:flex-start;
+    padding:10px 12px;
+    font-size:.74rem;
+    letter-spacing:.4px;
+    background:rgba(255,255,255,.02);
+  }
+  [data-theme="light"] .nav-sublink {
+    background:rgba(0,0,0,.02);
   }
   .stats-inner { grid-template-columns:repeat(2,1fr); }
   .info-grid { grid-template-columns:1fr; }

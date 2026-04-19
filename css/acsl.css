@@ -24,12 +24,30 @@
   align-items: center;
 }
 
+[data-theme="light"] .acsl-hero {
+  background:
+    radial-gradient(940px 430px at 12% 0%, rgba(255, 68, 92, 0.14), transparent 62%),
+    radial-gradient(860px 420px at 88% 10%, rgba(38, 108, 250, 0.12), transparent 66%),
+    linear-gradient(180deg, #f6f8ff, #eef2fb);
+}
+
+[data-theme="light"] .acsl-hero::before {
+  background:
+    linear-gradient(122deg, rgba(255, 255, 255, 0.62) 8%, transparent 56%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.42), transparent 52%);
+}
+
 .acsl-hero .hero-sub {
   max-width: 640px;
 }
 
 .acsl-hero-media .hero-img-wrap {
-  max-width: 560px;
+  width: min(560px, 100%);
+  aspect-ratio: 16 / 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
   border-color: rgba(255, 72, 96, 0.4);
   box-shadow: 0 14px 44px rgba(214, 0, 24, 0.32);
   background: rgba(8, 10, 24, 0.7);
@@ -38,23 +56,27 @@
 
 .acsl-hero-media .hero-img-wrap img {
   width: 100%;
-  height: auto;
-  max-height: 420px;
+  height: 100%;
+  max-height: none;
   object-fit: contain;
   background: rgba(0, 0, 0, 0.16);
 }
 
 .acsl-hero-logos {
   margin-top: 14px;
-  display: flex;
-  justify-content: center;
+  width: min(560px, 100%);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: center;
   gap: 12px;
-  flex-wrap: wrap;
 }
 
 .acsl-logo-chip {
-  width: min(220px, 80%);
+  width: 100%;
+  min-height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid var(--glass-border);
   border-radius: 12px;
   background: rgba(8, 10, 24, 0.62);
@@ -63,13 +85,29 @@
 }
 
 .acsl-logo-chip img {
-  width: 100%;
-  max-height: 52px;
+  width: min(170px, 100%);
+  height: 44px;
   object-fit: contain;
 }
 
 .acsl-logo-chip-dark {
   background: rgba(0, 0, 0, 0.82);
+}
+
+.acsl-hero-logos .acsl-logo-chip:only-child {
+  grid-column: 1 / -1;
+  max-width: 260px;
+  justify-self: center;
+}
+
+[data-theme="light"] .acsl-hero-media .hero-img-wrap {
+  border-color: rgba(214, 0, 24, 0.24);
+  box-shadow: 0 12px 30px rgba(152, 20, 38, 0.18);
+  background: rgba(255, 255, 255, 0.82);
+}
+
+[data-theme="light"] .acsl-logo-chip {
+  background: rgba(255, 255, 255, 0.82);
 }
 
 .acsl-warning {
@@ -199,7 +237,7 @@
   }
 
   .acsl-hero-media .hero-img-wrap img {
-    max-height: 340px;
+    max-height: none;
   }
 
   .acsl-time-grid {
@@ -218,6 +256,14 @@
 }
 
 @media (max-width: 520px) {
+  .acsl-hero-logos {
+    grid-template-columns: 1fr;
+  }
+
+  .acsl-logo-chip {
+    min-height: 84px;
+  }
+
   .acsl-time-grid {
     grid-template-columns: 1fr;
   }
