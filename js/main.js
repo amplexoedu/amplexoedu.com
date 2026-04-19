@@ -22,6 +22,44 @@ document.addEventListener('DOMContentLoaded', () => {
     else              { sunIcon.style.display='none';  moonIcon.style.display='block'; }
   }
 
+  /* --- MOBILE NAV --- */
+  const navToggle = document.getElementById('navToggle');
+  const navMenu = document.getElementById('siteNav');
+  const isEnglish = (document.documentElement.lang || '').toLowerCase().startsWith('en');
+  const menuOpenLabel = isEnglish ? 'Close menu' : 'Fechar menu';
+  const menuClosedLabel = isEnglish ? 'Open menu' : 'Abrir menu';
+
+  function closeNavMenu() {
+    if (!navToggle || !navMenu) return;
+    navMenu.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    navToggle.setAttribute('aria-label', menuClosedLabel);
+  }
+
+  if (navToggle && navMenu) {
+    navToggle.setAttribute('aria-label', menuClosedLabel);
+    navToggle.addEventListener('click', () => {
+      const willOpen = !navMenu.classList.contains('open');
+      navMenu.classList.toggle('open', willOpen);
+      navToggle.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+      navToggle.setAttribute('aria-label', willOpen ? menuOpenLabel : menuClosedLabel);
+    });
+
+    navMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => closeNavMenu());
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!navMenu.classList.contains('open')) return;
+      if (navMenu.contains(event.target) || navToggle.contains(event.target)) return;
+      closeNavMenu();
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) closeNavMenu();
+    });
+  }
+
   /* --- LIGHTBOX --- */
   const overlay   = document.getElementById('lightbox');
   const lbImg     = document.getElementById('lb-img');

@@ -63,9 +63,10 @@
 }
 
 .premios-social-note {
-  margin-top: 20px;
+  margin-top: 6px;
   color: var(--text2);
-  font-size: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .premios-social-note a {
@@ -80,16 +81,22 @@
 }
 
 .olympiad-intro-gallery {
-  margin-top: 36px;
+  margin-top: 14px;
+  margin-bottom: 6px;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 12px;
+  gap: 10px;
 }
 
 .olympiad-intro-gallery .gallery-item img {
-  height: 190px;
-  object-fit: contain;
+  height: 156px;
+  object-fit: cover;
+  object-position: center;
   filter: saturate(1) brightness(1);
-  padding: 6px;
+  padding: 0;
+}
+
+#olimpiadas .section-sub {
+  font-size: 1rem;
 }
 
 .olympiad-intro-gallery .gallery-item,
@@ -101,11 +108,20 @@
   position: relative;
 }
 
+#copernicus .olympiad-head {
+  justify-content: center;
+  align-items: center;
+}
+
+#copernicus .olympiad-head > div:last-child {
+  text-align: center;
+}
+
 .olympiad-head {
   display: flex;
   align-items: center;
   gap: 22px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .olympiad-head .section-title {
@@ -140,6 +156,7 @@
 .olympiad-gallery {
   display: grid;
   gap: 14px;
+  margin-top: 10px;
 }
 
 .olympiad-gallery.cols-2 {
@@ -159,10 +176,11 @@
 }
 
 .olympiad-gallery .gallery-item img {
-  height: 220px;
-  object-fit: contain;
+  height: 212px;
+  object-fit: cover;
+  object-position: center;
   filter: saturate(1) brightness(1);
-  padding: 6px;
+  padding: 0;
 }
 
 .olympiad-note {
@@ -254,7 +272,7 @@
   }
 
   .olympiad-intro-gallery .gallery-item img {
-    height: 150px;
+    height: 124px;
   }
 
   .olympiad-gallery.cols-4,
@@ -265,7 +283,7 @@
   }
 
   .olympiad-gallery .gallery-item img {
-    height: 170px;
+    height: 166px;
   }
 
   .premios-logo-grid,
@@ -290,7 +308,7 @@
   }
 
   .olympiad-intro-gallery .gallery-item img {
-    height: 128px;
+    height: 118px;
   }
 
   .olympiad-gallery.cols-4,
@@ -300,7 +318,7 @@
   }
 
   .olympiad-gallery .gallery-item img {
-    height: 144px;
+    height: 148px;
   }
 
   .premios-logo-grid,

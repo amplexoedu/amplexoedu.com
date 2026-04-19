@@ -76,11 +76,16 @@
   <nav class="navbar">
     <div class="nav-inner">
       <div class="logo glitch" data-text="Clube Amplexo" aria-label="Clube Amplexo">Clube <span>Amplexo</span></div>
-      <div class="nav-menu" aria-label="Menu principal">
+      <div id="siteNav" class="nav-menu" aria-label="Menu principal">
         <a href="./escola-azul/" class="nav-link">Escola Azul</a>
-        <a href="./premiacoes/" class="nav-link">Premiacoes</a>
+        <a href="./premiacoes/" class="nav-link">Premiações</a>
       </div>
       <div class="nav-controls">
+        <button id="navToggle" class="ctrl-btn nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="siteNav">
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </button>
         <button id="themeToggle" class="ctrl-btn" aria-label="Alternar tema">
           <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
           <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
