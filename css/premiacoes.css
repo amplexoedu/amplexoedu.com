@@ -63,7 +63,7 @@
 }
 
 .premios-social-note {
-  margin-top: 6px;
+  margin: 6px 0 0;
   color: var(--text2);
   font-size: 0.95rem;
   line-height: 1.5;
@@ -84,15 +84,22 @@
   margin-top: 14px;
   margin-bottom: 6px;
   grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-rows: auto;
   gap: 10px;
 }
 
 .olympiad-intro-gallery .gallery-item img {
-  height: 156px;
+  height: 144px;
   object-fit: cover;
   object-position: center;
   filter: saturate(1) brightness(1);
   padding: 0;
+}
+
+.premios-social-note.reveal {
+  opacity: 1;
+  transform: none;
+  transition: none;
 }
 
 #olimpiadas .section-sub {
@@ -232,7 +239,7 @@
 
 @media (max-width: 1200px) {
   .olympiad-intro-gallery {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .premios-logo-grid--dense {
