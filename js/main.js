@@ -494,6 +494,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* --- BLOG LINK: DESKTOP VS MOBILE --- */
+  const blogDesktopHref = 'https://amplexoedu.blogspot.com/?view=magazine';
+  const blogMobileHref = 'https://amplexoedu.blogspot.com/?view=snapshot';
+
+  function applyBlogNavHrefByViewport() {
+    const isMobileViewport = window.matchMedia('(max-width: 768px)').matches;
+    const targetHref = isMobileViewport ? blogMobileHref : blogDesktopHref;
+
+    document.querySelectorAll('#siteNav a.nav-link').forEach((link) => {
+      if (link.textContent.trim().toLowerCase() === 'blog') {
+        link.setAttribute('href', targetHref);
+      }
+    });
+  }
+
+  applyBlogNavHrefByViewport();
+  window.addEventListener('resize', applyBlogNavHrefByViewport);
+
   /* --- LIGHTBOX --- */
   const overlay   = document.getElementById('lightbox');
   const lbImg     = document.getElementById('lb-img');
