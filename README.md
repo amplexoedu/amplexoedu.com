@@ -37,6 +37,13 @@ Cada página pública possui metadados de compartilhamento com imagem dedicada:
 - twitter:image
 - twitter:image:alt
 
+As thumbs sociais foram padronizadas com:
+
+- dimensões 1200x630
+- formato JPEG
+- nomes curtos e legíveis
+- pasta dedicada `assets/images/og/`
+
 Arquivos com metadados de thumb configurados:
 
 - index.html
@@ -51,6 +58,26 @@ Arquivos com metadados de thumb configurados:
 - en/acsl/index.html
 
 Observação: após alterar imagem/meta de compartilhamento, algumas plataformas podem manter cache da prévia por um período.
+
+## Padronização de Nomes de Imagens
+
+Os arquivos em `assets/images/` seguem o padrão:
+
+- letras minúsculas
+- palavras separadas por hífen
+- remoção de sufixos aleatórios/hash no fim do nome
+- manutenção da extensão original (jpg, jpeg, png, webp, svg)
+- nomes de screenshot no formato `screenshot-YYYYMMDD-HHMMSS`
+- nomes de WhatsApp no formato `whatsapp-YYYYMMDD-HHMMSS`
+
+Para aplicar a padronização em lote e atualizar referências automaticamente:
+
+```bash
+node scripts/normalize-image-filenames.js --dry-run
+node scripts/normalize-image-filenames.js
+```
+
+Observação: o script não altera arquivos em `reports/`, `.git/` e `node_modules/`.
 
 ## Estrutura de Pastas
 
