@@ -13,6 +13,7 @@ Site oficial do Clube Amplexo Educação, com versões em Português e Inglês, 
 | Escola Azul | /escola-azul/ | /en/escola-azul/ |
 | Premiações | /premiacoes/ | /en/premiacoes/ |
 | Competições | /competicoes/ | /en/competicoes/ |
+| ACSL | /acsl/ | /en/acsl/ |
 
 ## Recursos Principais
 
@@ -46,6 +47,8 @@ Arquivos com metadados de thumb configurados:
 - en/premiacoes/index.html
 - competicoes/index.html
 - en/competicoes/index.html
+- acsl/index.html
+- en/acsl/index.html
 
 Observação: após alterar imagem/meta de compartilhamento, algumas plataformas podem manter cache da prévia por um período.
 
@@ -60,6 +63,8 @@ amplexoedu.com/
 |   |-- index.html
 |-- competicoes/
 |   |-- index.html
+|-- acsl/
+|   |-- index.html
 |-- en/
 |   |-- index.html
 |   |-- escola-azul/
@@ -68,11 +73,14 @@ amplexoedu.com/
 |       |-- index.html
 |   |-- competicoes/
 |       |-- index.html
+|   |-- acsl/
+|       |-- index.html
 |-- css/
 |   |-- styles.css
 |   |-- escola-azul.css
 |   |-- premiacoes.css
 |   |-- competicoes.css
+|   |-- acsl.css
 |-- js/
 |   |-- main.js
 |-- assets/
