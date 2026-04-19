@@ -75,12 +75,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobile = window.matchMedia('(max-width: 768px)').matches;
     const compact = window.matchMedia('(max-width: 480px)').matches;
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const formulaFarCount = compact ? 10 : (mobile ? 16 : 24);
-    const formulaNearCount = compact ? 14 : (mobile ? 24 : 36);
-    const symbolCount = compact ? 16 : (mobile ? 26 : 40);
+    const formulaFarCount = compact ? 4 : (mobile ? 6 : 8);
+    const formulaNearCount = compact ? 5 : (mobile ? 8 : 10);
+    const symbolCount = compact ? 10 : (mobile ? 16 : 22);
     const geometryCount = compact ? 4 : (mobile ? 7 : 11);
     const geometryLayer = document.createElement('div');
     geometryLayer.className = 'tech-geometry-layer';
+    const cinemaLayer = document.createElement('div');
+    cinemaLayer.className = 'cinema-atmo-layer';
     const formulaLayerFar = document.createElement('div');
     formulaLayerFar.className = 'formula-layer formula-layer-far';
     const formulaLayerNear = document.createElement('div');
@@ -121,11 +123,13 @@ document.addEventListener('DOMContentLoaded', () => {
       chip.style.setProperty('--delay', (-Math.random() * 24).toFixed(1) + 's');
       chip.style.setProperty('--drift', ((Math.random() * 20) - 10).toFixed(1) + 'px');
       chip.style.setProperty('--scale', (0.78 + Math.random() * 0.3).toFixed(2));
-      chip.style.setProperty('--opacity', (0.18 + Math.random() * 0.15).toFixed(2));
+      const farMinOpacity = 0.1 + Math.random() * 0.08;
+      chip.style.setProperty('--opacity-min', farMinOpacity.toFixed(2));
+      chip.style.setProperty('--opacity-max', (farMinOpacity + 0.08 + Math.random() * 0.04).toFixed(2));
 
       if (reducedMotion) {
         chip.style.animation = 'none';
-        chip.style.opacity = '0.2';
+        chip.style.opacity = '0.12';
       }
 
       formulaLayerFar.appendChild(chip);
@@ -141,11 +145,13 @@ document.addEventListener('DOMContentLoaded', () => {
       chip.style.setProperty('--delay', (-Math.random() * 24).toFixed(1) + 's');
       chip.style.setProperty('--drift', ((Math.random() * 34) - 17).toFixed(1) + 'px');
       chip.style.setProperty('--scale', (0.96 + Math.random() * 0.52).toFixed(2));
-      chip.style.setProperty('--opacity', (0.3 + Math.random() * 0.34).toFixed(2));
+      const nearMinOpacity = 0.15 + Math.random() * 0.08;
+      chip.style.setProperty('--opacity-min', nearMinOpacity.toFixed(2));
+      chip.style.setProperty('--opacity-max', (nearMinOpacity + 0.12 + Math.random() * 0.06).toFixed(2));
 
       if (reducedMotion) {
         chip.style.animation = 'none';
-        chip.style.opacity = compact ? '0.24' : '0.3';
+        chip.style.opacity = compact ? '0.16' : '0.2';
       }
 
       formulaLayerNear.appendChild(chip);
@@ -182,6 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     techBackground.appendChild(geometryLayer);
+    techBackground.appendChild(cinemaLayer);
     if (networkCanvas) techBackground.appendChild(networkCanvas);
     techBackground.appendChild(formulaLayerFar);
     techBackground.appendChild(symbolLayer);
@@ -194,6 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!reducedMotion && !mobile) {
       const parallaxLayers = [
         { element: geometryLayer, strength: 24 },
+        { element: cinemaLayer, strength: 6 },
         { element: formulaLayerFar, strength: 10 },
         { element: symbolLayer, strength: 14 },
         { element: formulaLayerNear, strength: 20 }
