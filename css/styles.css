@@ -355,6 +355,13 @@ footer {
 .feature-card:hover::before { transform:scaleX(1); }
 .card-icon { font-size:2.4rem; margin-bottom:16px; }
 .card-title { font-size:1.2rem; font-weight:700; margin-bottom:10px; }
+.card-emoji {
+  display:inline-block;
+  font-size:1.22rem;
+  margin-right:8px;
+  line-height:1;
+  transform:translateY(-1px);
+}
 .card-text { color:var(--text2); font-size:.95rem; line-height:1.7; }
 
 /* =========================================
@@ -437,30 +444,6 @@ footer {
 .video-grid {
   display:grid; grid-template-columns:repeat(2,1fr);
   gap:24px; margin-top:48px;
-}
-.video-card {
-  background:var(--card);
-  border:1px solid var(--glass-border);
-  border-radius:14px;
-  padding:18px;
-  backdrop-filter:blur(12px);
-  transition:.3s var(--ease);
-}
-.video-card:hover {
-  border-color:var(--primary);
-  box-shadow:0 0 20px var(--primary-dim);
-}
-.video-card-title {
-  font-size:1rem;
-  font-weight:700;
-  margin-bottom:8px;
-  line-height:1.4;
-}
-.video-card-text {
-  color:var(--text2);
-  font-size:.92rem;
-  line-height:1.65;
-  margin-bottom:14px;
 }
 .video-wrap {
   border-radius:14px; overflow:hidden; position:relative;
