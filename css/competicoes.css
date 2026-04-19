@@ -74,13 +74,13 @@
 }
 
 .comp-hero-card-main {
-  cursor: zoom-in;
+  cursor: pointer;
   border-color: rgba(255, 68, 92, 0.44);
   box-shadow: 0 14px 40px rgba(214, 0, 24, 0.32);
 }
 
 .comp-hero-card-secondary {
-  cursor: zoom-in;
+  cursor: pointer;
   background: #070b1a;
   padding-left: 24px;
 }
