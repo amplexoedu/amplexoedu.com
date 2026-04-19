@@ -164,6 +164,13 @@ img { display:block; max-width:100%; }
    SECTIONS
    ========================================= */
 section { position:relative; z-index:1; padding:96px 0; }
+main > section:not(.hero),
+.stats-strip,
+.cta-band,
+footer {
+  content-visibility:auto;
+  contain-intrinsic-size:1px 800px;
+}
 .section-label {
   display:block;
   width:fit-content;

@@ -1,0 +1,28 @@
+{
+  "name": "amplexoedu.com",
+  "version": "1.0.0",
+  "description": "[![Green Web Checked](https://img.shields.io/badge/Green%20Web-Checked-22c55e?style=flat-square&logo=leaflet)](https://www.thegreenwebfoundation.org/green-web-check/) [![License: Proprietary](https://img.shields.io/badge/License-Proprietary-red?style=flat-square)](LICENSE)",
+  "main": "index.js",
+  "scripts": {
+    "serve:local": "http-server . -p 4173 -c-1",
+    "audit:lighthouse:pt": "lighthouse http://127.0.0.1:4173/ --only-categories=performance,accessibility,best-practices,seo --output=html --output-path=./reports/lighthouse-pt.html --chrome-flags=\"--headless=new --no-sandbox\" --no-enable-error-reporting",
+    "audit:lighthouse:en": "lighthouse http://127.0.0.1:4173/en/ --only-categories=performance,accessibility,best-practices,seo --output=html --output-path=./reports/lighthouse-en.html --chrome-flags=\"--headless=new --no-sandbox\" --no-enable-error-reporting",
+    "audit:lighthouse": "node -e \"require('fs').mkdirSync('reports',{recursive:true})\" && npm run audit:lighthouse:pt && npm run audit:lighthouse:en"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amplexoedu/amplexoedu.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/amplexoedu/amplexoedu.com/issues"
+  },
+  "homepage": "https://github.com/amplexoedu/amplexoedu.com#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "lighthouse": "^13.1.0"
+  }
+}
