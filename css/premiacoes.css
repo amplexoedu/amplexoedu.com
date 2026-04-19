@@ -73,6 +73,12 @@
   font-weight: 700;
 }
 
+.olympiad-intro-section,
+.olympiad-section,
+#competicoes {
+  scroll-margin-top: calc(var(--nav-h) + 18px);
+}
+
 .olympiad-intro-gallery {
   margin-top: 36px;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -81,6 +87,14 @@
 
 .olympiad-intro-gallery .gallery-item img {
   height: 190px;
+  object-fit: contain;
+  filter: saturate(1) brightness(1);
+  padding: 6px;
+}
+
+.olympiad-intro-gallery .gallery-item,
+.olympiad-gallery .gallery-item {
+  background: rgba(8, 10, 24, 0.58);
 }
 
 .olympiad-section {
@@ -118,6 +132,11 @@
   border-color: rgba(24, 24, 54, 0.08);
 }
 
+[data-theme="light"] .olympiad-intro-gallery .gallery-item,
+[data-theme="light"] .olympiad-gallery .gallery-item {
+  background: rgba(255, 255, 255, 0.92);
+}
+
 .olympiad-gallery {
   display: grid;
   gap: 14px;
@@ -141,6 +160,9 @@
 
 .olympiad-gallery .gallery-item img {
   height: 220px;
+  object-fit: contain;
+  filter: saturate(1) brightness(1);
+  padding: 6px;
 }
 
 .olympiad-note {
@@ -264,21 +286,21 @@
 
 @media (max-width: 480px) {
   .olympiad-intro-gallery {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .olympiad-intro-gallery .gallery-item img {
-    height: 190px;
+    height: 128px;
   }
 
   .olympiad-gallery.cols-4,
   .olympiad-gallery.cols-3,
   .olympiad-gallery.cols-2 {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .olympiad-gallery .gallery-item img {
-    height: 220px;
+    height: 144px;
   }
 
   .premios-logo-grid,
