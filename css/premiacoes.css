@@ -1,0 +1,288 @@
+/* =========================================
+   PREMIACOES PAGE
+   ========================================= */
+
+.premios-hero {
+  min-height: 88vh;
+  background:
+    radial-gradient(940px 440px at 12% 0%, rgba(255, 48, 77, 0.18), transparent 62%),
+    radial-gradient(860px 380px at 88% 10%, rgba(36, 94, 250, 0.14), transparent 66%),
+    linear-gradient(180deg, rgba(10, 8, 22, 0.92), rgba(9, 8, 17, 0.58));
+}
+
+.premios-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(125deg, rgba(255, 255, 255, 0.03) 14%, transparent 60%),
+    linear-gradient(0deg, rgba(6, 8, 16, 0.7), transparent 48%);
+}
+
+.premios-hero-inner {
+  align-items: center;
+}
+
+.premios-hero-media .hero-img-wrap {
+  border-color: rgba(255, 74, 97, 0.4);
+  box-shadow: 0 12px 44px rgba(214, 0, 24, 0.25);
+  background: rgba(7, 8, 20, 0.62);
+  cursor: zoom-in;
+}
+
+.premios-hero-media .hero-img-wrap img {
+  width: 100%;
+  height: auto;
+  max-height: 560px;
+  min-height: 0;
+  object-fit: contain;
+}
+
+[data-theme="light"] .premios-hero {
+  background:
+    radial-gradient(920px 440px at 10% 0%, rgba(255, 54, 84, 0.2), transparent 62%),
+    radial-gradient(840px 420px at 92% 12%, rgba(73, 119, 255, 0.14), transparent 66%),
+    linear-gradient(180deg, #fff7fa 0%, #f5f6ff 52%, #fff 100%);
+}
+
+[data-theme="light"] .premios-hero::before {
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.4) 12%, transparent 56%),
+    linear-gradient(0deg, rgba(50, 40, 90, 0.04), transparent 45%);
+}
+
+[data-theme="light"] .premios-hero-media .hero-img-wrap {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(214, 0, 24, 0.2);
+  box-shadow: 0 10px 32px rgba(214, 0, 24, 0.14);
+}
+
+[data-theme="light"] .premios-hero-media .hero-img-wrap::after {
+  background: none;
+}
+
+.premios-social-note {
+  margin-top: 20px;
+  color: var(--text2);
+  font-size: 1rem;
+}
+
+.premios-social-note a {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.olympiad-intro-gallery {
+  margin-top: 36px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.olympiad-intro-gallery .gallery-item img {
+  height: 190px;
+}
+
+.olympiad-section {
+  position: relative;
+}
+
+.olympiad-head {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 30px;
+}
+
+.olympiad-head .section-title {
+  margin-bottom: 0;
+}
+
+.olympiad-logo {
+  width: min(360px, 48%);
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  background: var(--card);
+  padding: 12px 18px;
+  box-shadow: var(--shadow-soft);
+}
+
+.olympiad-logo img {
+  width: 100%;
+  max-height: 84px;
+  object-fit: contain;
+}
+
+[data-theme="light"] .olympiad-logo {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: rgba(24, 24, 54, 0.08);
+}
+
+.olympiad-gallery {
+  display: grid;
+  gap: 14px;
+}
+
+.olympiad-gallery.cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.olympiad-gallery.cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.olympiad-gallery.cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.olympiad-gallery .gallery-item {
+  margin: 0;
+}
+
+.olympiad-gallery .gallery-item img {
+  height: 220px;
+}
+
+.olympiad-note {
+  margin-top: 22px;
+  text-align: center;
+  color: var(--text2);
+  font-size: 1rem;
+}
+
+.olympiad-note a {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.premios-logo-grid {
+  margin-top: 38px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.premios-logo-grid--dense {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.premios-logo-card {
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  background: var(--card);
+  min-height: 126px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.35s var(--ease);
+}
+
+.premios-logo-card:hover {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-red);
+  transform: translateY(-4px);
+}
+
+.premios-logo-card img {
+  width: 100%;
+  max-height: 84px;
+  object-fit: contain;
+}
+
+@media (max-width: 1200px) {
+  .olympiad-intro-gallery {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .premios-logo-grid--dense {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1024px) {
+  .premios-hero {
+    min-height: auto;
+  }
+
+  .premios-hero-media .hero-img-wrap img {
+    max-height: 420px;
+  }
+
+  .olympiad-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .olympiad-logo {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .olympiad-gallery.cols-4 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .olympiad-intro-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .olympiad-intro-gallery .gallery-item img {
+    height: 150px;
+  }
+
+  .olympiad-gallery.cols-4,
+  .olympiad-gallery.cols-3,
+  .olympiad-gallery.cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .olympiad-gallery .gallery-item img {
+    height: 170px;
+  }
+
+  .premios-logo-grid,
+  .premios-logo-grid--dense {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .premios-logo-card {
+    min-height: 110px;
+    padding: 10px;
+  }
+
+  .premios-logo-card img {
+    max-height: 68px;
+  }
+}
+
+@media (max-width: 480px) {
+  .olympiad-intro-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .olympiad-intro-gallery .gallery-item img {
+    height: 190px;
+  }
+
+  .olympiad-gallery.cols-4,
+  .olympiad-gallery.cols-3,
+  .olympiad-gallery.cols-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .olympiad-gallery .gallery-item img {
+    height: 220px;
+  }
+
+  .premios-logo-grid,
+  .premios-logo-grid--dense {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
