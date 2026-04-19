@@ -1,97 +1,134 @@
-# Clube Amplexo Educação — Website
+# Clube Amplexo Educação — Website Oficial
 
 [![Green Web Checked](https://img.shields.io/badge/Green%20Web-Checked-22c55e?style=flat-square&logo=leaflet)](https://www.thegreenwebfoundation.org/green-web-check/)
 [![License: Proprietary](https://img.shields.io/badge/License-Proprietary-red?style=flat-square)](LICENSE)
 
-> Site oficial do **Clube Amplexo Educação** — o clube que conquistou o **1º lugar mundial** na Olimpíada Internacional de Computação (ICO) e no Singapore Math Challenge em 2025.
+Site oficial do Clube Amplexo Educação, com versões em Português e Inglês, páginas institucionais e de premiações, além de metadados completos para SEO e compartilhamento em redes sociais.
 
----
+## Páginas do Projeto
 
-## 🌐 Acesso
+| Seção | PT-BR | EN-US |
+|---|---|---|
+| Home | / | /en/ |
+| Escola Azul | /escola-azul/ | /en/escola-azul/ |
+| Premiações | /premiacoes/ | /en/premiacoes/ |
 
-| Idioma | URL |
-|---|---|
-| 🇧🇷 Português | `/index.html` |
-| 🇺🇸 English | `/en/index.html` |
+## Recursos Principais
 
-O site detecta automaticamente o idioma do navegador do visitante e redireciona para a versão correta.
+- Tema claro/escuro com persistência em localStorage.
+- Navegação responsiva com menu mobile.
+- Layout bilíngue (PT-BR e EN-US) com canonical e hreflang.
+- Galeria com lightbox nas seções com imagens.
+- Vídeos incorporados do YouTube.
+- Efeitos visuais (glitch, cyber grid, reveal on scroll).
+- Contadores animados nas seções de estatísticas.
+- Metadados Open Graph e Twitter Card configurados por página.
 
----
+## SEO e Thumb de Compartilhamento
 
-## ✨ Funcionalidades
+Cada página pública possui metadados de compartilhamento com imagem dedicada:
 
-- **Modo Escuro / Claro** — preferência salva no navegador, abre em modo escuro por padrão
-- **Bilíngue** — Português (PT-BR) e Inglês (EN-US) em pastas separadas para SEO
-- **Cursor customizado** — esfera interativa que reage ao hover
-- **Efeito Glitch** — distorção digital cyberpunk no logo e títulos
-- **Cyber Grid** — fundo animado de grade 3D
-- **Galeria de fotos** — layout Masonry com efeito hover (desaturado → colorido)
-- **4 vídeos** do YouTube incorporados
-- **Animações de scroll** — elementos revelados conforme o usuário rola a página
-- **Contador animado** — estatísticas com efeito de contagem progressiva
-- **Totalmente responsivo** — Mobile, Tablet e Desktop
-- **Acessibilidade** — ARIA labels, contraste adequado, semântica HTML5
+- og:image
+- og:image:secure_url
+- og:image:alt
+- twitter:card=summary_large_image
+- twitter:image
+- twitter:image:alt
 
----
+Arquivos com metadados de thumb configurados:
 
-## 🗂️ Estrutura de Pastas
+- index.html
+- en/index.html
+- escola-azul/index.html
+- en/escola-azul/index.html
+- premiacoes/index.html
+- en/premiacoes/index.html
 
-```
+Observação: após alterar imagem/meta de compartilhamento, algumas plataformas podem manter cache da prévia por um período.
+
+## Estrutura de Pastas
+
+```text
 amplexoedu.com/
-├── index.html            # Versão Português (PT-BR)
-├── en/
-│   └── index.html        # Versão Inglês (EN-US)
-├── css/
-│   └── styles.css        # Design system completo (variáveis, temas, efeitos)
-├── js/
-│   └── main.js           # Cursor, tema, scroll animations, counter
-└── assets/
-    └── images/           # Todas as imagens originais do site
+|-- index.html
+|-- escola-azul/
+|   |-- index.html
+|-- premiacoes/
+|   |-- index.html
+|-- en/
+|   |-- index.html
+|   |-- escola-azul/
+|   |   |-- index.html
+|   |-- premiacoes/
+|       |-- index.html
+|-- css/
+|   |-- styles.css
+|   |-- escola-azul.css
+|   |-- premiacoes.css
+|-- js/
+|   |-- main.js
+|-- assets/
+|   |-- images/
+|-- reports/
+|-- package.json
+`-- LICENSE
 ```
 
----
+## Desenvolvimento Local
 
-## 🛠️ Tecnologias
+Pré-requisitos:
 
-- **HTML5** semântico
-- **CSS3 Vanilla** — variáveis CSS, glassmorphism, animações, grid
-- **JavaScript Vanilla** — sem dependências externas
-- **Google Fonts** — [Outfit](https://fonts.google.com/specimen/Outfit)
+- Node.js 18+ e npm
 
----
+Instalação:
 
-## 🏆 Sobre o Clube
+```bash
+npm install
+```
 
-O **Clube Amplexo Educação** é um clube de enriquecimento curricular focado em Matemática, Ciências, Tecnologia e Linguagens, com participação em olimpíadas nacionais e internacionais de alto nível.
+Subir servidor local:
 
-**Conquistas em destaque:**
-- 🥇 1º lugar Mundial — Olimpíada Internacional de Computação (ICO) 2025
-- 🥇 1º lugar Mundial — Singapore Math Challenge 2025
-- 🏅 +300 premiações nacionais e internacionais
-- 👧👦 +3.000 crianças impactadas
+```bash
+npm run serve:local
+```
 
----
+URL local:
 
-## 📬 Contato
+- http://127.0.0.1:4173/
+
+## Auditoria (Lighthouse)
+
+Executar auditoria completa (PT + EN):
+
+```bash
+npm run audit:lighthouse
+```
+
+Relatórios gerados em:
+
+- reports/lighthouse-pt.html
+- reports/lighthouse-en.html
+
+## Tecnologias
+
+- HTML5 semântico
+- CSS3 (sem framework)
+- JavaScript Vanilla
+- Google Fonts (Outfit)
+
+## Contato
 
 | Canal | Informação |
 |---|---|
-| 📧 E-mail geral | amplexoedu@gmail.com |
-| 📧 E-mail pedagógico | pedagogico@amplexoedu.com |
-| 📱 WhatsApp | +55 (11) 9 1100-9793 |
-| 📸 Instagram | [@amplexoedu](https://www.instagram.com/amplexoedu) |
-| 🎥 YouTube | [@Amplexoeducacao](https://www.youtube.com/@Amplexoeducacao) |
-| 💼 LinkedIn | [Amplexo Educação](https://www.linkedin.com/company/amplexo-educa%C3%A7%C3%A3o/) |
+| E-mail geral | amplexoedu@gmail.com |
+| E-mail pedagógico | pedagogico@amplexoedu.com |
+| WhatsApp | +55 (11) 9 1100-9793 |
+| Instagram | https://www.instagram.com/amplexoedu |
+| YouTube | https://www.youtube.com/@Amplexoeducacao |
+| LinkedIn | https://www.linkedin.com/company/amplexo-educa%C3%A7%C3%A3o/ |
 
----
+## Licença
 
-## 📄 Licença
+Este repositório utiliza licença proprietária.
 
-Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
----
-
-<p align="center">
-  <strong>AMPLEXO<span style="color:red">EDU</span></strong><br>
-  <em>Jornada Olímpica & Enriquecimento Curricular para mentes brilhantes.</em>
-</p>
+Consulte o arquivo LICENSE para termos completos de uso, restrições e contato para autorização formal.
