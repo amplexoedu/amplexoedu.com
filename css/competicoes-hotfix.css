@@ -1,0 +1,70 @@
+/* Emergency hotfix for hero card overlap on competitions pages */
+
+.hero.comp-hero .comp-hero-stack {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 16px !important;
+  align-items: stretch !important;
+  width: min(620px, 100%) !important;
+}
+
+.hero.comp-hero .comp-hero-stack > .comp-hero-card {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  margin: 0 !important;
+  transform: none !important;
+  z-index: 2 !important;
+  overflow: hidden !important;
+  background: #060b1b !important;
+  backdrop-filter: none !important;
+  isolation: isolate !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  aspect-ratio: 21 / 9 !important;
+  padding: 10px !important;
+}
+
+.hero.comp-hero .comp-hero-card img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  margin: 0 auto !important;
+}
+
+.hero.comp-hero .comp-hero-card-secondary {
+  padding-left: 10px !important;
+}
+
+.hero.comp-hero .comp-hero-card-secondary img {
+  width: 92% !important;
+  height: 92% !important;
+  max-width: 92% !important;
+  max-height: 92% !important;
+  object-position: center center !important;
+}
+
+@media (max-width: 768px) {
+  .hero.comp-hero .comp-hero-stack {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+    width: min(440px, 100%) !important;
+  }
+
+  .hero.comp-hero .comp-hero-stack > .comp-hero-card {
+    aspect-ratio: 16 / 9 !important;
+  }
+
+  .hero.comp-hero .comp-hero-card-secondary {
+    padding-left: 10px !important;
+  }
+
+  .hero.comp-hero .comp-hero-card-secondary img {
+    width: 88% !important;
+    height: 88% !important;
+    max-width: 88% !important;
+    max-height: 88% !important;
+    object-position: center center !important;
+  }
+}

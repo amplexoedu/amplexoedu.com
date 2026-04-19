@@ -12,6 +12,7 @@ Site oficial do Clube Amplexo Educação, com versões em Português e Inglês, 
 | Home | / | /en/ |
 | Escola Azul | /escola-azul/ | /en/escola-azul/ |
 | Premiações | /premiacoes/ | /en/premiacoes/ |
+| Competições | /competicoes/ | /en/competicoes/ |
 
 ## Recursos Principais
 
@@ -43,6 +44,8 @@ Arquivos com metadados de thumb configurados:
 - en/escola-azul/index.html
 - premiacoes/index.html
 - en/premiacoes/index.html
+- competicoes/index.html
+- en/competicoes/index.html
 
 Observação: após alterar imagem/meta de compartilhamento, algumas plataformas podem manter cache da prévia por um período.
 
@@ -55,16 +58,21 @@ amplexoedu.com/
 |   |-- index.html
 |-- premiacoes/
 |   |-- index.html
+|-- competicoes/
+|   |-- index.html
 |-- en/
 |   |-- index.html
 |   |-- escola-azul/
 |   |   |-- index.html
 |   |-- premiacoes/
 |       |-- index.html
+|   |-- competicoes/
+|       |-- index.html
 |-- css/
 |   |-- styles.css
 |   |-- escola-azul.css
 |   |-- premiacoes.css
+|   |-- competicoes.css
 |-- js/
 |   |-- main.js
 |-- assets/
