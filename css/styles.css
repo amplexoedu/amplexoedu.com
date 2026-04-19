@@ -270,6 +270,12 @@ footer {
   font-weight:700; text-transform:uppercase; letter-spacing:1px;
   border:1px solid var(--primary); background:var(--primary-dim); color:var(--primary);
 }
+.hero-badge.long {
+  text-transform:none;
+  letter-spacing:0;
+  font-size:.82rem;
+  line-height:1.4;
+}
 .hero-title {
   font-size:clamp(2.8rem,5vw,4.5rem); font-weight:800;
   line-height:1.1; letter-spacing:-1px; margin-bottom:24px;
@@ -319,6 +325,14 @@ footer {
   text-shadow:0 0 20px var(--primary-glow); line-height:1;
 }
 .stat-label { font-size:.9rem; font-weight:600; color:#fff; letter-spacing:1px; text-transform:uppercase; margin-top:8px; }
+.stat-label.long {
+  text-transform:none;
+  letter-spacing:0;
+  line-height:1.4;
+  max-width:240px;
+  margin:8px auto 0;
+  font-size:.8rem;
+}
 
 /* =========================================
    FEATURE CARDS
@@ -423,6 +437,30 @@ footer {
 .video-grid {
   display:grid; grid-template-columns:repeat(2,1fr);
   gap:24px; margin-top:48px;
+}
+.video-card {
+  background:var(--card);
+  border:1px solid var(--glass-border);
+  border-radius:14px;
+  padding:18px;
+  backdrop-filter:blur(12px);
+  transition:.3s var(--ease);
+}
+.video-card:hover {
+  border-color:var(--primary);
+  box-shadow:0 0 20px var(--primary-dim);
+}
+.video-card-title {
+  font-size:1rem;
+  font-weight:700;
+  margin-bottom:8px;
+  line-height:1.4;
+}
+.video-card-text {
+  color:var(--text2);
+  font-size:.92rem;
+  line-height:1.65;
+  margin-bottom:14px;
 }
 .video-wrap {
   border-radius:14px; overflow:hidden; position:relative;
