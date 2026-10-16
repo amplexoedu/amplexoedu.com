@@ -1,0 +1,113 @@
+# Botão para levar o site de teste (site.amplexoedu.com) para o site oficial (amplexoedu.com).
+# Como usar: aba Actions → "Publicar site de teste no oficial" → Run workflow.
+name: Publicar site de teste no oficial
+
+on:
+  workflow_dispatch:
+    inputs:
+      caminhos:
+        description: 'O que levar do site de teste para o oficial (separe por espaços; use . para o site inteiro)'
+        required: true
+        default: 'index.html css/home-v2.css js/home-v2.js assets/images/v2'
+      confirmacao:
+        description: 'Digite PUBLICAR para confirmar'
+        required: true
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: publicar-site-oficial
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    if: github.repository == 'amplexoedu/amplexoedu.com'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Conferir confirmação
+        if: inputs.confirmacao != 'PUBLICAR'
+        run: |
+          echo "::error::Publicação cancelada: digite PUBLICAR (em maiúsculas) no campo de confirmação."
+          exit 1
+
+      - name: Baixar site oficial
+        uses: actions/checkout@v5
+        with:
+          ref: main
+          path: oficial
+
+      - name: Baixar site de teste
+        uses: actions/checkout@v5
+        with:
+          repository: amplexoedu/site-teste
+          ref: main
+          path: teste
+          persist-credentials: false
+
+      - name: Copiar do teste para o oficial
+        env:
+          CAMINHOS: ${{ inputs.caminhos }}
+        run: |
+          set -euo pipefail
+          # CNAME e robots.txt são a configuração do ambiente de teste:
+          # levá-los tiraria o site oficial do ar e do Google.
+          proibidos='^(CNAME|robots\.txt|\.git|\.github)(/|$)'
+          read -ra lista <<< "$CAMINHOS"
+          for p in "${lista[@]}"; do
+            p="${p#./}"; p="${p%/}"
+            [ -z "$p" ] && p="."
+            if [[ "$p" == /* || "$p" == *..* ]]; then echo "::error::Caminho inválido: $p"; exit 1; fi
+            if [[ "$p" =~ $proibidos ]]; then echo "::error::$p pertence ao ambiente de teste e não pode ir para o site oficial."; exit 1; fi
+            if [ ! -e "teste/$p" ]; then echo "::error::Não existe no site de teste: $p"; exit 1; fi
+            (cd teste && rsync -aR --exclude='.git' --exclude='.github' --exclude='/CNAME' --exclude='/robots.txt' -- "$p" ../oficial/)
+          done
+
+      - name: Conferências de segurança
+        working-directory: oficial
+        run: |
+          set -euo pipefail
+          if [ "$(tr -d '[:space:]' < CNAME)" != "amplexoedu.com" ]; then
+            echo "::error::O CNAME do site oficial mudaria. Publicação cancelada."; exit 1
+          fi
+          if [ -n "$(git status --porcelain -- CNAME robots.txt)" ]; then
+            echo "::error::CNAME ou robots.txt seriam alterados. Publicação cancelada."; exit 1
+          fi
+          if grep -qiE '<meta[^>]*name="robots"[^>]*noindex' index.html; then
+            echo "::error::A página inicial tem noindex fixo e sumiria do Google. Publicação cancelada."; exit 1
+          fi
+
+      - name: Publicar
+        id: publicar
+        working-directory: oficial
+        env:
+          CAMINHOS: ${{ inputs.caminhos }}
+        run: |
+          set -euo pipefail
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nada para publicar: o site oficial já está igual ao de teste nesses arquivos." | tee -a "$GITHUB_STEP_SUMMARY"
+            echo "publicou=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          {
+            echo "### Publicado em https://amplexoedu.com"
+            echo "Deve aparecer no ar em 1 a 2 minutos."
+            echo '```'
+            git diff --cached --stat
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Publica do site de teste: $CAMINHOS" \
+                     -m "Origem: amplexoedu/site-teste@$(git -C ../teste rev-parse --short HEAD), acionado por @$GITHUB_ACTOR"
+          git push origin HEAD:main
+          echo "publicou=true" >> "$GITHUB_OUTPUT"
+
+      - name: Atualizar o GitHub Pages
+        if: steps.publicar.outputs.publicou == 'true'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/$GITHUB_REPOSITORY/pages/builds" > /dev/null && echo "Atualização do GitHub Pages solicitada."
