@@ -51,9 +51,9 @@ jobs:
           CAMINHOS: ${{ inputs.caminhos }}
         run: |
           set -euo pipefail
-          # CNAME e robots.txt são a configuração do ambiente de teste:
-          # levá-los tiraria o site oficial do ar e do Google.
-          proibidos='^(CNAME|robots\.txt|\.git|\.github)(/|$)'
+          # CNAME, robots.txt e README.md são exclusivos do ambiente de teste.
+          # Levar CNAME ou robots.txt tiraria o site oficial do ar e do Google.
+          proibidos='^(CNAME|robots\.txt|README\.md|\.git|\.github)(/|$)'
           read -ra lista <<< "$CAMINHOS"
           for p in "${lista[@]}"; do
             p="${p#./}"; p="${p%/}"
@@ -61,7 +61,7 @@ jobs:
             if [[ "$p" == /* || "$p" == *..* ]]; then echo "::error::Caminho inválido: $p"; exit 1; fi
             if [[ "$p" =~ $proibidos ]]; then echo "::error::$p pertence ao ambiente de teste e não pode ir para o site oficial."; exit 1; fi
             if [ ! -e "teste/$p" ]; then echo "::error::Não existe no site de teste: $p"; exit 1; fi
-            (cd teste && rsync -aR --exclude='.git' --exclude='.github' --exclude='/CNAME' --exclude='/robots.txt' -- "$p" ../oficial/)
+            (cd teste && rsync -aR --exclude='.git' --exclude='.github' --exclude='/CNAME' --exclude='/robots.txt' --exclude='/README.md' -- "$p" ../oficial/)
           done
 
       - name: Conferências de segurança
@@ -71,8 +71,8 @@ jobs:
           if [ "$(tr -d '[:space:]' < CNAME)" != "amplexoedu.com" ]; then
             echo "::error::O CNAME do site oficial mudaria. Publicação cancelada."; exit 1
           fi
-          if [ -n "$(git status --porcelain -- CNAME robots.txt)" ]; then
-            echo "::error::CNAME ou robots.txt seriam alterados. Publicação cancelada."; exit 1
+          if [ -n "$(git status --porcelain -- CNAME robots.txt README.md)" ]; then
+            echo "::error::CNAME, robots.txt ou README.md seriam alterados. Publicação cancelada."; exit 1
           fi
           if grep -qiE '<meta[^>]*name="robots"[^>]*noindex' index.html; then
             echo "::error::A página inicial tem noindex fixo e sumiria do Google. Publicação cancelada."; exit 1
