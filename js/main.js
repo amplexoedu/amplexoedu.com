@@ -459,9 +459,10 @@ document.addEventListener('DOMContentLoaded', () => {
   /* --- MOBILE NAV --- */
   const navToggle = document.getElementById('navToggle');
   const navMenu = document.getElementById('siteNav');
-  const isEnglish = (document.documentElement.lang || '').toLowerCase().startsWith('en');
-  const menuOpenLabel = isEnglish ? 'Close menu' : 'Fechar menu';
-  const menuClosedLabel = isEnglish ? 'Open menu' : 'Abrir menu';
+  const pageLang = (document.documentElement.lang || 'pt').toLowerCase().slice(0, 2);
+  const menuLabels = { en: ['Open menu', 'Close menu'], es: ['Abrir menú', 'Cerrar menú'] }[pageLang] || ['Abrir menu', 'Fechar menu'];
+  const menuClosedLabel = menuLabels[0];
+  const menuOpenLabel = menuLabels[1];
 
   function closeNavMenu() {
     if (!navToggle || !navMenu) return;
@@ -490,7 +491,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     window.addEventListener('resize', () => {
-      if (window.innerWidth > 768) closeNavMenu();
+      if (window.innerWidth > 1024) closeNavMenu();
     });
   }
 
@@ -608,7 +609,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const step = Math.ceil(target / 60);
       const timer = setInterval(() => {
         current = Math.min(current + step, target);
-        el.textContent = prefix + current.toLocaleString('pt-BR') + suffix;
+        el.textContent = prefix + current.toLocaleString(document.documentElement.lang || 'pt-BR') + suffix;
         if (current >= target) clearInterval(timer);
       }, 25);
       so.unobserve(el);
