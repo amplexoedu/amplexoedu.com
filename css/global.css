@@ -1,0 +1,103 @@
+/* Amplexo Educação — estilos comuns: seletor de idioma e capa de vídeo do YouTube */
+
+/* ---------- Seletor de idioma ---------- */
+.lang-switch {
+  --ls-bg: rgba(255, 255, 255, .08);
+  --ls-border: rgba(255, 255, 255, .22);
+  --ls-hover: rgba(255, 255, 255, .14);
+  --ls-active-bg: #fff;
+  --ls-active-fg: #740707;
+  display: inline-flex; align-items: center; gap: 2px; flex: none;
+  padding: 3px; border-radius: 999px;
+  background: var(--ls-bg); box-shadow: inset 0 0 0 1px var(--ls-border);
+  font-family: inherit; font-size: 12px; font-weight: 700; letter-spacing: .04em; line-height: 1;
+}
+.lang-switch a {
+  display: inline-flex; align-items: center; gap: 6px;
+  min-height: 32px; padding: 0 10px; border-radius: 999px;
+  color: inherit; text-decoration: none; opacity: .82;
+  transition: background .25s, color .25s, opacity .25s;
+}
+.lang-switch a:hover { opacity: 1; background: var(--ls-hover); }
+.lang-switch a[aria-current="true"] { opacity: 1; background: var(--ls-active-bg); color: var(--ls-active-fg); }
+.lang-switch a:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+.lang-switch img { display: block; width: 18px; height: auto; border-radius: 2px; box-shadow: 0 0 0 1px rgba(0, 0, 0, .14); }
+@media (max-width: 520px) {
+  .lang-switch a { padding: 0 7px; }
+  .lang-switch a span { display: none; } /* no celular, só as bandeiras (o nome do idioma continua no aria-label) */
+}
+
+/* Nova página inicial: branco sobre o hero escuro, vinho quando a barra fica clara */
+.nav .lang-switch { color: #fff; }
+.nav.is-scrolled .lang-switch {
+  --ls-bg: rgba(116, 7, 7, .05); --ls-border: rgba(116, 7, 7, .16); --ls-hover: rgba(116, 7, 7, .08);
+  --ls-active-bg: #740707; --ls-active-fg: #fff;
+  color: #3b2d30;
+}
+.menu-open .nav .lang-switch { --ls-bg: rgba(255, 255, 255, .08); --ls-border: rgba(255, 255, 255, .22); --ls-active-bg: #fff; --ls-active-fg: #740707; color: #fff; }
+
+/* Páginas do Clube Amplexo (tema claro/escuro do styles.css) */
+.nav-controls .lang-switch {
+  --ls-bg: var(--card); --ls-border: var(--glass-border); --ls-hover: var(--primary-dim);
+  --ls-active-bg: var(--primary); --ls-active-fg: #fff;
+  border-radius: 8px; color: var(--text); font-family: 'Outfit', sans-serif;
+}
+.nav-controls .lang-switch a { border-radius: 6px; }
+
+/* Jornal Amplexo */
+.topbar .lang-switch {
+  --ls-bg: transparent; --ls-border: rgba(116, 7, 7, .18); --ls-hover: rgba(116, 7, 7, .07);
+  --ls-active-bg: #740707; --ls-active-fg: #fff;
+  justify-self: end; color: #740707;
+}
+.topbar-inner:has(.lang-switch) { grid-template-columns: 1fr auto 1fr; }
+.topbar .edition { display: none; }
+
+/* Páginas legais */
+.legal-top .lang-switch {
+  --ls-bg: #fff; --ls-border: rgba(28, 20, 22, .12); --ls-hover: rgba(116, 7, 7, .06);
+  --ls-active-bg: #740707; --ls-active-fg: #fff;
+  color: #3b2d30;
+}
+
+/* ---------- Vídeo do YouTube: capa que só carrega o player ao clicar ---------- */
+.yt-facade {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  display: grid; place-items: center; align-content: center; gap: 10px;
+  padding: 16px; border: 0; cursor: pointer;
+  background: #000; color: #fff; font: inherit; text-align: center;
+  overflow: hidden;
+}
+.yt-facade img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .72; transition: opacity .3s, transform .6s; }
+.yt-facade:hover img, .yt-facade:focus-visible img { opacity: .55; transform: scale(1.03); }
+.yt-facade-play {
+  position: relative; display: grid; place-items: center; width: 68px; height: 48px; border-radius: 14px;
+  background: #e00; box-shadow: 0 8px 24px rgba(0, 0, 0, .4); transition: transform .3s;
+}
+.yt-facade-play::before { content: ""; margin-left: 4px; border-style: solid; border-width: 10px 0 10px 17px; border-color: transparent transparent transparent #fff; }
+.yt-facade:hover .yt-facade-play { transform: scale(1.08); }
+.yt-facade-aviso {
+  position: relative; max-width: 30ch; font-size: 12px; line-height: 1.4; font-weight: 500;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, .8);
+}
+.yt-facade:focus-visible { outline: 3px solid #fff; outline-offset: -3px; }
+.yt-player { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .lang-switch a, .yt-facade img, .yt-facade-play { transition: none; }
+}
+
+/* Páginas do Clube: em tablets (769–1024 px) o menu completo + seletor não cabem na barra.
+   Mesmo comportamento do celular (menu "hambúrguer"), que antes só valia até 768 px. */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar .ctrl-btn.nav-toggle { display: inline-flex; }
+  .navbar .nav-controls { margin-left: auto; gap: 8px; }
+  .navbar .nav-menu { position: absolute; top: calc(100% + 10px); left: 16px; right: 16px; margin: 0; padding: 10px; flex-direction: column; align-items: stretch; gap: 8px; border: 1px solid var(--glass-border); border-radius: 12px; background: var(--card); box-shadow: var(--shadow); opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(-8px); transition: .25s var(--ease); z-index: 1001; }
+  .navbar .nav-menu.open { opacity: 1; visibility: visible; pointer-events: auto; transform: translateY(0); }
+  .navbar .nav-link { width: 100%; justify-content: flex-start; padding: 11px 12px; font-size: .78rem; letter-spacing: .5px; }
+  .navbar .nav-item { width: 100%; flex-direction: column; align-items: stretch; }
+  .navbar .nav-item-has-submenu > .nav-link::after { margin-left: auto; }
+  .navbar .nav-submenu { position: static; min-width: 0; margin-top: 6px; padding: 0 0 0 12px; border: none; border-radius: 0; background: transparent; box-shadow: none; opacity: 1; visibility: visible; pointer-events: auto; transform: none; }
+  .navbar .nav-sublink { width: 100%; justify-content: flex-start; padding: 10px 12px; font-size: .74rem; letter-spacing: .4px; background: rgba(255, 255, 255, .02); }
+  [data-theme="light"] .navbar .nav-sublink { background: rgba(0, 0, 0, .02); }
+}
