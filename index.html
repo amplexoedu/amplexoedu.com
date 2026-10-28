@@ -2,443 +2,195 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Amplexo Educação | Clube de enriquecimento curricular</title>
-  <meta name="description" content="Toda criança merece um desafio do seu tamanho. Conheça o Clube Amplexo: aulas, projetos, mentorias e jornada olímpica, unindo excelência acadêmica e valores humanos.">
-  <link rel="canonical" href="https://amplexoedu.com/">
-  <!-- idiomas:inicio -->
-  <link rel="alternate" hreflang="pt-BR" href="https://amplexoedu.com/">
-  <link rel="alternate" hreflang="en" href="https://amplexoedu.com/en/">
-  <link rel="alternate" hreflang="es" href="https://amplexoedu.com/es/">
-  <link rel="alternate" hreflang="x-default" href="https://amplexoedu.com/en/">
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/global.css">
-  <script src="js/global.js"></script>
-  <!-- idiomas:fim -->
-  <meta name="theme-color" content="#1d0306">
+  <meta name="description" content="Toda criança merece um desafio do seu tamanho. Conheça as trilhas de enriquecimento curricular da Amplexo.">
+  <meta name="theme-color" content="#f7f4ef">
   <link rel="icon" href="assets/images/redlogo.png">
-
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="pt_BR">
-  <meta property="og:site_name" content="Amplexo Educação">
-  <meta property="og:title" content="Amplexo Educação | Transformar no presente. Impactar para sempre.">
-  <meta property="og:description" content="Clube de enriquecimento curricular que une excelência acadêmica e valores humanos. Aulas, projetos, mentorias e jornada olímpica.">
-  <meta property="og:url" content="https://amplexoedu.com/">
-  <meta property="og:image" content="https://amplexoedu.com/assets/images/og/home-pt.jpg">
-  <meta property="og:image:secure_url" content="https://amplexoedu.com/assets/images/og/home-pt.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Estudantes da Amplexo Educação celebrando juntos">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Amplexo Educação | Transformar no presente. Impactar para sempre.">
-  <meta name="twitter:description" content="Clube de enriquecimento curricular que une excelência acadêmica e valores humanos.">
-  <meta name="twitter:image" content="https://amplexoedu.com/assets/images/og/home-pt.jpg">
-  <meta name="twitter:image:alt" content="Estudantes da Amplexo Educação celebrando juntos">
-
-  <script>
-    document.documentElement.classList.add('js');
-    // Se o script principal não carregar, mostra todo o conteúdo mesmo assim.
-    setTimeout(function () { if (!window.__amplexoReady) document.documentElement.classList.add('no-anim'); }, 2500);
-    // Na versão de teste (site.amplexoedu.com) os buscadores não devem indexar a página.
-    if (location.hostname === 'site.amplexoedu.com') {
-      var robots = document.createElement('meta');
-      robots.name = 'robots';
-      robots.content = 'noindex, nofollow';
-      document.head.appendChild(robots);
-      document.documentElement.classList.add('is-staging');
-    }
-  </script>
-
-  <link rel="stylesheet" href="css/home-v2.css">
-  <script src="js/home-v2.js" defer></script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "EducationalOrganization",
-    "name": "Amplexo Educação",
-    "url": "https://amplexoedu.com/",
-    "logo": "https://amplexoedu.com/assets/images/amplexo-logo-full.png",
-    "slogan": "Educar para o bem",
-    "email": "pedagogico@amplexoedu.com",
-    "telephone": "+55 11 91100-9793",
-    "award": "Brands For Good Awards 2026 — Edu For Good Distinction",
-    "sameAs": [
-      "https://www.instagram.com/amplexoedu",
-      "https://www.youtube.com/@Amplexoeducacao",
-      "https://www.linkedin.com/company/amplexo-educa%C3%A7%C3%A3o/"
-    ]
-  }
-  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&family=Spectral:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/home-reference.css">
 </head>
-<body>
+<body id="inicio">
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
-  <div class="progress" aria-hidden="true"><span data-progress></span></div>
-  <p class="staging-badge" role="note">Prévia · site de teste</p>
 
-  <header class="nav" data-nav>
-    <div class="nav-inner">
-      <a class="nav-brand" href="#topo" aria-label="Amplexo Educação — voltar ao início">
-        <img src="assets/images/amplexo-logo-full.png" alt="Amplexo Educação" width="1590" height="731">
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#inicio" aria-label="Voltar ao início da página">
+        <img src="assets/images/amplexo-logo-full.png" alt="Amplexo Educação">
       </a>
-      <nav class="nav-links" aria-label="Seções da página">
-        <a href="#clube">O Clube</a>
-        <a href="#aprendizagem">Aprendizagem</a>
-        <a href="#impacto">Impacto</a>
-        <a href="#contato">Contato</a>
-      </nav>
-      <div class="nav-actions">
-        <a class="btn btn-small btn-journal" href="jornal-amplexo/">Jornal Amplexo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <!-- idioma:seletor --><nav class="lang-switch" aria-label="Escolher idioma"><a href="./" hreflang="pt-BR" lang="pt-BR" data-idioma="pt" aria-label="Português" title="Português" aria-current="true"><img src="assets/flags/br.svg" alt="" width="18" height="13"><span>PT</span></a><a href="en/" hreflang="en" lang="en" data-idioma="en" aria-label="English" title="English"><img src="assets/flags/us.svg" alt="" width="18" height="13"><span>EN</span></a><a href="es/" hreflang="es" lang="es" data-idioma="es" aria-label="Español" title="Español"><img src="assets/flags/es.svg" alt="" width="18" height="13"><span>ES</span></a></nav><!-- /idioma:seletor -->
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" data-menu-toggle data-open="Menu" data-close="Fechar"><span>Menu</span><i aria-hidden="true"></i></button>
-      </div>
+      <a class="journal-button" href="jornal-amplexo/">Jornal Amplexo <span aria-hidden="true">→</span></a>
     </div>
   </header>
 
-  <div class="menu" id="menu">
-    <nav aria-label="Menu principal">
-      <a href="#clube" style="--i:0">O Clube</a>
-      <a href="#aprendizagem" style="--i:1">Aprendizagem</a>
-      <a href="#impacto" style="--i:2">Impacto</a>
-      <a href="#contato" style="--i:3">Contato</a>
-      <a href="jornal-amplexo/" style="--i:4">Jornal Amplexo <em>→</em></a>
-    </nav>
-    <p class="menu-foot">Abrace e seja abraçado pela Educação.</p>
-  </div>
-
   <main id="conteudo">
-
-    <!-- ============ HERO ============ -->
-    <section class="hero" id="topo" data-hero>
-      <div class="hero-bg" aria-hidden="true">
-        <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
-        <span class="hero-spot"></span>
-      </div>
-
+    <section id="amplexo" class="hero">
       <div class="hero-inner">
-        <div class="hero-copy">
-          <p class="pill"><span class="dot" aria-hidden="true"></span>Educar para o bem</p>
-          <h1 class="hero-title">
-            <span class="line" style="--d:0"><span>Transformar</span></span>
-            <span class="line" style="--d:1"><span>no presente.</span></span>
-            <span class="line" style="--d:2"><span><em>Impactar</em></span></span>
-            <span class="line" style="--d:3"><span><em>para sempre.</em></span></span>
-          </h1>
-          <p class="hero-lede">Colaboramos para a formação humana e acadêmica de crianças e jovens, criando pontes para as melhores oportunidades de aprendizagem, em um ambiente seguro, onde todos se abraçam, torcem uns pelos outros e aprendem juntos.</p>
-          <div class="hero-ctas">
-            <a class="btn btn-primary" href="https://wa.me/5511911009793" target="_blank" rel="noopener" data-magnetic>
-              Quero fazer parte
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-            <a class="btn btn-glass" href="#clube">Conheça o Clube</a>
-          </div>
-          <div class="hero-proof">
-            <div class="avatars" aria-hidden="true">
-              <img src="assets/images/v2/familia-02.webp" alt="" width="440" height="660">
-              <img src="assets/images/v2/familia-06.webp" alt="" width="440" height="660">
-              <img src="assets/images/v2/familia-03.webp" alt="" width="440" height="660">
-              <img src="assets/images/v2/familia-07.webp" alt="" width="440" height="660">
-            </div>
-            <p><strong>+500 famílias</strong> fazem parte da nossa comunidade</p>
-            <span class="proof-sep" aria-hidden="true"></span>
-            <p class="proof-award"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z"/></svg>Brands For Good Awards 2026</p>
-          </div>
+        <div class="hero-content reveal">
+          <p class="eyebrow amber">Educar para o bem</p>
+          <h1>Transformar no presente.<br>Impactar para sempre.</h1>
+          <p class="hero-copy">Colaboramos para a formação humana e acadêmica de crianças e jovens, criando pontes para as melhores oportunidades de aprendizagem. Unimos a excelência do estudo em alto nível aos valores humanos para formar cidadãos confiantes e preparados para o futuro. Por meio de projetos, aulas e mentorias, enriquecemos o currículo dos estudantes, cultivando a responsabilidade social e o prazer pelo conhecimento, tudo em um ambiente seguro, onde todos se abraçam, torcem uns pelos outros e aprendem juntos.</p>
         </div>
-      </div>
-
-      <div class="hero-wall" aria-hidden="true">
-        <div class="wall" data-wall>
-          <div class="wall-col"><div class="wall-track" data-loop>
-            <img src="assets/images/v2/comunidade-01.webp" alt="" width="440" height="952" decoding="async">
-            <img src="assets/images/v2/familia-02.webp" alt="" width="440" height="660" decoding="async">
-            <img src="assets/images/v2/comunidade-04.webp" alt="" width="440" height="486" decoding="async">
-            <img src="assets/images/v2/familia-05.webp" alt="" width="440" height="294" decoding="async">
-            <img src="assets/images/v2/comunidade-07.webp" alt="" width="440" height="658" decoding="async">
-            <img src="assets/images/v2/familia-06.webp" alt="" width="440" height="660" decoding="async">
-          </div></div>
-          <div class="wall-col wall-col-down"><div class="wall-track" data-loop>
-            <img src="assets/images/v2/familia-03.webp" alt="" width="440" height="660" decoding="async">
-            <img src="assets/images/v2/comunidade-02.webp" alt="" width="440" height="294" decoding="async">
-            <img src="assets/images/v2/comunidade-05.webp" alt="" width="440" height="782" decoding="async">
-            <img src="assets/images/v2/familia-01.webp" alt="" width="440" height="382" decoding="async">
-            <img src="assets/images/v2/comunidade-09.webp" alt="" width="440" height="660" decoding="async">
-            <img src="assets/images/v2/comunidade-10.webp" alt="" width="440" height="294" decoding="async">
-          </div></div>
-          <div class="wall-col"><div class="wall-track" data-loop>
-            <img src="assets/images/v2/comunidade-03.webp" alt="" width="440" height="508" decoding="async">
-            <img src="assets/images/v2/familia-04.webp" alt="" width="440" height="660" decoding="async">
-            <img src="assets/images/v2/comunidade-06.webp" alt="" width="440" height="586" decoding="async">
-            <img src="assets/images/v2/comunidade-08.webp" alt="" width="440" height="660" decoding="async">
-            <img src="assets/images/v2/familia-07.webp" alt="" width="440" height="660" decoding="async">
-            <img src="assets/images/v2/comunidade-11.webp" alt="" width="440" height="660" decoding="async">
-          </div></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ FAIXAS QUE SE ABRAÇAM ============ -->
-    <section class="ribbons" aria-labelledby="ribbons-title">
-      <h2 id="ribbons-title" class="sr-only">O que vivemos na Amplexo</h2>
-      <ul class="sr-only">
-        <li>Olimpíadas</li><li>Arte</li><li>Música</li><li>Jornal</li><li>Teatro</li><li>Ciências</li><li>Tecnologia</li><li>Mentorias</li><li>Projetos sociais</li><li>Esportes</li><li>Cultura</li><li>Inovação</li>
-      </ul>
-      <div class="ribbon ribbon-1" aria-hidden="true"><div class="ribbon-track" data-loop>
-        <span>Olimpíadas</span><span><em>Arte</em></span><span>Música</span><span><em>Jornal</em></span><span>Teatro</span><span><em>Ciências</em></span><span>Tecnologia</span><span><em>Mentorias</em></span>
-      </div></div>
-      <div class="ribbon ribbon-2" aria-hidden="true"><div class="ribbon-track" data-loop>
-        <span>Projetos sociais</span><span><em>Esportes</em></span><span>Cultura</span><span><em>Inovação</em></span><span>Protagonismo</span><span><em>Acolhimento</em></span><span>Excelência</span><span><em>Afeto</em></span>
-      </div></div>
-    </section>
-
-    <!-- ============ NÚMEROS ============ -->
-    <section class="section stats" id="numeros" aria-labelledby="stats-title">
-      <div class="shell">
-        <header class="head">
-          <div data-reveal>
-            <p class="kicker">Nossa trajetória</p>
-            <h2 id="stats-title" class="h2">Conquistas que nascem de <em>muitos abraços.</em></h2>
-          </div>
-          <p class="lead" data-reveal style="--delay:.1s">Unimos a excelência do estudo em alto nível aos valores humanos para formar cidadãos confiantes e preparados para o futuro.</p>
-        </header>
-
-        <ul class="bento">
-          <li class="tile tile-photo" data-spot data-reveal>
-            <img src="assets/images/v2/familia-olimpiada.webp" alt="Mãe e dois filhos com camisetas da Amplexo segurando a bandeira do clube" width="1100" height="734" loading="lazy" decoding="async">
-            <span class="stat-num" data-count="500" data-prefix="+">+500</span>
-            <span class="stat-label">Famílias impactadas</span>
-            <span class="stat-note">Uma comunidade que se abraça, torce junto e cresce junto.</span>
-          </li>
-          <li class="tile tile-wine" data-spot data-reveal style="--delay:.08s">
-            <span class="tile-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="14" r="6"/><path d="M8.5 9.2 6 3h4l2 4.2M15.5 9.2 18 3h-4l-2 4.2"/><path d="m12 11.4.9 1.8 2 .3-1.4 1.4.3 2-1.8-1-1.8 1 .3-2-1.4-1.4 2-.3z"/></svg></span>
-            <span class="stat-num" data-count="3000" data-prefix="+">+3.000</span>
-            <span class="stat-label">Premiações</span>
-          </li>
-          <li class="tile tile-gold" data-spot data-reveal style="--delay:.16s">
-            <span class="tile-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 0 1-8 0zM8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M8.5 20h7M10 17h4"/></svg></span>
-            <span class="stat-num">1º<small>lugar</small></span>
-            <span class="stat-label">Em olimpíadas nacionais e internacionais</span>
-          </li>
-          <li class="tile tile-navy" data-spot data-reveal style="--delay:.24s">
-            <div>
-              <span class="stat-num stat-word"><em>Prestígio</em></span>
-              <span class="stat-label">Brands For Good Awards 2026<br>Edu For Good — Distinction</span>
-            </div>
-            <img class="tile-seal" src="assets/images/v2/selo-brands-for-good.webp" alt="Selo Brands For Good Awards 2026 — Edu For Good Distinction" width="900" height="538" loading="lazy" decoding="async">
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- ============ PROPÓSITO ============ -->
-    <section class="section manifesto" id="clube" aria-labelledby="clube-title">
-      <div class="shell">
-        <p class="kicker" data-reveal>Propósito</p>
-        <h2 id="clube-title" class="sr-only">O Clube Amplexo</h2>
-        <p class="words" data-words>O Clube Amplexo é mais do que uma iniciativa pedagógica: é um <em>movimento de transformação.</em> Estimulamos o desejo pelo saber em alto nível, encorajamos os estudantes a superar desafios e damos espaço para que expressem suas ideias, sempre respeitando a história, a individualidade e o ritmo de cada pessoa.</p>
-
-        <div class="manifesto-cols">
-          <article data-reveal>
-            <span class="col-num">01</span>
-            <h3>Inclusão de verdade</h3>
-            <p>Nossa comunidade acolhe crianças e adolescentes neurotípicos e neurodivergentes, com diferentes interesses, talentos e necessidades. Apoiamos estudantes curiosos que buscam aprofundamento, novos desafios ou suplementação pedagógica, oferecendo escuta, apoio e oportunidades para que cada um desenvolva plenamente o seu potencial.</p>
-          </article>
-          <article data-reveal style="--delay:.12s">
-            <span class="col-num">02</span>
-            <h3>Mentes brilhantes, corações dispostos</h3>
-            <p>Para nós, inclusão e responsabilidade social significam reconhecer singularidades, ampliar caminhos e dar voz aos estudantes. Por isso, a excelência acadêmica caminha junto com a empatia e o compromisso com o bem, porque formar mentes brilhantes só faz sentido quando também formamos corações dispostos a construir um mundo melhor.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ ABRACE E SEJA ABRAÇADO ============ -->
-    <section class="embrace" aria-labelledby="embrace-title" data-embrace>
-      <div class="embrace-sticky">
-        <figure class="embrace-media">
-          <img src="assets/images/v2/celebracao-1440.webp" srcset="assets/images/v2/celebracao-800.webp 800w, assets/images/v2/celebracao-1440.webp 1440w" sizes="100vw" alt="Dezenas de estudantes da Amplexo com camisetas do clube celebrando de braços para o alto" width="1440" height="720" loading="lazy" decoding="async">
+        <figure class="hero-photo" aria-label="Estudantes da Amplexo reunidas">
+          <img src="assets/images/amplexo-estudantes.jpg" alt="Quatro estudantes da Amplexo sorrindo e se abraçando" width="1800" height="2700">
         </figure>
-        <div class="embrace-copy">
-          <h2 id="embrace-title" class="embrace-title">Abrace e seja <em>abraçado</em> pela Educação</h2>
-          <p>Excelência acadêmica educando para o bem.</p>
-        </div>
       </div>
     </section>
 
-    <!-- ============ AMBIENTES DE APRENDIZAGEM ============ -->
-    <section class="section learn" id="aprendizagem" aria-labelledby="learn-title">
-      <div class="shell">
-        <header class="head">
-          <div data-reveal>
-            <p class="kicker">Enriquecimento curricular on-line</p>
-            <h2 id="learn-title" class="h2">Ambientes de <em>aprendizagem</em></h2>
+    <section class="credibility shell" aria-labelledby="cred-title">
+      <div class="transition-line" aria-hidden="true"></div>
+      <h2 id="cred-title" class="sr-only">Indicadores de credibilidade</h2>
+      <div class="metrics-scene">
+        <div class="metrics reveal">
+        <article><strong>Prestígio</strong><span>Brands For Good Awards 2026<br>Edu For Good – Distinction</span></article>
+        <article><strong>+500</strong><span>Famílias impactadas</span></article>
+        <article><strong>1º lugar</strong><span>Em olimpíadas nacionais e internacionais</span></article>
+        <article><strong>+3.000</strong><span>Premiações</span></article>
+        </div>
+        <div class="family-carousel" aria-label="Famílias que fazem parte da comunidade Amplexo">
+          <div class="family-carousel-track">
+            <div class="family-carousel-group">
+              <figure><img src="assets/images/familia-amplexo-01-360.jpg" srcset="assets/images/familia-amplexo-01-360.jpg 360w, assets/images/familia-amplexo-01-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
+              <figure><img src="assets/images/familia-amplexo-03-360.jpg" srcset="assets/images/familia-amplexo-03-360.jpg 360w, assets/images/familia-amplexo-03-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
+              <figure><img src="assets/images/familia-amplexo-06-360.jpg" srcset="assets/images/familia-amplexo-06-360.jpg 360w, assets/images/familia-amplexo-06-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
+              <figure><img src="assets/images/amplexo-familia-abraco-360.jpg" srcset="assets/images/amplexo-familia-abraco-360.jpg 360w, assets/images/amplexo-familia-abraco-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
+              <figure><img src="assets/images/familia-amplexo-05-360.jpg" srcset="assets/images/familia-amplexo-05-360.jpg 360w, assets/images/familia-amplexo-05-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
+              <figure><img src="assets/images/familia-amplexo-02-360.jpg" srcset="assets/images/familia-amplexo-02-360.jpg 360w, assets/images/familia-amplexo-02-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
+              <figure><img src="assets/images/familia-amplexo-04-360.jpg" srcset="assets/images/familia-amplexo-04-360.jpg 360w, assets/images/familia-amplexo-04-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
+              <figure><img src="assets/images/familia-amplexo-07-360.jpg" srcset="assets/images/familia-amplexo-07-360.jpg 360w, assets/images/familia-amplexo-07-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
+            </div>
+            <div class="family-carousel-group" aria-hidden="true">
+              <figure><img src="assets/images/familia-amplexo-01-360.jpg" srcset="assets/images/familia-amplexo-01-360.jpg 360w, assets/images/familia-amplexo-01-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
+              <figure><img src="assets/images/familia-amplexo-03-360.jpg" srcset="assets/images/familia-amplexo-03-360.jpg 360w, assets/images/familia-amplexo-03-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
+              <figure><img src="assets/images/familia-amplexo-06-360.jpg" srcset="assets/images/familia-amplexo-06-360.jpg 360w, assets/images/familia-amplexo-06-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
+              <figure><img src="assets/images/amplexo-familia-abraco-360.jpg" srcset="assets/images/amplexo-familia-abraco-360.jpg 360w, assets/images/amplexo-familia-abraco-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
+              <figure><img src="assets/images/familia-amplexo-05-360.jpg" srcset="assets/images/familia-amplexo-05-360.jpg 360w, assets/images/familia-amplexo-05-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
+              <figure><img src="assets/images/familia-amplexo-02-360.jpg" srcset="assets/images/familia-amplexo-02-360.jpg 360w, assets/images/familia-amplexo-02-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
+              <figure><img src="assets/images/familia-amplexo-04-360.jpg" srcset="assets/images/familia-amplexo-04-360.jpg 360w, assets/images/familia-amplexo-04-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
+              <figure><img src="assets/images/familia-amplexo-07-360.jpg" srcset="assets/images/familia-amplexo-07-360.jpg 360w, assets/images/familia-amplexo-07-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
+            </div>
           </div>
-          <p class="lead" data-reveal style="--delay:.1s">Por meio de projetos, aulas e mentorias, enriquecemos o currículo dos estudantes, cultivando a responsabilidade social e o prazer pelo conhecimento.</p>
-        </header>
-
-        <div class="stack">
-          <article class="card card-1" style="--i:0" data-card>
-            <div class="card-body">
-              <span class="card-num">01</span>
-              <h3>Aulas, projetos e mentorias</h3>
-              <p>Além de aulas ao vivo, gravadas e materiais de qualidade, mantemos uma escuta constante de alunos e famílias para compreender suas necessidades e favorecer o desenvolvimento da saúde física, emocional e cognitiva.</p>
-              <p>Participamos de iniciativas como o <a href="escola-azul/">Programa Escola Azul</a> e de projetos sociais, e incentivamos experiências em esportes, arte, cultura, ciência, tecnologia, inovação e protagonismo.</p>
-            </div>
-            <figure class="card-media"><img src="assets/images/v2/quadro.webp" alt="Dois estudantes da Amplexo resolvendo um problema de matemática no quadro" width="1100" height="734" loading="lazy" decoding="async"></figure>
-          </article>
-
-          <article class="card card-2" style="--i:1" data-card>
-            <div class="card-body">
-              <span class="card-num">02</span>
-              <h3>Calendário diversificado</h3>
-              <p>Conhecimento em movimento, com acompanhamento e desafios significativos. Uma programação rica e contínua, que amplia a experiência acadêmica e cria diferentes caminhos de desenvolvimento.</p>
-              <ul class="chips" aria-label="Atividades do calendário">
-                <li>Arte</li><li>Música</li><li>Jornal</li><li>Olimpíadas</li><li>Laboratório de ciências</li><li>Teatro</li><li>Tecnologia</li>
-              </ul>
-              <p>Mesmo no ambiente on-line, cultivamos proximidade, cuidado e afeto, para que cada encontro seja um verdadeiro abraço em forma de educação.</p>
-            </div>
-            <figure class="card-media"><img src="assets/images/v2/musica.webp" alt="Estudante da Amplexo tocando piano em uma apresentação" width="1100" height="734" loading="lazy" decoding="async"></figure>
-          </article>
-
-          <article class="card card-3" style="--i:2" data-card>
-            <div class="card-body">
-              <span class="card-num">03</span>
-              <h3>Parcerias e plataformas</h3>
-              <p>Além da nossa plataforma própria, os alunos têm acesso a soluções e parcerias que ampliam o contato com tecnologia, inovação, conexões e novas oportunidades de aprendizagem, desenvolvimento e protagonismo.</p>
-              <ul class="chips" aria-label="Plataformas e instituições parceiras">
-                <li>Medalhei</li><li>Educacross</li><li>SuperAutor</li><li>QuBits</li><li>Instituto Azlan</li><li>Sócios Mirins AEITA</li><li>Mensa Brasil</li><li>SMETA Olympiad</li>
-              </ul>
-            </div>
-            <figure class="card-media"><img src="assets/images/v2/online.webp" alt="Estudante da Amplexo sorrindo durante uma atividade on-line" width="800" height="1066" loading="lazy" decoding="async"></figure>
-          </article>
-
-          <article class="card card-4" style="--i:3" data-card>
-            <div class="card-body">
-              <span class="card-num">04</span>
-              <h3>Jornada Olímpica</h3>
-              <p>Preparamos e acompanhamos cada estudante em todas as etapas de sua jornada olímpica. Celebramos muito além das medalhas: cada desafio enfrentado, aprendizado construído e passo dado representa uma conquista.</p>
-              <p>Somos referência nacional e internacional em premiações olímpicas, unindo excelência acadêmica, estratégia, torcida e acolhimento.</p>
-              <a class="text-link" href="premiacoes/">Conheça nossas premiações <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            </div>
-            <figure class="card-media"><img src="assets/images/v2/medalhas.webp" alt="Estudante da Amplexo sorrindo com várias medalhas de olimpíadas no pescoço" width="800" height="1200" loading="lazy" decoding="async"></figure>
-          </article>
         </div>
+      </div>
+    </section>
 
-        <aside class="journey" aria-labelledby="journey-title">
-          <h3 id="journey-title" class="journey-title" data-reveal>Acolhemos desde o primeiro passo. <em>Preparamos para os maiores desafios.</em></h3>
-          <p class="journey-copy" data-reveal style="--delay:.1s">A alta performance nasce de uma base bem construída. Do nível básico ao avançado, o estudante encontra suporte, ferramentas e desafios para ir cada vez mais longe.</p>
-          <ol class="steps" data-reveal style="--delay:.2s">
-            <li style="--i:0"><span>Primeiro passo</span></li>
-            <li style="--i:1"><span>Nível básico</span></li>
-            <li style="--i:2"><span>Avançado</span></li>
-            <li style="--i:3"><span>Maiores desafios</span></li>
-          </ol>
+    <section id="clube" class="manifesto section-pad">
+      <div class="narrow reveal">
+        <p class="eyebrow teal">Propósito</p>
+        <h2>Abrace e seja abraçado pela Educação</h2>
+        <div class="editorial-copy">
+          <p>O Clube Amplexo é mais do que uma iniciativa pedagógica: é um movimento de transformação. Estimulamos o desejo pelo saber em alto nível, encorajamos os estudantes a superar desafios e damos espaço para que expressem suas ideias, sempre respeitando a história, a individualidade e o ritmo de cada pessoa.</p>
+          <p>Nossa comunidade acolhe crianças e adolescentes neurotípicos e neurodivergentes, com diferentes interesses, talentos e necessidades. Apoiamos estudantes curiosos que buscam aprofundamento, novos desafios ou suplementação pedagógica, oferecendo escuta, apoio e oportunidades para que cada um desenvolva plenamente o seu potencial.</p>
+          <p>Para nós, inclusão e responsabilidade social significam reconhecer singularidades, ampliar caminhos e dar voz aos estudantes. Por isso, a excelência acadêmica caminha junto com a empatia e o compromisso com o bem, porque formar mentes brilhantes só faz sentido quando também formamos corações dispostos a construir um mundo melhor.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="learning section-pad">
+      <div class="learning-showcase">
+        <div class="learning-photo-rail learning-photo-rail-left" aria-label="Momentos de aprendizagem na Amplexo">
+          <figure><img src="assets/images/aprendizagem-comunidade.jpg" alt="Estudantes da Amplexo reunidos em uma atividade coletiva" loading="lazy"></figure>
+          <figure><img src="assets/images/aprendizagem-medalhas.jpg" alt="Estudante da Amplexo celebrando suas medalhas" loading="lazy"></figure>
+          <figure><img src="assets/images/aprendizagem-online.jpg" alt="Estudante participando de uma atividade on-line" loading="lazy"></figure>
+          <figure><img src="assets/images/aprendizagem-musica.jpg" alt="Estudante da Amplexo tocando piano" loading="lazy"></figure>
+        </div>
+        <div class="learning-content">
+        <div class="section-heading reveal">
+          <p class="eyebrow wine">Enriquecimento curricular Online</p>
+          <h2>Ambientes de aprendizagem</h2>
+        </div>
+        <div class="learning-grid">
+          <article class="learning-card reveal"><span>01</span><h3>Aulas, projetos e mentorias</h3><p>Além de aulas ao vivo, gravadas e materiais de qualidade, mantemos uma escuta constante de alunos e famílias para compreender suas necessidades e favorecer o desenvolvimento da saúde física, emocional e cognitiva.</p><p>Participamos de iniciativas como o <strong>Programa Escola Azul</strong> e de projetos sociais. Também incentivamos e apoiamos experiências em esportes, arte, cultura, ciência, tecnologia, inovação e protagonismo, construindo uma formação ampla, acolhedora e conectada aos interesses de cada aluno.</p></article>
+          <article class="learning-card reveal"><span>02</span><h3>Calendário diversificado</h3><p>Conhecimento em movimento, com acompanhamento e desafios significativos.</p><p>Oferecemos uma programação rica e contínua, que amplia a experiência acadêmica e cria diferentes caminhos de desenvolvimento. Arte, música, jornal, olimpíadas, laboratório de ciências, teatro e tecnologia fazem parte dessa jornada. Mesmo no ambiente <strong>on-line</strong>, cultivamos proximidade, cuidado e afeto, para que cada encontro seja um verdadeiro abraço em forma de educação.</p></article>
+          <article class="learning-card reveal"><span>03</span><h3>Parcerias e plataformas</h3><p>Além da nossa plataforma própria, oferecemos aos alunos acesso a soluções como <strong>Medalhei, Educacross, SuperAutor e QuBits</strong>, somadas a parcerias com instituições como <strong>Instituto Azlan, Sócios Mirins AEITA, Mensa Brasil e SMETA Olympiad</strong>. Essa rede amplia o contato com tecnologia, inovação, conexões e novas oportunidades de aprendizagem, desenvolvimento e protagonismo.</p></article>
+          <article class="learning-card reveal"><span>04</span><h3>Jornada Olímpica</h3><p>Preparamos e acompanhamos cada estudante em todas as etapas de sua jornada olímpica. Celebramos muito além das medalhas: cada desafio enfrentado, aprendizado construído e passo dado representa uma conquista. Somos referência nacional e internacional em premiações olímpicas, unindo excelência acadêmica, estratégia, torcida e acolhimento.</p></article>
+        </div>
+        <aside class="learning-callout reveal">
+          <h3>Acolhemos desde o primeiro passo. Preparamos para os maiores desafios.</h3>
+          <p>A alta performance nasce de uma base bem construída. Do nível básico ao avançado, o estudante encontra suporte, ferramentas e desafios para ir cada vez mais longe.</p>
         </aside>
-      </div>
-    </section>
-
-    <!-- ============ PRÊMIO ============ -->
-    <section class="section award" id="impacto" aria-labelledby="award-title">
-      <div class="award-aura" aria-hidden="true"></div>
-      <div class="shell award-grid">
-        <div class="award-copy">
-          <p class="kicker kicker-light" data-reveal>Brands For Good Awards 2026</p>
-          <h2 id="award-title" class="h2" data-reveal>Quando a educação gera impacto, <em>o mundo reconhece!</em></h2>
-          <blockquote data-reveal style="--delay:.12s">
-            <p>“Receber esta distinção reconhece uma história construída por alunos, famílias, professores e parceiros que acreditam que a educação pode transformar vidas.”</p>
-            <footer>
-              <img src="assets/images/v2/clarissa.webp" alt="" width="200" height="300" loading="lazy" decoding="async">
-              <span><strong>Clarissa Vergara</strong>Fundadora e Diretora Executiva</span>
-            </footer>
-          </blockquote>
         </div>
-
-        <div class="award-visual" data-tilt-area>
-          <div class="rings" aria-hidden="true"><span></span><span></span></div>
-          <figure class="trophy" data-tilt>
-            <img src="assets/images/v2/trofeu.webp" alt="Troféu Brands For Good Awards 2026 entregue à Amplexo Educação, categoria Edu For Good — Distinction" width="561" height="974" loading="lazy" decoding="async">
-          </figure>
-          <img class="award-seal" src="assets/images/v2/selo-brands-for-good.webp" alt="" width="900" height="538" loading="lazy" decoding="async">
+        <div class="learning-photo-rail learning-photo-rail-right" aria-label="Histórias reais da comunidade Amplexo">
+          <figure><img src="assets/images/aprendizagem-familia.jpg" alt="Família vestindo a camisa da Amplexo" loading="lazy"></figure>
+          <figure><img src="assets/images/aprendizagem-abraco.jpg" alt="Abraço celebrando uma conquista" loading="lazy"></figure>
+          <figure><img src="assets/images/aprendizagem-arte.jpg" alt="Criança apresentando uma criação artística" loading="lazy"></figure>
+          <figure><img src="assets/images/aprendizagem-equipe.jpg" alt="Estudantes reunidos representando a comunidade Amplexo" loading="lazy"></figure>
         </div>
       </div>
     </section>
 
-    <!-- ============ CONTATO ============ -->
-    <section class="section join" id="contato" aria-labelledby="join-title">
-      <div class="polaroids" aria-hidden="true">
-        <div class="polaroid-track" data-loop>
-          <figure class="polaroid"><img src="assets/images/v2/comunidade-09.webp" alt="" width="440" height="660" loading="lazy" decoding="async"></figure>
-          <figure class="polaroid"><img src="assets/images/v2/comunidade-03.webp" alt="" width="440" height="508" loading="lazy" decoding="async"></figure>
-          <figure class="polaroid"><img src="assets/images/v2/comunidade-12.webp" alt="" width="440" height="660" loading="lazy" decoding="async"></figure>
-          <figure class="polaroid"><img src="assets/images/v2/comunidade-06.webp" alt="" width="440" height="586" loading="lazy" decoding="async"></figure>
-          <figure class="polaroid"><img src="assets/images/v2/comunidade-11.webp" alt="" width="440" height="660" loading="lazy" decoding="async"></figure>
-          <figure class="polaroid"><img src="assets/images/v2/comunidade-04.webp" alt="" width="440" height="486" loading="lazy" decoding="async"></figure>
-          <figure class="polaroid"><img src="assets/images/v2/comunidade-08.webp" alt="" width="440" height="660" loading="lazy" decoding="async"></figure>
-          <figure class="polaroid"><img src="assets/images/v2/comunidade-01.webp" alt="" width="440" height="952" loading="lazy" decoding="async"></figure>
-          <figure class="polaroid"><img src="assets/images/v2/comunidade-07.webp" alt="" width="440" height="658" loading="lazy" decoding="async"></figure>
-          <figure class="polaroid"><img src="assets/images/v2/comunidade-05.webp" alt="" width="440" height="782" loading="lazy" decoding="async"></figure>
+    <section id="impacto" class="impact section-pad">
+      <div class="shell impact-grid">
+        <div class="impact-copy reveal">
+          <p class="eyebrow amber">Brands For Good Awards 2026</p>
+          <h2>Quando a educação gera impacto, o mundo reconhece!</h2>
+          <blockquote>“Receber esta distinção reconhece uma história construída por alunos, famílias, professores e parceiros que acreditam que a educação pode transformar vidas.”</blockquote>
+          <p class="signature">Clarissa Vergara · Fundadora e Diretora Executiva</p>
         </div>
+        <div class="award reveal"><img src="assets/images/brands-for-good-2026.png" alt="Selo Brands For Good Awards 2026 — Edu For Good Distinction" loading="lazy"></div>
       </div>
+    </section>
 
-      <div class="shell join-inner">
-        <p class="kicker" data-reveal>Contatos</p>
-        <h2 id="join-title" class="h2" data-reveal>Faça parte da comunidade <em>Amplexo Educação</em></h2>
-        <p class="lead" data-reveal style="--delay:.1s">Toda criança merece um desafio do seu tamanho. Conte pra gente sobre a sua família e vamos encontrar, juntos, o próximo passo.</p>
-
-        <div class="contacts">
-          <a class="contact contact-main" href="https://wa.me/5511911009793" target="_blank" rel="noopener" data-spot data-reveal>
-            <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.5 11.6a8.6 8.6 0 0 1-12.7 7.5L3.5 20.5l1.4-4.1a8.6 8.6 0 1 1 15.6-4.8z"/><path d="M9 9.2c.3 1.9 2 3.8 4.2 4.6l1-1.2 2 .9c-.3 1-1.1 1.6-2.2 1.5-3-.4-5.8-3.2-6.2-6.1-.1-1.1.5-1.9 1.5-2.2l.9 2z"/></svg></span>
-            <span class="contact-text"><span class="contact-label">WhatsApp</span><strong>(11) 91100-9793</strong></span>
-            <span class="contact-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
-          </a>
-          <a class="contact" href="https://instagram.com/amplexoedu" target="_blank" rel="noopener" data-spot data-reveal style="--delay:.08s">
-            <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg></span>
-            <span class="contact-text"><span class="contact-label">Instagram</span><strong>@amplexoedu</strong></span>
-            <span class="contact-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
-          </a>
-          <a class="contact" href="mailto:pedagogico@amplexoedu.com" data-spot data-reveal style="--delay:.16s">
-            <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3.5 7.5 8.5 6 8.5-6"/></svg></span>
-            <span class="contact-text"><span class="contact-label">E-mail</span><strong>pedagogico<wbr>@amplexoedu.com</strong></span>
-            <span class="contact-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
-          </a>
+    <section class="contact section-pad">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow amber">Contatos</p>
+          <h2>Faça parte da comunidade Amplexo Educação</h2>
+        </div>
+        <div class="community-carousel reveal" aria-label="Pessoas que fazem parte da comunidade Amplexo Educação">
+          <div class="community-carousel-track">
+            <div class="community-carousel-group">
+              <figure class="community-photo"><img src="assets/images/comunidade-01-480.jpg" srcset="assets/images/comunidade-01-480.jpg 480w, assets/images/comunidade-01-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
+              <figure class="community-photo"><img src="assets/images/comunidade-02-480.jpg" srcset="assets/images/comunidade-02-480.jpg 480w, assets/images/comunidade-02-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
+              <figure class="community-photo"><img src="assets/images/comunidade-03-480.jpg" srcset="assets/images/comunidade-03-480.jpg 480w, assets/images/comunidade-03-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
+              <figure class="community-photo"><img src="assets/images/comunidade-04-480.jpg" srcset="assets/images/comunidade-04-480.jpg 480w, assets/images/comunidade-04-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
+              <figure class="community-photo"><img src="assets/images/comunidade-05-480.jpg" srcset="assets/images/comunidade-05-480.jpg 480w, assets/images/comunidade-05-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
+              <figure class="community-photo"><img src="assets/images/comunidade-06-480.jpg" srcset="assets/images/comunidade-06-480.jpg 480w, assets/images/comunidade-06-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
+              <figure class="community-photo"><img src="assets/images/comunidade-07-480.jpg" srcset="assets/images/comunidade-07-480.jpg 480w, assets/images/comunidade-07-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
+              <figure class="community-photo"><img src="assets/images/comunidade-08-480.jpg" srcset="assets/images/comunidade-08-480.jpg 480w, assets/images/comunidade-08-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
+              <figure class="community-photo"><img src="assets/images/comunidade-09-480.jpg" srcset="assets/images/comunidade-09-480.jpg 480w, assets/images/comunidade-09-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
+              <figure class="community-photo"><img src="assets/images/comunidade-10-480.jpg" srcset="assets/images/comunidade-10-480.jpg 480w, assets/images/comunidade-10-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
+              <figure class="community-photo"><img src="assets/images/comunidade-11-480.jpg" srcset="assets/images/comunidade-11-480.jpg 480w, assets/images/comunidade-11-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
+              <figure class="community-photo"><img src="assets/images/comunidade-12-480.jpg" srcset="assets/images/comunidade-12-480.jpg 480w, assets/images/comunidade-12-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
+            </div>
+            <div class="community-carousel-group" aria-hidden="true">
+              <figure class="community-photo"><img src="assets/images/comunidade-01-480.jpg" srcset="assets/images/comunidade-01-480.jpg 480w, assets/images/comunidade-01-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
+              <figure class="community-photo"><img src="assets/images/comunidade-02-480.jpg" srcset="assets/images/comunidade-02-480.jpg 480w, assets/images/comunidade-02-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
+              <figure class="community-photo"><img src="assets/images/comunidade-03-480.jpg" srcset="assets/images/comunidade-03-480.jpg 480w, assets/images/comunidade-03-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
+              <figure class="community-photo"><img src="assets/images/comunidade-04-480.jpg" srcset="assets/images/comunidade-04-480.jpg 480w, assets/images/comunidade-04-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
+              <figure class="community-photo"><img src="assets/images/comunidade-05-480.jpg" srcset="assets/images/comunidade-05-480.jpg 480w, assets/images/comunidade-05-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
+              <figure class="community-photo"><img src="assets/images/comunidade-06-480.jpg" srcset="assets/images/comunidade-06-480.jpg 480w, assets/images/comunidade-06-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
+              <figure class="community-photo"><img src="assets/images/comunidade-07-480.jpg" srcset="assets/images/comunidade-07-480.jpg 480w, assets/images/comunidade-07-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
+              <figure class="community-photo"><img src="assets/images/comunidade-08-480.jpg" srcset="assets/images/comunidade-08-480.jpg 480w, assets/images/comunidade-08-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
+              <figure class="community-photo"><img src="assets/images/comunidade-09-480.jpg" srcset="assets/images/comunidade-09-480.jpg 480w, assets/images/comunidade-09-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
+              <figure class="community-photo"><img src="assets/images/comunidade-10-480.jpg" srcset="assets/images/comunidade-10-480.jpg 480w, assets/images/comunidade-10-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
+              <figure class="community-photo"><img src="assets/images/comunidade-11-480.jpg" srcset="assets/images/comunidade-11-480.jpg 480w, assets/images/comunidade-11-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
+              <figure class="community-photo"><img src="assets/images/comunidade-12-480.jpg" srcset="assets/images/comunidade-12-480.jpg 480w, assets/images/comunidade-12-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
+            </div>
+          </div>
+        </div>
+        <div class="contact-grid">
+          <a class="contact-card reveal" href="https://wa.me/5511911009793" target="_blank" rel="noopener"><span>WhatsApp</span><strong>(11) 91100-9793</strong><i>↗</i></a>
+          <a class="contact-card reveal" href="https://instagram.com/amplexoedu" target="_blank" rel="noopener"><span>Instagram</span><strong>@amplexoedu</strong><i>↗</i></a>
+          <a class="contact-card reveal" href="mailto:pedagogico@amplexoedu.com"><span>E-mail</span><strong>pedagogico@amplexoedu.com</strong><i>↗</i></a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="shell">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <img src="assets/images/amplexo-logo-full.png" alt="Amplexo Educação" width="1590" height="731" loading="lazy">
-          <p>Excelência acadêmica educando para o bem.</p>
-        </div>
-        <nav class="footer-nav" aria-label="Rodapé">
-          <div>
-            <p class="footer-h">Explore</p>
-            <a href="#clube">O Clube</a>
-            <a href="#aprendizagem">Aprendizagem</a>
-            <a href="#impacto">Impacto</a>
-            <a href="jornal-amplexo/">Jornal Amplexo</a>
-          </div>
-          <div>
-            <p class="footer-h">Fale com a gente</p>
-            <a href="https://wa.me/5511911009793" target="_blank" rel="noopener">WhatsApp</a>
-            <a href="mailto:pedagogico@amplexoedu.com">pedagogico<wbr>@amplexoedu.com</a>
-          </div>
-          <div>
-            <p class="footer-h">Redes</p>
-            <a href="https://www.instagram.com/amplexoedu" target="_blank" rel="noopener">Instagram</a>
-            <a href="https://www.youtube.com/@Amplexoeducacao" target="_blank" rel="noopener">YouTube</a>
-            <a href="https://www.linkedin.com/company/amplexo-educa%C3%A7%C3%A3o/" target="_blank" rel="noopener">LinkedIn</a>
-          </div>
-        </nav>
-      </div>
-      <p class="footer-word" aria-hidden="true">amplexo</p>
-      <div class="footer-bottom">
-        <span>© <span data-year>2026</span> Amplexo Educação</span>
-        <nav class="footer-legal" aria-label="Informações legais"><a href="privacidade/">Política de Privacidade</a><a href="termos/">Termos de Uso</a><a href="acessibilidade/">Acessibilidade</a></nav>
-      </div>
+    <div class="shell footer-grid">
+      <div><strong>Amplexo Educação</strong><p>Excelência acadêmica educando para o bem.</p></div>
+      <p>Política de Privacidade · Termos · Acessibilidade</p>
     </div>
   </footer>
+
+  <script>
+    const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+    }), { threshold: .12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
