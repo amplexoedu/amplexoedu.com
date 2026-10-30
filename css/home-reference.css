@@ -146,14 +146,19 @@ blockquote{font-family:Spectral,Georgia,serif;font-size:25px;line-height:1.4;fon
   .editorial-copy p:last-child{grid-column:1/-1;max-width:720px}
 }
 @media (max-width:760px){
-  .header-actions{gap:8px}
-  .matriculas-button{padding:8px 12px;font-size:11px}
-
   .shell,.narrow{width:min(100% - 32px,1200px)}
-  .site-header{height:89px}
-  .brand{width:134px}.brand img{height:70px}
-  .journal-button{padding:10px 13px;font-size:12px}
+  .site-header{height:80px}
+  .header-inner{display:flex;justify-content:space-between;align-items:center}
+  .brand{width:auto;flex:none}
+  .brand img{height:46px;width:auto}
+  .header-actions{justify-self:auto;display:flex;align-items:center;gap:8px;flex-shrink:0}
+  .matriculas-button{padding:8px 13px;font-size:11px;white-space:nowrap;letter-spacing:.02em}
+  .journal-button{padding:8px 12px;font-size:11px;white-space:nowrap}
   .journal-button span{display:none}
+  .hero-content{text-align:center;display:flex;flex-direction:column;align-items:center}
+  .hero-content .eyebrow{margin-inline:auto}
+  h1{text-align:center}
+  .hero-copy{text-align:center}
   .hero{width:100%;min-height:0;margin-top:22px;padding:62px 24px 24px}
   .hero-inner{grid-template-columns:1fr;gap:38px}
   .hero-photo{height:min(112vw,510px);border-radius:18px}
