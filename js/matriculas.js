@@ -1,5 +1,5 @@
 /* Amplexo Educação — Matrículas e rematrículas 2027
-   1) Menu do celular   2) Sombra do cabeçalho   3) Link da seção atual   4) Revelação suave ao rolar
+   1) Menu do celular   2) Sombra do cabeçalho   3) Link da seção atual   4) Revelação suave ao rolar   5) Vídeo do YouTube
    O botão do WhatsApp fica no cabeçalho fixo (em vez de flutuante) para não cobrir conteúdos nem controles.
    A página funciona sem este script: tudo continua visível e os links do WhatsApp são links comuns. */
 (function () {
@@ -35,6 +35,26 @@
   function aoRolar() { header.classList.toggle('is-scrolled', window.scrollY > 8); }
   aoRolar();
   window.addEventListener('scroll', aoRolar, { passive: true });
+
+  /* 5) Vídeo: o player do YouTube só carrega no clique (página mais leve e sem cookies antes disso) */
+  cada('[data-youtube]', function (link) {
+    var titulo = link.getAttribute('data-title');
+    var aviso = link.querySelector('[data-video-sr]');
+    link.removeAttribute('target');
+    if (aviso) aviso.textContent = ' “' + titulo + '”';
+    link.addEventListener('click', function (e) {
+      if (e.button !== 0 || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return; // deixa abrir em nova aba, se a pessoa quiser
+      e.preventDefault();
+      var player = document.createElement('iframe');
+      player.src = 'https://www.youtube-nocookie.com/embed/' + link.getAttribute('data-youtube') + '?autoplay=1&rel=0&playsinline=1';
+      player.title = titulo;
+      player.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      player.allowFullscreen = true;
+      player.referrerPolicy = 'strict-origin-when-cross-origin';
+      link.replaceWith(player);
+      player.focus();
+    });
+  });
 
   if (!('IntersectionObserver' in window)) return;
 

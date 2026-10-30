@@ -54,7 +54,7 @@ p { text-wrap: pretty; }
 ::selection { background: var(--wine); color: #fff; }
 /* foco do teclado: vinho nas áreas claras, dourado nas escuras (contraste mínimo de 3:1 nos dois casos) */
 :focus-visible { outline: 3px solid var(--wine); outline-offset: 3px; border-radius: 6px; }
-.hero :focus-visible, .como :focus-visible, .olimpiadas :focus-visible, .campanha-panel :focus-visible,
+.hero :focus-visible, .video :focus-visible, .como :focus-visible, .olimpiadas :focus-visible, .campanha-panel :focus-visible,
 .final :focus-visible, .footer :focus-visible, .area-dark :focus-visible, .area-estrategia :focus-visible { outline-color: var(--gold-bright); }
 
 .shell { width: min(1200px, calc(100% - 48px)); margin-inline: auto; }
@@ -345,6 +345,70 @@ p { text-wrap: pretty; }
   border: 1px solid var(--gold); pointer-events: none;
 }
 .framed-photo img { position: relative; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 50% 30%; border-radius: var(--radius); }
+
+/* ---------- Vídeo ---------- */
+.video {
+  overflow: hidden;
+  background:
+    radial-gradient(640px 420px at 0% 100%, rgba(116, 7, 7, .38), transparent 70%),
+    radial-gradient(560px 360px at 100% 0%, rgba(227, 176, 75, .12), transparent 70%),
+    var(--navy-deep);
+  color: #fff;
+}
+.video-head { max-width: 760px; margin: 0 auto clamp(40px, 5vw, 60px); text-align: center; }
+.video-head .kicker::after { content: ""; width: 30px; height: 2px; border-radius: 2px; background: var(--gold-line); }
+.video .h2 { color: #fff; }
+.video .h2 em { color: var(--gold-bright); }
+.video .lead { margin-top: 20px; color: rgba(255, 255, 255, .78); }
+.video-stage { position: relative; max-width: 1000px; margin-inline: auto; padding: 0 18px 18px 0; }
+.video-stage::before { /* moldura dourada deslocada, como nas fotos */
+  content: ""; position: absolute; inset: 18px 0 0 18px; border-radius: var(--radius);
+  border: 1px solid var(--gold); pointer-events: none;
+}
+.video-player, .video-stage iframe {
+  position: relative; display: block; width: 100%; aspect-ratio: 16 / 9;
+  border: 0; border-radius: var(--radius); overflow: hidden; background: #000;
+  box-shadow: 0 40px 80px -40px rgba(0, 0, 0, .85);
+}
+.video-player { color: #fff; text-decoration: none; }
+.video-player img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s var(--ease); }
+.video-player::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(6, 25, 42, .1) 35%, rgba(6, 25, 42, .78) 100%);
+}
+.video-play {
+  position: absolute; z-index: 1; top: 50%; left: 50%;
+  display: grid; place-items: center;
+  width: clamp(68px, 9vw, 96px); aspect-ratio: 1; border-radius: 50%;
+  background: var(--gold-tag); color: var(--navy-deep);
+  box-shadow: 0 0 0 10px rgba(247, 217, 138, .2), 0 20px 40px -12px rgba(0, 0, 0, .6);
+  transform: translate(-50%, -50%);
+  transition: transform .4s var(--ease), box-shadow .4s var(--ease);
+}
+.video-play::before {
+  content: ""; position: absolute; inset: 0; border-radius: 50%;
+  border: 1px solid var(--gold-bright); opacity: 0;
+}
+.video-play svg { width: 40%; height: 40%; margin-left: 8%; fill: currentColor; stroke: none; }
+.video-label {
+  position: absolute; z-index: 1; left: clamp(18px, 3vw, 32px); bottom: clamp(16px, 2.6vw, 28px);
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: 14px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+}
+.video-label::before { content: ""; width: 30px; height: 2px; border-radius: 2px; background: var(--gold-line); }
+.video-player:hover img, .video-player:focus-visible img { transform: scale(1.03); }
+.video-player:hover .video-play, .video-player:focus-visible .video-play {
+  transform: translate(-50%, -50%) scale(1.07);
+  box-shadow: 0 0 0 16px rgba(247, 217, 138, .16), 0 24px 48px -12px rgba(0, 0, 0, .6);
+}
+.video-caption {
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px;
+  max-width: 1000px; margin: 22px auto 0; padding-right: 18px;
+  color: rgba(255, 255, 255, .7); font-size: .95rem;
+}
+.video-caption span { font-family: var(--serif); font-style: italic; font-size: 1.05rem; }
+.video-caption a { display: inline-flex; align-items: center; gap: 6px; color: var(--gold-bright); font-weight: 700; text-underline-offset: 4px; }
+.video-caption a svg { width: 15px; height: 15px; }
 
 /* ---------- Trilhas ---------- */
 .trilhas {
@@ -798,6 +862,11 @@ p { text-wrap: pretty; }
 @media (prefers-reduced-motion: no-preference) {
   .reveal-on [data-reveal] { opacity: 0; transform: translateY(18px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
   .reveal-on [data-reveal].is-visible { opacity: 1; transform: none; }
+  .video-play::before { animation: video-pulse 2.6s var(--ease) infinite; }
+  @keyframes video-pulse {
+    0% { opacity: .8; transform: scale(1); }
+    100% { opacity: 0; transform: scale(1.7); }
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -875,6 +944,7 @@ p { text-wrap: pretty; }
     margin-inline: auto; border-radius: 999px;
     padding: 8px 16px; font-size: 11px; line-height: 1.45; letter-spacing: .06em;
     max-width: 320px;
+    flex-direction: column; align-items: center; gap: 2px; /* "Educação Infantil ao 9º ano" na linha de baixo */
   }
   .hero-eyebrow span[aria-hidden="true"] { display: none; }
   .hero h1 { text-align: center; }
@@ -904,6 +974,12 @@ p { text-wrap: pretty; }
   .pillars li, .pillars li:nth-child(even) { padding: 18px 0; border-left: 0; }
   .framed-photo { padding: 0 12px 12px 0; }
   .framed-photo::before { inset: 12px 0 0 12px; }
+
+  .video-stage { padding: 0 12px 12px 0; }
+  .video-stage::before { inset: 12px 0 0 12px; }
+  .video-label { font-size: 12px; letter-spacing: .1em; }
+  .video-label::before { width: 20px; }
+  .video-caption { flex-direction: column; align-items: center; text-align: center; padding-right: 12px; }
 
   .tracks { grid-template-columns: 1fr; }
   .area-dark { padding: 28px 22px; margin-inline: -4px; }
@@ -952,5 +1028,5 @@ p { text-wrap: pretty; }
 
 @media print {
   .site-header, .staging-badge, .hero-geo { display: none !important; }
-  .hero, .como, .olimpiadas, .campanha-panel, .final, .area-dark, .area-estrategia, .statement, .stat { background: #fff !important; color: #000 !important; }
+  .hero, .video, .como, .olimpiadas, .campanha-panel, .final, .area-dark, .area-estrategia, .statement, .stat { background: #fff !important; color: #000 !important; }
 }
