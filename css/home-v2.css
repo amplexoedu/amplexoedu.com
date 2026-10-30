@@ -162,6 +162,19 @@ section[id] { scroll-margin-top: 80px; }
 .nav.is-scrolled .nav-links a { color: var(--ink-2); }
 .nav.is-scrolled .nav-links a:hover { color: var(--wine); background: rgba(116, 7, 7, .07); }
 .nav-actions { display: flex; align-items: center; gap: 10px; }
+.btn-matriculas {
+  --bg: var(--amber); --fg: var(--night);
+  font-weight: 700; font-size: 13.5px; letter-spacing: .03em;
+  box-shadow: 0 4px 16px rgba(229, 154, 22, .35);
+}
+.btn-matriculas:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(229, 154, 22, .5);
+}
+.nav.is-scrolled .btn-matriculas {
+  --bg: var(--amber); --fg: var(--night);
+  box-shadow: 0 4px 14px rgba(229, 154, 22, .4);
+}
 .btn-journal { --bg: #fff; --fg: var(--wine); }
 .nav.is-scrolled .btn-journal { --bg: var(--wine); --fg: #fff; }
 .nav-toggle {
