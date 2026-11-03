@@ -123,6 +123,8 @@ blockquote{font-family:Spectral,Georgia,serif;font-size:25px;line-height:1.4;fon
 .footer-grid{display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
 .footer strong{font-family:Spectral,Georgia,serif;font-size:28px}
 .footer p{color:rgba(247,244,239,.7);margin:5px 0 0;font-size:14px}
+.footer a{color:rgba(247,244,239,.85);text-decoration:none;text-underline-offset:3px;transition:color .2s}
+.footer a:hover{color:#fff;text-decoration:underline}
 .reveal{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.hero-content,.hero-photo,.hero::before,.family-carousel-track,.community-carousel-track{animation:none}.hero-photo img{transition:none}.hero:hover .hero-photo img{transform:none}.family-carousel,.community-carousel{overflow-x:auto;mask-image:none;-webkit-mask-image:none}}
 @media (max-width:1499px){
@@ -192,3 +194,11 @@ blockquote{font-family:Spectral,Georgia,serif;font-size:25px;line-height:1.4;fon
 .header-actions{justify-self:end;display:inline-flex;align-items:center;gap:12px}
 .matriculas-button{display:inline-flex;align-items:center;padding:11px 18px;border-radius:999px;background:#e59a16;color:#16050a;font-size:12.5px;font-weight:700;letter-spacing:.03em;text-decoration:none;box-shadow:0 4px 14px rgba(229,154,22,.35);transition:background .2s,transform .2s,box-shadow .2s}
 .matriculas-button:hover{background:#d97706;transform:translateY(-2px);box-shadow:0 6px 20px rgba(229,154,22,.5)}
+
+/* Seletor de idioma: à direita no computador; no celular, logo e bandeiras na primeira linha e os botões na segunda */
+.header-inner>.lang-switch{justify-self:end}
+@media (max-width:760px){
+  .site-header{height:auto;padding:12px 0}
+  .header-inner{flex-wrap:wrap;row-gap:12px}
+  .header-actions{order:3;width:100%;justify-content:center}
+}

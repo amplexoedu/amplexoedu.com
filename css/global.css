@@ -60,6 +60,13 @@
   color: #3b2d30;
 }
 
+/* Página inicial e Matrículas (cabeçalho claro) */
+.site-header .lang-switch {
+  --ls-bg: #fff; --ls-border: rgba(116, 7, 7, .16); --ls-hover: rgba(116, 7, 7, .07);
+  --ls-active-bg: #740707; --ls-active-fg: #fff;
+  color: #3b2d30;
+}
+
 /* ---------- Vídeo do YouTube: capa que só carrega o player ao clicar ---------- */
 .yt-facade {
   position: absolute; inset: 0; width: 100%; height: 100%;

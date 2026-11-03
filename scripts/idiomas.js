@@ -3,6 +3,7 @@
   Aplica em todas as páginas do site as peças comuns aos três idiomas:
     - links hreflang (PT, EN, ES) para o Google entender as versões de cada página;
     - css/global.css e js/global.js (escolha automática de idioma e vídeos que só carregam ao clicar);
+    - js/cookies.js (aviso de cookies e Pixel da Meta, só com consentimento);
     - seletor de idioma com bandeiras;
     - fontes hospedadas no próprio site (remove os links do Google Fonts);
     - capa clicável no lugar dos vídeos do YouTube incorporados.
@@ -28,6 +29,7 @@ const PAGINAS = [
   ['acsl/', 'en/acsl/', 'es/acsl/'],
   ['smeta/', 'en/smeta/', 'es/smeta/'],
   ['projetos-que-abraçam/', 'en/projetos-que-abraçam/', 'es/projetos-que-abraçam/'],
+  ['matriculas/', 'en/matriculas/', 'es/matriculas/'],
   ['jornal-amplexo/', 'en/jornal-amplexo/', 'es/jornal-amplexo/'],
   ...['calendario-reune-ciencia-arte-e-tecnologia', 'distincao-internacional-impacto-educacional', 'novos-projetos-dos-alunos', 'nutrir-o-cerebro-ao-longo-da-vida']
     .map(s => [`jornal-amplexo/${s}/`, `en/jornal-amplexo/${s}/`, `es/jornal-amplexo/${s}/`]),
@@ -74,8 +76,9 @@ for (const grupo of PAGINAS) {
     html = html.replace(/^[ \t]*<(?:link|noscript)\b[^\n]*fonts\.(?:googleapis|gstatic)\.com[^\n]*\n/gm, '');
     if (/fonts\.(googleapis|gstatic)\.com/.test(html)) avisos.push(`${pasta || '/'}: ainda há referência ao Google Fonts`);
 
-    // 2) Bloco no <head>: hreflang + fontes locais + global.css/js
+    // 2) Bloco no <head>: hreflang + fontes locais + global.css/js + cookies.js
     html = html.replace(/^[ \t]*<link rel="alternate" hreflang="[^"]*"[^>]*>\n/gm, '');
+    html = html.replace(/^[ \t]*<script src="[^"]*js\/cookies\.js"[^>]*><\/script>\n/gm, ''); // volta dentro do bloco
     const temFontes = /href="[^"]*css\/fonts\.css"/.test(html.replace(/<!-- idiomas:inicio -->[\s\S]*?<!-- idiomas:fim -->/, ''));
     const bloco = [
       '<!-- idiomas:inicio -->',
@@ -84,6 +87,7 @@ for (const grupo of PAGINAS) {
       ...(temFontes ? [] : [`  <link rel="stylesheet" href="${raiz}css/fonts.css">`]),
       `  <link rel="stylesheet" href="${raiz}css/global.css">`,
       `  <script src="${raiz}js/global.js"></script>`,
+      `  <script src="${raiz}js/cookies.js" defer></script>`,
       '  <!-- idiomas:fim -->',
     ].join('\n');
     if (html.includes('<!-- idiomas:inicio -->')) {

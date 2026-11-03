@@ -68,6 +68,11 @@ a:hover { text-decoration-thickness: 2px; }
 
 .legal-note { padding: 16px 18px; border-left: 3px solid var(--amber); border-radius: 0 12px 12px 0; background: rgba(229, 154, 22, .08); }
 
+/* Botão que reabre o aviso de cookies (js/cookies.js); fica escondido sem JavaScript */
+.legal-button { display: inline-flex; align-items: center; min-height: 46px; padding: 10px 22px; border: 0; border-radius: 999px; background: var(--wine); color: #fff; font: 700 15px/1.2 var(--sans); cursor: pointer; }
+.legal-button:hover { background: var(--wine-deep); }
+.legal-button[hidden] { display: none; }
+
 /* Dados que a empresa ainda precisa preencher */
 mark.preencher { padding: 1px 6px; border-radius: 4px; background: #ffe58a; color: #5a3b00; font-weight: 700; box-shadow: inset 0 0 0 1px #e8c34a; }
 
@@ -87,7 +92,7 @@ mark.preencher { padding: 1px 6px; border-radius: 4px; background: #ffe58a; colo
   .legal-brand img { height: 38px; }
 }
 @media print {
-  .legal-top, .legal-tabs, .legal-toc, .legal-footer, .skip-link { display: none; }
+  .legal-top, .legal-tabs, .legal-toc, .legal-footer, .skip-link, .legal-button { display: none; }
   body { background: #fff; font-size: 12pt; }
   .legal-body { display: block; padding: 0; }
   a { color: inherit; }

@@ -12,11 +12,14 @@
   var celular = window.matchMedia('(max-width: 960px)');
   var cada = function (seletor, fn) { Array.prototype.forEach.call(document.querySelectorAll(seletor), fn); };
 
-  /* 1) Menu do celular */
+  /* 1) Menu do celular (os rótulos vêm do HTML, para funcionar nos três idiomas) */
+  var rotulo = toggle && toggle.querySelector('.menu-toggle-label');
+  var textoMenu = rotulo ? rotulo.textContent : 'Menu';
+  var textoFechar = (toggle && toggle.getAttribute('data-rotulo-fechar')) || 'Fechar';
   function abrirMenu(abrir) {
     toggle.setAttribute('aria-expanded', String(abrir));
     menu.classList.toggle('is-open', abrir);
-    toggle.querySelector('.menu-toggle-label').textContent = abrir ? 'Fechar' : 'Menu';
+    rotulo.textContent = abrir ? textoFechar : textoMenu;
   }
   if (toggle && menu) {
     toggle.addEventListener('click', function () {
@@ -36,8 +39,9 @@
   aoRolar();
   window.addEventListener('scroll', aoRolar, { passive: true });
 
-  /* 5) Vídeo: o player do YouTube só carrega no clique (página mais leve e sem cookies antes disso) */
-  cada('[data-youtube]', function (link) {
+  /* 5) Vídeo: o player do YouTube só carrega no clique (página mais leve e sem cookies antes disso).
+     Usa data-video-id, e não data-youtube, porque o js/global.js já trata data-youtube do jeito dele. */
+  cada('[data-video-id]', function (link) {
     var titulo = link.getAttribute('data-title');
     var aviso = link.querySelector('[data-video-sr]');
     link.removeAttribute('target');
@@ -46,7 +50,7 @@
       if (e.button !== 0 || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return; // deixa abrir em nova aba, se a pessoa quiser
       e.preventDefault();
       var player = document.createElement('iframe');
-      player.src = 'https://www.youtube-nocookie.com/embed/' + link.getAttribute('data-youtube') + '?autoplay=1&rel=0&playsinline=1';
+      player.src = 'https://www.youtube-nocookie.com/embed/' + link.getAttribute('data-video-id') + '?autoplay=1&rel=0&playsinline=1';
       player.title = titulo;
       player.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
       player.allowFullscreen = true;
