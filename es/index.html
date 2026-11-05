@@ -14,8 +14,25 @@
   <script src="../js/cookies.js" defer></script>
   <!-- idiomas:fim -->
   <meta name="description" content="Todo niño merece un desafío a su medida. Conoce las rutas de enriquecimiento curricular de Amplexo.">
-  <meta name="theme-color" content="#f7f4ef">
-  <link rel="icon" href="../assets/images/redlogo.png">
+  <meta name="theme-color" content="#1E2B4E">
+  <!-- Marca: favicon, ícones de aplicativo e imagem de compartilhamento (kit de marca, pasta 04) -->
+  <link rel="icon" href="../favicon.ico" sizes="48x48">
+  <link rel="icon" href="../assets/brand/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/brand/apple-touch-icon_180px.png">
+  <link rel="manifest" href="../assets/brand/site.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Amplexo Educação">
+  <meta property="og:title" content="Amplexo Educação | Club de enriquecimiento curricular">
+  <meta property="og:description" content="Todo niño merece un desafío a su medida. Conoce las rutas de enriquecimiento curricular de Amplexo.">
+  <meta property="og:url" content="https://amplexoedu.com/es/">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:image" content="https://amplexoedu.com/assets/brand/imagem-de-compartilhamento_1200x630.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Marca Amplexo Educação sobre fondo azul">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="../assets/fonts/lexend-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/lexend-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../css/fonts.css">
   <link rel="stylesheet" href="../css/home-reference.css">
   <script>
@@ -35,7 +52,10 @@
   <header class="site-header">
     <div class="shell header-inner">
       <a class="brand" href="#inicio" aria-label="Volver al inicio de la página">
-        <img src="../assets/images/amplexo-logo-full.png" alt="Amplexo Educação">
+        <picture>
+          <source media="(max-width: 359px)" srcset="../assets/brand/amplexo_sem-descritor_positiva.svg" width="991" height="187">
+          <img src="../assets/brand/amplexo_horizontal_positiva.svg" alt="Amplexo Educação" width="1012" height="224">
+        </picture>
       </a>
       <div class="header-actions">
         <a class="matriculas-button" href="matriculas/">MATRÍCULAS 2027</a>

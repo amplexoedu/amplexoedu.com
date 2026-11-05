@@ -1,2 +1,6 @@
 node_modules
 reports/
+
+# Kit de marca: material de origem (manual, EPS, PDFs). Fica no Drive da equipe, não no site.
+# O site usa só as cópias em assets/brand/, assets/fonts/ e favicon.ico.
+/Amplexo - Kit de marca/

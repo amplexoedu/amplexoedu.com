@@ -16,8 +16,14 @@
   <script src="../../js/cookies.js" defer></script>
   <!-- idiomas:fim -->
   <link rel="stylesheet" href="../../css/fonts.css">
-  <meta name="theme-color" content="#06192a">
-  <link rel="icon" href="../../assets/images/redlogo.png">
+  <meta name="theme-color" content="#1E2B4E">
+  <!-- Marca: favicon e ícones de aplicativo (kit de marca, pasta 04) -->
+  <link rel="icon" href="../../favicon.ico" sizes="48x48">
+  <link rel="icon" href="../../assets/brand/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../../assets/brand/apple-touch-icon_180px.png">
+  <link rel="manifest" href="../../assets/brand/site.webmanifest">
+  <link rel="preload" href="../../assets/fonts/lexend-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../assets/fonts/lexend-600.woff2" as="font" type="font/woff2" crossorigin>
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
@@ -68,7 +74,11 @@
   <header class="site-header" data-header>
     <div class="shell header-inner">
       <a class="brand" href="../" aria-label="Amplexo Educação — home page">
-        <img src="../../assets/images/amplexo-logo-full.png" alt="Amplexo Educação" width="1590" height="731">
+        <picture>
+          <source media="(max-width: 520px)" srcset="../../assets/brand/amplexo_icone-reduzido_positiva.svg" width="176" height="196">
+          <source media="(max-width: 680px)" srcset="../../assets/brand/amplexo_sem-descritor_positiva.svg" width="991" height="187">
+          <img src="../../assets/brand/amplexo_horizontal_positiva.svg" alt="Amplexo Educação" width="1012" height="224">
+        </picture>
       </a>
       <nav class="main-nav" id="menu" aria-label="Page sections" data-menu>
         <a href="#clube">The club</a>
@@ -705,7 +715,7 @@
   <footer class="footer">
     <div class="shell footer-inner">
       <div class="footer-brand">
-        <img src="../../assets/images/redlogo.png" alt="" width="192" height="192" loading="lazy">
+        <img src="../../assets/brand/android-chrome_192px.png" alt="" width="192" height="192" loading="lazy">
         <div>
           <strong>Amplexo Educação</strong>
           <p>Transform the present. Impact forever.</p>
