@@ -735,6 +735,17 @@ p { text-wrap: pretty; }
 .schedule-block dl { margin: 0; }
 .schedule-block dl > div { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 20px; align-items: baseline; padding: 10px 0; }
 .schedule-block dl > div + div { border-top: 1px dashed var(--line); }
+.schedule-block-infantil { border-left: 4px solid var(--gold-deep); }
+.segment-tag {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 2px 8px; border-radius: 6px;
+  background: rgba(11, 41, 64, .08); color: var(--navy);
+  font-family: var(--sans); font-size: .76rem; font-weight: 700; letter-spacing: .04em;
+  margin-right: 6px; vertical-align: middle;
+}
+.segment-row dt {
+  display: inline-flex; align-items: center; flex-wrap: wrap; gap: 4px 6px;
+}
 .schedule-block dt { color: var(--navy); font-weight: 700; }
 .schedule-block dd { margin: 0; color: var(--ink); font-family: var(--serif); font-size: 1.12rem; font-weight: 600; text-align: right; }
 

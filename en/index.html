@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Amplexo Educação | Academic enrichment club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Enrollment 2027 | Clube Amplexo Educação</title>
+  <meta name="description" content="2027 enrollment and re-enrollment at Clube Amplexo Educação: online academic enrichment from preschool to 9th grade. Explore the tracks and talk to our team on WhatsApp.">
+  <link rel="canonical" href="https://amplexoedu.com/en/">
   <!-- idiomas:inicio -->
   <link rel="alternate" hreflang="pt-BR" href="https://amplexoedu.com/">
   <link rel="alternate" hreflang="en" href="https://amplexoedu.com/en/">
@@ -13,29 +15,35 @@
   <script src="../js/global.js"></script>
   <script src="../js/cookies.js" defer></script>
   <!-- idiomas:fim -->
-  <meta name="description" content="Every child deserves a challenge their own size. Discover Amplexo's academic enrichment tracks.">
+  <link rel="stylesheet" href="../css/fonts.css">
   <meta name="theme-color" content="#1E2B4E">
-  <!-- Marca: favicon, ícones de aplicativo e imagem de compartilhamento (kit de marca, pasta 04) -->
+  <!-- Marca: favicon e ícones de aplicativo (kit de marca, pasta 04) -->
   <link rel="icon" href="../favicon.ico" sizes="48x48">
   <link rel="icon" href="../assets/brand/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="../assets/brand/apple-touch-icon_180px.png">
   <link rel="manifest" href="../assets/brand/site.webmanifest">
+  <link rel="preload" href="../assets/fonts/lexend-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/lexend-600.woff2" as="font" type="font/woff2" crossorigin>
+
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Amplexo Educação">
-  <meta property="og:title" content="Amplexo Educação | Academic enrichment club">
-  <meta property="og:description" content="Every child deserves a challenge their own size. Discover Amplexo's academic enrichment tracks.">
-  <meta property="og:url" content="https://amplexoedu.com/en/">
   <meta property="og:locale" content="en_US">
-  <meta property="og:image" content="https://amplexoedu.com/assets/brand/imagem-de-compartilhamento_1200x630.jpg">
+  <meta property="og:site_name" content="Amplexo Educação">
+  <meta property="og:title" content="Enrollment and re-enrollment 2027 | Clube Amplexo Educação">
+  <meta property="og:description" content="Many ways to learn. One community to belong to. Preschool to 9th grade, online.">
+  <meta property="og:url" content="https://amplexoedu.com/en/">
+  <meta property="og:image" content="https://amplexoedu.com/assets/images/og/home-pt.jpg">
+  <meta property="og:image:secure_url" content="https://amplexoedu.com/assets/images/og/home-pt.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Amplexo Educação logo on a blue background">
+  <meta property="og:image:alt" content="Amplexo Educação students celebrating together">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="preload" href="../assets/fonts/lexend-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="../assets/fonts/lexend-700.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="../css/fonts.css">
-  <link rel="stylesheet" href="../css/home-reference.css">
+  <meta name="twitter:title" content="Enrollment and re-enrollment 2027 | Clube Amplexo Educação">
+  <meta name="twitter:description" content="Many ways to learn. One community to belong to.">
+  <meta name="twitter:image" content="https://amplexoedu.com/assets/images/og/home-pt.jpg">
+  <meta name="twitter:image:alt" content="Amplexo Educação students celebrating together">
+
   <script>
+    document.documentElement.classList.add('js');
     // Na versão de teste (site.amplexoedu.com) os buscadores não devem indexar a página.
     if (location.hostname === 'site.amplexoedu.com') {
       var robots = document.createElement('meta');
@@ -45,197 +53,695 @@
       document.documentElement.classList.add('is-staging');
     }
   </script>
-</head>
-<body id="inicio">
-  <a class="skip-link" href="#conteudo">Skip to content</a>
 
-  <header class="site-header">
+  <link rel="stylesheet" href="../css/matriculas.css">
+  <script src="../js/matriculas.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Skip to content</a>
+  <p class="staging-badge" role="note">Preview · test site</p>
+
+  <!-- Ícone do WhatsApp reutilizado nos botões -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-whatsapp" viewBox="0 0 24 24">
+      <path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.4l-4.4 1.5 1.5-4.3a8.5 8.5 0 1 1 15.5-4.6Z"/>
+      <path d="M9 8.6c.2-.5.5-.6.8-.6h.5c.2 0 .4.1.5.4l.6 1.5c.1.2 0 .5-.1.6l-.5.6c.6 1.1 1.4 1.9 2.5 2.5l.6-.5c.2-.1.4-.2.6-.1l1.5.6c.3.1.4.3.4.5v.5c0 .3-.1.6-.6.8-.6.3-1.6.4-2.9-.2a8 8 0 0 1-3.6-3.6c-.6-1.3-.5-2.3-.2-3Z"/>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+  </svg>
+
+  <header class="site-header" data-header>
     <div class="shell header-inner">
-      <a class="brand" href="#inicio" aria-label="Back to top of page">
+      <a class="brand" href="./" aria-label="Amplexo Educação — home page">
         <picture>
-          <source media="(max-width: 359px)" srcset="../assets/brand/amplexo_sem-descritor_positiva.svg" width="991" height="187">
+          <source media="(max-width: 520px)" srcset="../assets/brand/amplexo_icone-reduzido_positiva.svg" width="176" height="196">
+          <source media="(max-width: 680px)" srcset="../assets/brand/amplexo_sem-descritor_positiva.svg" width="991" height="187">
           <img src="../assets/brand/amplexo_horizontal_positiva.svg" alt="Amplexo Educação" width="1012" height="224">
         </picture>
       </a>
-      <div class="header-actions">
-        <a class="matriculas-button" href="matriculas/">ENROLLMENT 2027</a>
-        <a class="journal-button" href="jornal-amplexo/">Jornal Amplexo <span aria-hidden="true">→</span></a>
-      </div>
-      <!-- idioma:seletor --><nav class="lang-switch" aria-label="Choose language"><a href="../" hreflang="pt-BR" lang="pt-BR" data-idioma="pt" aria-label="Português" title="Português"><img src="../assets/flags/br.svg" alt="" width="18" height="13"><span>PT</span></a><a href="./" hreflang="en" lang="en" data-idioma="en" aria-label="English" title="English" aria-current="true"><img src="../assets/flags/us.svg" alt="" width="18" height="13"><span>EN</span></a><a href="../es/" hreflang="es" lang="es" data-idioma="es" aria-label="Español" title="Español"><img src="../assets/flags/es.svg" alt="" width="18" height="13"><span>ES</span></a></nav><!-- /idioma:seletor -->
+      <nav class="main-nav" id="menu" aria-label="Page sections" data-menu>
+        <a href="#clube">The club</a>
+        <a href="#trilhas">Tracks</a>
+        <a href="#como-funciona">How it works</a>
+        <a href="#experiencias">Experiences</a>
+        <a href="#duvidas">FAQ</a>
+        <a class="btn btn-gold menu-cta" href="https://wa.me/5511911009793?text=Hi!%20I'd%20like%20to%20learn%20about%20Clube%20Amplexo%20Educa%C3%A7%C3%A3o%20and%20get%20information%20about%20enrollment%20for%202027." target="_blank" rel="noopener">
+          <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>Talk about enrollment<span class="sr-only"> (opens WhatsApp in a new tab)</span>
+        </a>
+      </nav>
+      <a class="btn btn-navy btn-small header-cta" href="https://wa.me/5511911009793?text=Hi!%20I'd%20like%20to%20learn%20about%20Clube%20Amplexo%20Educa%C3%A7%C3%A3o%20and%20get%20information%20about%20enrollment%20for%202027." target="_blank" rel="noopener" title="Talk about enrollment on WhatsApp">
+        <svg aria-hidden="true"><use href="#i-whatsapp"/></svg><span class="header-cta-label">Talk about enrollment</span><span class="sr-only"> (opens WhatsApp in a new tab)</span>
+      </a>
+      <!-- idioma:seletor --><nav class="lang-switch" aria-label="Choose language"><a href="./" hreflang="pt-BR" lang="pt-BR" data-idioma="pt" aria-label="Português" title="Português"><img src="../assets/flags/br.svg" alt="" width="18" height="13"><span>PT</span></a><a href="./" hreflang="en" lang="en" data-idioma="en" aria-label="English" title="English" aria-current="true"><img src="../assets/flags/us.svg" alt="" width="18" height="13"><span>EN</span></a><a href="../es/" hreflang="es" lang="es" data-idioma="es" aria-label="Español" title="Español"><img src="../assets/flags/es.svg" alt="" width="18" height="13"><span>ES</span></a></nav><!-- /idioma:seletor -->
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" data-menu-toggle data-rotulo-fechar="Close">
+        <span class="menu-toggle-label">Menu</span><i aria-hidden="true"></i>
+      </button>
     </div>
   </header>
 
   <main id="conteudo">
-    <section id="amplexo" class="hero">
-      <div class="hero-inner">
-        <div class="hero-content reveal">
-          <p class="eyebrow amber">Educating for good</p>
-          <h1>Transform the present.<br>Impact forever.</h1>
-          <p class="hero-copy">We contribute to the human and academic development of children and young people, building bridges to the best learning opportunities. We combine high-level academic excellence with human values to raise confident citizens who are ready for the future. Through projects, classes and mentoring, we enrich students' learning, nurturing social responsibility and a love of knowledge, all in a safe environment where everyone embraces, cheers each other on and learns together.</p>
-        </div>
-        <figure class="hero-photo" aria-label="Amplexo students together">
-          <img src="../assets/images/amplexo-estudantes.jpg" alt="Four Amplexo students smiling and hugging" width="1800" height="2700">
-        </figure>
-      </div>
-    </section>
 
-    <section class="credibility shell" aria-labelledby="cred-title">
-      <div class="transition-line" aria-hidden="true"></div>
-      <h2 id="cred-title" class="sr-only">Credibility indicators</h2>
-      <div class="metrics-scene">
-        <div class="metrics reveal">
-        <article><strong>Prestige</strong><span>Brands For Good Awards 2026<br>Edu For Good – Distinction</span></article>
-        <article><strong>+500</strong><span>Families impacted</span></article>
-        <article><strong>1st place</strong><span>In national and international olympiads</span></article>
-        <article><strong>+3,000</strong><span>Awards</span></article>
-        </div>
-        <div class="family-carousel" aria-label="Families who are part of the Amplexo community">
-          <div class="family-carousel-track">
-            <div class="family-carousel-group">
-              <figure><img src="../assets/images/familia-amplexo-01-360.jpg" srcset="../assets/images/familia-amplexo-01-360.jpg 360w, ../assets/images/familia-amplexo-01-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
-              <figure><img src="../assets/images/familia-amplexo-03-360.jpg" srcset="../assets/images/familia-amplexo-03-360.jpg 360w, ../assets/images/familia-amplexo-03-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
-              <figure><img src="../assets/images/familia-amplexo-06-360.jpg" srcset="../assets/images/familia-amplexo-06-360.jpg 360w, ../assets/images/familia-amplexo-06-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
-              <figure><img src="../assets/images/amplexo-familia-abraco-360.jpg" srcset="../assets/images/amplexo-familia-abraco-360.jpg 360w, ../assets/images/amplexo-familia-abraco-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
-              <figure><img src="../assets/images/familia-amplexo-05-360.jpg" srcset="../assets/images/familia-amplexo-05-360.jpg 360w, ../assets/images/familia-amplexo-05-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
-              <figure><img src="../assets/images/familia-amplexo-02-360.jpg" srcset="../assets/images/familia-amplexo-02-360.jpg 360w, ../assets/images/familia-amplexo-02-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
-              <figure><img src="../assets/images/familia-amplexo-04-360.jpg" srcset="../assets/images/familia-amplexo-04-360.jpg 360w, ../assets/images/familia-amplexo-04-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
-              <figure><img src="../assets/images/familia-amplexo-07-360.jpg" srcset="../assets/images/familia-amplexo-07-360.jpg 360w, ../assets/images/familia-amplexo-07-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
-            </div>
-            <div class="family-carousel-group" aria-hidden="true">
-              <figure><img src="../assets/images/familia-amplexo-01-360.jpg" srcset="../assets/images/familia-amplexo-01-360.jpg 360w, ../assets/images/familia-amplexo-01-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
-              <figure><img src="../assets/images/familia-amplexo-03-360.jpg" srcset="../assets/images/familia-amplexo-03-360.jpg 360w, ../assets/images/familia-amplexo-03-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
-              <figure><img src="../assets/images/familia-amplexo-06-360.jpg" srcset="../assets/images/familia-amplexo-06-360.jpg 360w, ../assets/images/familia-amplexo-06-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
-              <figure><img src="../assets/images/amplexo-familia-abraco-360.jpg" srcset="../assets/images/amplexo-familia-abraco-360.jpg 360w, ../assets/images/amplexo-familia-abraco-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
-              <figure><img src="../assets/images/familia-amplexo-05-360.jpg" srcset="../assets/images/familia-amplexo-05-360.jpg 360w, ../assets/images/familia-amplexo-05-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
-              <figure><img src="../assets/images/familia-amplexo-02-360.jpg" srcset="../assets/images/familia-amplexo-02-360.jpg 360w, ../assets/images/familia-amplexo-02-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
-              <figure><img src="../assets/images/familia-amplexo-04-360.jpg" srcset="../assets/images/familia-amplexo-04-360.jpg 360w, ../assets/images/familia-amplexo-04-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
-              <figure><img src="../assets/images/familia-amplexo-07-360.jpg" srcset="../assets/images/familia-amplexo-07-360.jpg 360w, ../assets/images/familia-amplexo-07-720.jpg 720w" sizes="(max-width: 760px) 142px, 174px" alt="" loading="lazy" decoding="async"></figure>
-            </div>
+    <!-- ============ ABERTURA ============ -->
+    <section class="hero" id="topo" aria-labelledby="hero-title">
+      <svg class="hero-geo" viewBox="0 0 800 800" aria-hidden="true" focusable="false">
+        <circle cx="400" cy="400" r="330"/>
+        <circle cx="400" cy="400" r="250" stroke-dasharray="2 10"/>
+        <path d="M400 70 L686 565 L114 565 Z"/>
+        <path d="M70 400 A330 330 0 0 1 400 70"/>
+        <ellipse cx="400" cy="400" rx="380" ry="120" transform="rotate(-24 400 400)"/>
+        <circle class="dot" cx="400" cy="70" r="5"/>
+        <circle class="dot" cx="686" cy="565" r="5"/>
+        <circle class="dot" cx="114" cy="565" r="5"/>
+        <circle class="dot" cx="745" cy="248" r="3"/>
+        <circle class="dot" cx="58" cy="560" r="3"/>
+      </svg>
+
+      <div class="shell hero-inner">
+        <div class="hero-copy">
+          <p class="hero-eyebrow"><span>2027 enrollment and re-enrollment</span> <span aria-hidden="true">·</span> <span>Preschool to 9th grade</span></p>
+          <h1 id="hero-title">For kids with <em>big questions</em>, a world of possibilities.</h1>
+          <p class="hero-sub">Math, language, science, technology, the arts and new challenges in an online academic enrichment club that welcomes your family and takes your child's curiosity seriously.</p>
+          <p class="hero-motto"><span>One enrollment.</span> <span>Many ways to learn.</span> <span>A community to grow together.</span></p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="https://wa.me/5511911009793?text=Hi!%20I'd%20like%20to%20learn%20about%20Clube%20Amplexo%20Educa%C3%A7%C3%A3o%20and%20get%20information%20about%20enrollment%20for%202027." target="_blank" rel="noopener">
+              <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>Tell me about the club<span class="sr-only"> (opens WhatsApp in a new tab)</span>
+            </a>
+            <a class="btn btn-line-light" href="https://wa.me/5511911009793?text=Hi!%20We're%20already%20part%20of%20Amplexo%20and%20would%20like%20guidance%20on%20re-enrolling%20for%202027." target="_blank" rel="noopener">
+              <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>Already at Amplexo: I want to renew<span class="sr-only"> (opens WhatsApp in a new tab)</span>
+            </a>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section id="clube" class="manifesto section-pad">
-      <div class="narrow reveal">
-        <p class="eyebrow teal">Purpose</p>
-        <h2>Embrace and be embraced by Education</h2>
-        <div class="editorial-copy">
-          <p>Clube Amplexo is more than an educational initiative: it is a movement for transformation. We spark the desire for high-level learning, encourage students to overcome challenges and give them room to express their ideas, always respecting each person's story, individuality and pace.</p>
-          <p>Our community welcomes neurotypical and neurodivergent children and teens with different interests, talents and needs. We support curious students looking for deeper learning, new challenges or extra academic support, offering a listening ear, encouragement and opportunities so that each of them can fully develop their potential.</p>
-          <p>For us, inclusion and social responsibility mean recognizing what makes each person unique, opening up new paths and giving students a voice. That is why academic excellence goes hand in hand with empathy and a commitment to doing good: shaping brilliant minds only makes sense when we also shape hearts ready to build a better world.</p>
+        <div class="hero-visual">
+          <figure class="hero-arch">
+            <img src="../assets/images/v2/quadro.webp" alt="Two Amplexo students, seen from behind, solving a math problem on a blue board" width="1100" height="734" fetchpriority="high">
+          </figure>
+          <figure class="hero-orb">
+            <img src="../assets/images/v2/online.webp" alt="Amplexo student smiling in front of the computer at home during an online activity" width="800" height="1066">
+          </figure>
+          <p class="hero-chip"><span aria-hidden="true">✦</span> Online academic enrichment</p>
         </div>
-      </div>
-    </section>
 
-    <section class="learning section-pad">
-      <div class="learning-showcase">
-        <div class="learning-photo-rail learning-photo-rail-left" aria-label="Learning moments at Amplexo">
-          <figure><img src="../assets/images/aprendizagem-comunidade.jpg" alt="Amplexo students gathered for a group activity" loading="lazy"></figure>
-          <figure><img src="../assets/images/aprendizagem-medalhas.jpg" alt="Amplexo student celebrating their medals" loading="lazy"></figure>
-          <figure><img src="../assets/images/aprendizagem-online.jpg" alt="Student taking part in an online activity" loading="lazy"></figure>
-          <figure><img src="../assets/images/aprendizagem-musica.jpg" alt="Amplexo student playing the piano" loading="lazy"></figure>
-        </div>
-        <div class="learning-content">
-        <div class="section-heading reveal">
-          <p class="eyebrow wine">Online academic enrichment</p>
-          <h2>Learning environments</h2>
-        </div>
-        <div class="learning-grid">
-          <article class="learning-card reveal"><span>01</span><h3>Classes, projects and mentoring</h3><p>Along with live and recorded classes and high-quality materials, we keep listening closely to students and families to understand their needs and support their physical, emotional and cognitive health.</p><p>We take part in initiatives such as the <strong>Blue School Program</strong> (Escola Azul) and in social projects. We also encourage and support experiences in sports, art, culture, science, technology, innovation and student leadership, building a broad, welcoming education connected to each student's interests.</p></article>
-          <article class="learning-card reveal"><span>02</span><h3>A varied calendar</h3><p>Knowledge in motion, with guidance and meaningful challenges.</p><p>We offer a rich, ongoing program that broadens the academic experience and opens up different paths for growth. Art, music, the newspaper, olympiads, science lab, theater and technology are all part of this journey. Even <strong>online</strong>, we nurture closeness, care and affection, so that every meeting is a true embrace in the form of education.</p></article>
-          <article class="learning-card reveal"><span>03</span><h3>Partnerships and platforms</h3><p>In addition to our own platform, we give students access to tools such as <strong>Medalhei, Educacross, SuperAutor and QuBits</strong>, along with partnerships with institutions such as <strong>Instituto Azlan, Sócios Mirins AEITA, Mensa Brasil and SMETA Olympiad</strong>. This network broadens students' contact with technology, innovation, connections and new opportunities for learning, growth and leadership.</p></article>
-          <article class="learning-card reveal"><span>04</span><h3>Olympiad Journey</h3><p>We prepare and support each student through every stage of their olympiad journey. We celebrate far beyond medals: every challenge faced, every lesson learned and every step taken is an achievement. We are a national and international reference in olympiad awards, combining academic excellence, strategy, cheering and care.</p></article>
-        </div>
-        <aside class="learning-callout reveal">
-          <h3>We welcome students from the very first step. We prepare them for the greatest challenges.</h3>
-          <p>High performance grows from a solid foundation. From beginner to advanced levels, students find the support, tools and challenges to go further and further.</p>
+        <aside class="campaign-band" aria-label="2027 enrollment campaign">
+          <div class="band-item">
+            <span class="band-tag">Until Nov 30, 2026</span>
+            <p><strong>Special terms until November 30, 2026.</strong> Talk to our team.</p>
+          </div>
+          <a class="band-link" href="https://wa.me/5511911009793?text=Hi!%20I'd%20like%20to%20know%20the%20fees%20and%20enrollment%20terms%20of%20Clube%20Amplexo%20Educa%C3%A7%C3%A3o%20for%202027." target="_blank" rel="noopener">
+            <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>See the terms<span class="sr-only"> (opens WhatsApp in a new tab)</span>
+          </a>
         </aside>
-        </div>
-        <div class="learning-photo-rail learning-photo-rail-right" aria-label="Real stories from the Amplexo community">
-          <figure><img src="../assets/images/aprendizagem-familia.jpg" alt="Family wearing Amplexo shirts" loading="lazy"></figure>
-          <figure><img src="../assets/images/aprendizagem-abraco.jpg" alt="A hug celebrating an achievement" loading="lazy"></figure>
-          <figure><img src="../assets/images/aprendizagem-arte.jpg" alt="Child presenting an artwork" loading="lazy"></figure>
-          <figure><img src="../assets/images/aprendizagem-equipe.jpg" alt="Students gathered representing the Amplexo community" loading="lazy"></figure>
-        </div>
       </div>
     </section>
 
-    <section id="impacto" class="impact section-pad">
-      <div class="shell impact-grid">
-        <div class="impact-copy reveal">
-          <p class="eyebrow amber">Brands For Good Awards 2026</p>
-          <h2>When education makes an impact, the world takes notice!</h2>
-          <blockquote>“This distinction recognizes a story built by students, families, teachers and partners who believe that education can transform lives.”</blockquote>
-          <p class="signature">Clarissa Vergara · Founder and Executive Director</p>
-        </div>
-        <div class="award reveal"><img src="../assets/images/brands-for-good-2026.png" alt="Brands For Good Awards 2026 seal — Edu For Good Distinction" loading="lazy"></div>
-      </div>
-    </section>
-
-    <section class="contact section-pad">
+    <!-- ============ O CLUBE ============ -->
+    <section class="section clube" id="clube" aria-labelledby="clube-title">
       <div class="shell">
-        <div class="section-heading reveal">
-          <p class="eyebrow amber">Contact</p>
-          <h2>Join the Amplexo Educação community</h2>
+        <div class="clube-intro">
+          <div data-reveal>
+            <p class="kicker">The club</p>
+            <h2 class="h2" id="clube-title">Many ways to learn. <em>One community to belong to.</em></h2>
+          </div>
+          <div class="clube-text" data-reveal>
+            <p>Clube Amplexo Educação is an online academic enrichment club for students from preschool through 9th grade.</p>
+            <p>One enrollment gives access to the activities suited to the student's stage and preparation, within the club's schedule. Families don't need to sign up for each course separately.</p>
+          </div>
         </div>
-        <div class="community-carousel reveal" aria-label="People who are part of the Amplexo Educação community">
-          <div class="community-carousel-track">
-            <div class="community-carousel-group">
-              <figure class="community-photo"><img src="../assets/images/comunidade-01-480.jpg" srcset="../assets/images/comunidade-01-480.jpg 480w, ../assets/images/comunidade-01-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
-              <figure class="community-photo"><img src="../assets/images/comunidade-02-480.jpg" srcset="../assets/images/comunidade-02-480.jpg 480w, ../assets/images/comunidade-02-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
-              <figure class="community-photo"><img src="../assets/images/comunidade-03-480.jpg" srcset="../assets/images/comunidade-03-480.jpg 480w, ../assets/images/comunidade-03-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
-              <figure class="community-photo"><img src="../assets/images/comunidade-04-480.jpg" srcset="../assets/images/comunidade-04-480.jpg 480w, ../assets/images/comunidade-04-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
-              <figure class="community-photo"><img src="../assets/images/comunidade-05-480.jpg" srcset="../assets/images/comunidade-05-480.jpg 480w, ../assets/images/comunidade-05-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
-              <figure class="community-photo"><img src="../assets/images/comunidade-06-480.jpg" srcset="../assets/images/comunidade-06-480.jpg 480w, ../assets/images/comunidade-06-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
-              <figure class="community-photo"><img src="../assets/images/comunidade-07-480.jpg" srcset="../assets/images/comunidade-07-480.jpg 480w, ../assets/images/comunidade-07-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
-              <figure class="community-photo"><img src="../assets/images/comunidade-08-480.jpg" srcset="../assets/images/comunidade-08-480.jpg 480w, ../assets/images/comunidade-08-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
-              <figure class="community-photo"><img src="../assets/images/comunidade-09-480.jpg" srcset="../assets/images/comunidade-09-480.jpg 480w, ../assets/images/comunidade-09-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
-              <figure class="community-photo"><img src="../assets/images/comunidade-10-480.jpg" srcset="../assets/images/comunidade-10-480.jpg 480w, ../assets/images/comunidade-10-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
-              <figure class="community-photo"><img src="../assets/images/comunidade-11-480.jpg" srcset="../assets/images/comunidade-11-480.jpg 480w, ../assets/images/comunidade-11-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
-              <figure class="community-photo"><img src="../assets/images/comunidade-12-480.jpg" srcset="../assets/images/comunidade-12-480.jpg 480w, ../assets/images/comunidade-12-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
+
+        <div class="statement" data-reveal>
+          <p class="statement-quote">Having access to everything doesn't mean having to do everything.</p>
+          <div class="statement-body">
+            <p>Variety widens the choices. Each family plans participation around the child's interests, availability and current stage.</p>
+            <p>Making the most of the club isn't about a packed schedule: it's about finding what makes sense right now.</p>
+          </div>
+        </div>
+
+        <h3 class="pillars-title" data-reveal>What Amplexo brings together</h3>
+        <ul class="pillars" data-reveal>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21v-7M12 14 6 8M12 14l6-6M6 8V4M18 8V4M4 6l2-2 2 2M16 6l2-2 2 2"/></svg>
+            <span>Different learning paths</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M5 20v-4h4v4M10 20v-8h4v8M15 20V8h4v12M17 4v2"/></svg>
+            <span>Strengthening the basics and opportunities to go deeper</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="14" r="6"/><path d="m9 3 3 5 3-5M12 11.5l.8 1.6 1.7.2-1.2 1.2.3 1.7-1.6-.8-1.6.8.3-1.7-1.2-1.2 1.7-.2Z"/></svg>
+            <span>Preparation for academic challenges and olympiads</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1 0 1.5-.8 1.2-1.6-.4-1.1.3-2.4 1.6-2.4H17a4 4 0 0 0 4-4c0-5.5-4-10-9-10Z"/><circle cx="7.5" cy="11" r="1.2"/><circle cx="10" cy="7" r="1.2"/><circle cx="14.5" cy="7" r="1.2"/></svg>
+            <span>Arts, language, science, technology and personal growth</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5Z"/></svg>
+            <span>Academic follow-up</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="16.5" cy="9" r="2.5"/><path d="M2.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5M14 14.6c.8-.4 1.6-.6 2.5-.6 2.3 0 4.1 1.5 4.6 4"/></svg>
+            <span>Community, connection and support for families</span>
+          </li>
+        </ul>
+
+        <div class="para-quem">
+          <figure class="framed-photo" data-reveal>
+            <img src="../assets/images/aprendizagem-arte.jpg" alt="Amplexo child smiling next to a painting they made, resting on an easel" width="1400" height="977" loading="lazy" decoding="async">
+          </figure>
+          <div data-reveal>
+            <h3 class="h3">For kids who love asking questions</h3>
+            <p>Amplexo is for children and teens who love to ask, investigate, create, read, experiment and solve challenges.</p>
+            <p>We have experience with neurodivergent students, including gifted and talented students, but the club is not only for them. <strong>No diagnosis, Mensa membership or previous medals are required to join.</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VÍDEO ============ -->
+    <section class="section video" id="video" aria-labelledby="video-title">
+      <div class="shell">
+        <div class="video-head" data-reveal>
+          <p class="kicker kicker-light">Watch</p>
+          <h2 class="h2" id="video-title">Meet <em>Team&nbsp;Amplexo</em> up close.</h2>
+          <p class="lead">See who makes the club happen: students who ask, create, celebrate and learn together.</p>
+        </div>
+
+        <div class="video-stage" data-reveal>
+          <!-- O player do YouTube só é carregado no clique (ver js/matriculas.js); sem JavaScript, o link abre o vídeo no YouTube. -->
+          <a class="video-player" href="https://www.youtube.com/watch?v=QICy58hbkgs" target="_blank" rel="noopener" data-video-id="QICy58hbkgs" data-title="Clube Amplexo Educação 2026">
+            <img src="../assets/images/v2/video-clube.webp" alt="" width="1280" height="720" loading="lazy" decoding="async">
+            <span class="video-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5Z"/></svg></span>
+            <span class="video-label">Watch the video<span class="sr-only" data-video-sr> “Clube Amplexo Educação 2026” (opens YouTube in a new tab)</span></span>
+          </a>
+        </div>
+
+        <p class="video-caption" data-reveal>
+          <span>Clube Amplexo Educação 2026 · with English subtitles</span>
+          <a href="https://www.youtube.com/@Amplexoeducacao" target="_blank" rel="noopener">More videos on our channel <svg aria-hidden="true"><use href="#i-external"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ TRILHAS ============ -->
+    <section class="section trilhas" id="trilhas" aria-labelledby="trilhas-title">
+      <div class="shell">
+        <div class="section-head" data-reveal>
+          <div>
+            <p class="kicker">2027 tracks</p>
+            <h2 class="h2" id="trilhas-title">Choose where <em>curiosity</em> wants to start.</h2>
+          </div>
+          <p class="lead">These are the confirmed tracks for 2027. We grouped them by area only to make them easier to read: the groupings are editorial, not classes or packages.</p>
+        </div>
+
+        <article class="area" data-reveal aria-labelledby="area-mat">
+          <header class="area-head">
+            <svg class="area-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6 8 40M24 6l16 34M13 30h22"/><circle cx="24" cy="6" r="2.5"/><path d="M8 40a20 20 0 0 1 32 0" stroke-dasharray="2 4"/></svg>
+            <span class="area-num">01</span>
+            <h3 id="area-mat">Math and test preparation</h3>
+            <p class="area-q">How many ways are there to solve the same problem?</p>
+          </header>
+          <ul class="tracks">
+            <li><h4>Early Math</h4><p>The first steps in mathematical thinking.</p></li>
+            <li><h4>Basic Math</h4><p>A solid foundation to move forward with confidence.</p></li>
+            <li><h4>Advanced Math</h4><p>Going deeper for students who already have a solid foundation.</p></li>
+            <li><h4>Olympiad Math</h4><p>Challenging problems and olympiad preparation.</p></li>
+            <li class="track-wide"><h4>Prep course for Brazilian military schools</h4><p>Preparation for the entrance exams of Brazilian military schools. For 5th graders, a scholarship may be available: ask our team about the terms.</p></li>
+          </ul>
+        </article>
+
+        <article class="area area-alt" data-reveal aria-labelledby="area-ling">
+          <header class="area-head">
+            <svg class="area-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 12c-4-3-10-4-17-3v28c7-1 13 0 17 3 4-3 10-4 17-3V9c-7-1-13 0-17 3ZM24 12v28"/><path d="M12 17c3-.3 5.5.2 8 1.3M12 23c3-.3 5.5.2 8 1.3M28 18.3c2.5-1.1 5-1.6 8-1.3"/></svg>
+            <span class="area-num">02</span>
+            <h3 id="area-ling">Languages and communication</h3>
+            <p class="area-q">What story do you want to tell the world?</p>
+          </header>
+          <ul class="tracks">
+            <li><h4>Portuguese Language Literacy</h4><p>Reading, writing and comprehension to express yourself clearly.</p></li>
+            <li><h4>Children's Literature — Reading Mentorship</h4><p>Guided reading to discover books and talk about them.</p></li>
+            <li><h4>Writing</h4><p>Writing with structure, clarity and a voice of your own.</p></li>
+            <li><h4>Communication and Citizenship</h4><p>The Newspaper Project, classes on key communication topics, and debates.</p></li>
+            <li class="track-wide"><h4>English study group</h4><p>For children aged 7 to 10, in partnership with Instituto Azlan.</p></li>
+          </ul>
+        </article>
+
+        <article class="area area-dark" data-reveal aria-labelledby="area-cien">
+          <header class="area-head">
+            <svg class="area-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="3"/><ellipse cx="24" cy="24" rx="19" ry="7.5"/><ellipse cx="24" cy="24" rx="19" ry="7.5" transform="rotate(60 24 24)"/><ellipse cx="24" cy="24" rx="19" ry="7.5" transform="rotate(-60 24 24)"/></svg>
+            <span class="area-num">03</span>
+            <h3 id="area-cien">Science and technology</h3>
+            <p class="area-q">How can we use knowledge to take care of the world?</p>
+          </header>
+          <ul class="tracks">
+            <li><h4>Technology</h4><p>Scratch, a computing project and computer science theory.</p></li>
+            <li><h4>Science</h4><p>Environmental projects, astronomy, biology and experiments.</p></li>
+            <li><h4>Physics</h4><p>Physics concepts and phenomena explored with curiosity.</p></li>
+            <li><h4>Robotics</h4><p>Computational thinking and creativity applied to robotics.</p></li>
+          </ul>
+        </article>
+
+        <div class="area-pair">
+          <article class="area-mini area-artes" data-reveal aria-labelledby="area-artes">
+            <figure>
+              <img src="../assets/images/v2/musica.webp" alt="Amplexo student playing the piano in an auditorium, with the audience in the background" width="1100" height="734" loading="lazy" decoding="async">
+            </figure>
+            <div class="area-mini-body">
+              <span class="area-num">04</span>
+              <h3 id="area-artes">Arts</h3>
+              <p class="area-q">How can an idea take shape?</p>
+              <ul class="tracks tracks-single">
+                <li><h4>Arts — Music, Theater, Culture and Visual Arts</h4><p>Exploring artistic languages, creating and expressing yourself.</p></li>
+              </ul>
             </div>
-            <div class="community-carousel-group" aria-hidden="true">
-              <figure class="community-photo"><img src="../assets/images/comunidade-01-480.jpg" srcset="../assets/images/comunidade-01-480.jpg 480w, ../assets/images/comunidade-01-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
-              <figure class="community-photo"><img src="../assets/images/comunidade-02-480.jpg" srcset="../assets/images/comunidade-02-480.jpg 480w, ../assets/images/comunidade-02-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
-              <figure class="community-photo"><img src="../assets/images/comunidade-03-480.jpg" srcset="../assets/images/comunidade-03-480.jpg 480w, ../assets/images/comunidade-03-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
-              <figure class="community-photo"><img src="../assets/images/comunidade-04-480.jpg" srcset="../assets/images/comunidade-04-480.jpg 480w, ../assets/images/comunidade-04-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
-              <figure class="community-photo"><img src="../assets/images/comunidade-05-480.jpg" srcset="../assets/images/comunidade-05-480.jpg 480w, ../assets/images/comunidade-05-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
-              <figure class="community-photo"><img src="../assets/images/comunidade-06-480.jpg" srcset="../assets/images/comunidade-06-480.jpg 480w, ../assets/images/comunidade-06-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
-              <figure class="community-photo"><img src="../assets/images/comunidade-07-480.jpg" srcset="../assets/images/comunidade-07-480.jpg 480w, ../assets/images/comunidade-07-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
-              <figure class="community-photo"><img src="../assets/images/comunidade-08-480.jpg" srcset="../assets/images/comunidade-08-480.jpg 480w, ../assets/images/comunidade-08-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
-              <figure class="community-photo"><img src="../assets/images/comunidade-09-480.jpg" srcset="../assets/images/comunidade-09-480.jpg 480w, ../assets/images/comunidade-09-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
-              <figure class="community-photo"><img src="../assets/images/comunidade-10-480.jpg" srcset="../assets/images/comunidade-10-480.jpg 480w, ../assets/images/comunidade-10-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
-              <figure class="community-photo"><img src="../assets/images/comunidade-11-480.jpg" srcset="../assets/images/comunidade-11-480.jpg 480w, ../assets/images/comunidade-11-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
-              <figure class="community-photo"><img src="../assets/images/comunidade-12-480.jpg" srcset="../assets/images/comunidade-12-480.jpg 480w, ../assets/images/comunidade-12-800.jpg 800w" sizes="(max-width: 760px) 222px, 286px" alt="" loading="lazy" decoding="async"></figure>
+          </article>
+
+          <article class="area-mini area-estrategia" data-reveal aria-labelledby="area-estr">
+            <svg class="board" viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+              <rect x="10" y="10" width="100" height="100" rx="4"/>
+              <path class="sq" d="M10 10h25v25H10zM60 10h25v25H60zM35 35h25v25H35zM85 35h25v25H85zM10 60h25v25H10zM60 60h25v25H60zM35 85h25v25H35zM85 85h25v25H85z"/>
+              <path class="piece" d="M72 52c0-5 3-8 3-11a4.5 4.5 0 1 0-9 0c0 3 3 6 3 11h-4l-2 5h15l-2-5Z"/>
+              <path class="move" d="M70 66v14h20" stroke-dasharray="3 4"/>
+            </svg>
+            <div class="area-mini-body">
+              <span class="area-num">05</span>
+              <h3 id="area-estr">Strategy</h3>
+              <p class="area-q">What changes when you anticipate the next move?</p>
+              <ul class="tracks tracks-single">
+                <li><h4>Chess and Strategy Games</h4><p>Plan, anticipate and decide, one move at a time.</p></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <p class="trilhas-note" data-reveal>Participation in each track depends on the student's stage and knowledge and on the groups' schedule. <a href="#como-funciona">See how it works</a>.</p>
+      </div>
+    </section>
+
+    <!-- ============ COMO FUNCIONA ============ -->
+    <section class="section como" id="como-funciona" aria-labelledby="como-title">
+      <div class="shell">
+        <div class="section-head" data-reveal>
+          <div>
+            <p class="kicker kicker-light">How it works</p>
+            <h2 class="h2" id="como-title">Tracks and challenges organized by stage, knowledge and group interests.</h2>
+          </div>
+          <p class="lead">From the enrollment form to follow-up throughout the year, every step starts by listening to the family.</p>
+        </div>
+
+        <ol class="steps" data-reveal>
+          <li>
+            <span class="step-num" aria-hidden="true">1</span>
+            <h3>The family shares</h3>
+            <p>In the enrollment form, the family tells us about the student's profile and interests and picks the activities they are most interested in, with no minimum or maximum.</p>
+          </li>
+          <li>
+            <span class="step-num" aria-hidden="true">2</span>
+            <h3>Coordinators get to know each profile</h3>
+            <p>The coordinators review the students' profiles and interests.</p>
+          </li>
+          <li>
+            <span class="step-num" aria-hidden="true">3</span>
+            <h3>Groups take shape</h3>
+            <p>Groups and activities are organized by age, school grade, knowledge and interests, suited to each student's stage and preparation.</p>
+          </li>
+          <li>
+            <span class="step-num" aria-hidden="true">4</span>
+            <h3>Progress is followed closely</h3>
+            <p>Progress is tracked through reports, practice tests, meetings and conversations with the coordinators.</p>
+          </li>
+        </ol>
+
+        <div class="como-grid">
+          <div class="good-to-know" data-reveal>
+            <h3 class="h3">Good to know</h3>
+            <ul class="checks">
+              <li>Advanced courses may include an assessment of the required foundation.</li>
+              <li>If a student is beyond the planned content, the coordinators consider placing them in more advanced classes.</li>
+              <li>Choosing an activity doesn't guarantee automatic access to any class. Participation depends on fit with the group, the schedule and the routine, and there may be time conflicts.</li>
+            </ul>
+          </div>
+          <div class="neuro" data-reveal>
+            <h3 class="h3">Every student, in their own way</h3>
+            <p>Our team is trained and experienced in working with neurodivergent students, including gifted and talented students.</p>
+            <p>We start by listening to each family, not from generalizations. With flexibility, activities and challenges can be adapted when that makes sense for the student.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COMUNIDADE ============ -->
+    <section class="section comunidade" id="experiencias" aria-labelledby="comunidade-title">
+      <div class="shell comunidade-grid">
+        <div class="comunidade-copy" data-reveal>
+          <p class="kicker">Community</p>
+          <h2 class="h2" id="comunidade-title">When a child joins, <em>a family finds its place too.</em></h2>
+          <p class="lead">At Amplexo, bonds grow around learning experiences: among students, families and staff.</p>
+          <ul class="chips">
+            <li>Family groups</li>
+            <li>Conversations and exchanges</li>
+            <li>Frequent meetups</li>
+            <li>In-person events</li>
+          </ul>
+        </div>
+        <div class="mosaic" data-reveal>
+          <figure class="mosaic-wide">
+            <img src="../assets/images/v2/celebracao-1440.webp" srcset="../assets/images/v2/celebracao-800.webp 800w, ../assets/images/v2/celebracao-1440.webp 1440w" sizes="(max-width: 860px) 100vw, 640px" alt="Dozens of Amplexo students in club T-shirts celebrating with their arms raised" width="1440" height="720" loading="lazy" decoding="async">
+          </figure>
+          <figure>
+            <img src="../assets/images/v2/familia-olimpiada.webp" alt="A mother and her two children in Amplexo T-shirts holding the club flag" width="1100" height="734" loading="lazy" decoding="async">
+          </figure>
+          <figure>
+            <img src="../assets/images/amplexo-familia-abraco.jpg" alt="Mother and son holding a flag that reads “Abrace e seja abraçado pela Educação” (Embrace and be embraced by Education)" width="1200" height="800" loading="lazy" decoding="async">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OLIMPÍADAS ============ -->
+    <section class="section olimpiadas" aria-labelledby="olimpiadas-title">
+      <div class="shell olimpiadas-grid">
+        <figure class="olimpiadas-photo" data-reveal>
+          <img src="../assets/images/v2/medalhas.webp" alt="Amplexo student smiling with several medals around their neck" width="800" height="1200" loading="lazy" decoding="async">
+        </figure>
+        <div class="olimpiadas-copy">
+          <div data-reveal>
+            <p class="kicker kicker-light">Olympiads</p>
+            <h2 class="h2" id="olimpiadas-title">Learning that goes beyond the medal.</h2>
+            <p>Taking part in olympiads is a way to practice persistence, discover new challenges and value the learning journey. The club offers preparation, support and opportunities for students who want to explore their interests in depth and enter competitions.</p>
+            <p class="olimpiadas-choice">This track is a choice. And each student's worth goes far beyond awards.</p>
+          </div>
+
+          <h3 class="opp-title" data-reveal>Opportunities planned for 2027</h3>
+          <div class="opp-lists" data-reveal>
+            <div>
+              <h4>At no extra cost</h4>
+              <ul>
+                <li>Medalhei Olympiads</li>
+                <li>Singapore Math Olympiad Preliminary Round</li>
+              </ul>
+            </div>
+            <div>
+              <h4>With discounted registration</h4>
+              <ul>
+                <li>Portuguese Language Olympiad (OP and OP Be a Bá)</li>
+                <li>ACSL (American Computer Science League)</li>
+                <li>Literature Olympiad</li>
+                <li>TeenEagle</li>
+                <li>SMETA (Science, Mathematics, English, Technology and Art)</li>
+                <li>Exploradores do Saber</li>
+                <li>Seleta Educação</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="condition" data-reveal><strong>To use these benefits, the student must be active and in good standing with the club in the month of the exam.</strong></p>
+          <p class="opp-note" data-reveal>Other opportunities may come up during the year and will be shared with parents. Some registrations are covered, others are discounted and others may be paid separately.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONQUISTAS ============ -->
+    <section class="section conquistas" aria-labelledby="conquistas-title">
+      <div class="shell">
+        <div class="section-head" data-reveal>
+          <div>
+            <p class="kicker">Achievements and applied knowledge</p>
+            <h2 class="h2" id="conquistas-title">Achievements that tell <em>a story</em>.</h2>
+          </div>
+        </div>
+
+        <div class="conquistas-grid">
+          <aside class="conq-institution" data-reveal aria-labelledby="inst-title">
+            <p class="conq-label">Institutional recognition</p>
+            <div class="seal-panel">
+              <img src="../assets/images/v2/selo-brands-for-good.webp" alt="Brands For Good Awards 2026 seal — Edu For Good Distinction" width="900" height="538" loading="lazy" decoding="async">
+              <h3 id="inst-title">Brands For Good</h3>
+              <p>Amplexo Educação is a Brands For Good winner with distinction.</p>
+              <a class="text-link" href="https://app.brandsforgood.asia/winner/amplexo-educa-o-clarissa-vergara" target="_blank" rel="noopener">See the award <svg aria-hidden="true"><use href="#i-external"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+            </div>
+          </aside>
+
+          <div class="conq-students" data-reveal>
+            <p class="conq-label">From our students</p>
+            <div class="conq-awards-card">
+              <ul class="conq-awards-list">
+                <li class="featured-award">
+                  <svg class="award-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 6.6 7 .6-5.3 4.6 1.6 6.9L12 17.2l-5.7 3.5 1.6-6.9L2.6 9.2l7-.6L12 2z"/></svg>
+                  <div><strong class="award-highlight-lg">+ 4,000</strong> national and international awards</div>
+                </li>
+                <li>
+                  <svg class="award-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 6.6 7 .6-5.3 4.6 1.6 6.9L12 17.2l-5.7 3.5 1.6-6.9L2.6 9.2l7-.6L12 2z"/></svg>
+                  <div><strong>Over 175</strong> awards at the SINGAPORE MATH CHALLENGE</div>
+                </li>
+                <li>
+                  <svg class="award-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 6.6 7 .6-5.3 4.6 1.6 6.9L12 17.2l-5.7 3.5 1.6-6.9L2.6 9.2l7-.6L12 2z"/></svg>
+                  <div><strong>1st place GLOBAL</strong> - SMC - Singapore Math Challenge</div>
+                </li>
+                <li>
+                  <svg class="award-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 6.6 7 .6-5.3 4.6 1.6 6.9L12 17.2l-5.7 3.5 1.6-6.9L2.6 9.2l7-.6L12 2z"/></svg>
+                  <div><strong>Over 100</strong> awards at the COPERNICUS MATHEMATICS OLYMPIAD</div>
+                </li>
+                <li>
+                  <svg class="award-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 6.6 7 .6-5.3 4.6 1.6 6.9L12 17.2l-5.7 3.5 1.6-6.9L2.6 9.2l7-.6L12 2z"/></svg>
+                  <div><strong>Over 70</strong> awards at SASMO - Singapore and Asia Math Olympiad</div>
+                </li>
+                <li>
+                  <svg class="award-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 6.6 7 .6-5.3 4.6 1.6 6.9L12 17.2l-5.7 3.5 1.6-6.9L2.6 9.2l7-.6L12 2z"/></svg>
+                  <div><strong>1st Place Worldwide ICO</strong> - International Computing Olympiad - Sustainability Project, Amplexo EcoScratchers Team</div>
+                </li>
+                <li>
+                  <svg class="award-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 6.6 7 .6-5.3 4.6 1.6 6.9L12 17.2l-5.7 3.5 1.6-6.9L2.6 9.2l7-.6L12 2z"/></svg>
+                  <div><strong>1st place BRAZIL</strong> - Jacob Palis - N1</div>
+                </li>
+                <li>
+                  <svg class="award-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 6.6 7 .6-5.3 4.6 1.6 6.9L12 17.2l-5.7 3.5 1.6-6.9L2.6 9.2l7-.6L12 2z"/></svg>
+                  <div><strong>1st place</strong> Brazilian Olympiad in Informatics - N1</div>
+                </li>
+                <li>
+                  <svg class="award-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 6.6 7 .6-5.3 4.6 1.6 6.9L12 17.2l-5.7 3.5 1.6-6.9L2.6 9.2l7-.6L12 2z"/></svg>
+                  <div><strong>43 active members</strong> IJHS - International Honor Society</div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="contact-grid">
-          <a class="contact-card reveal" href="https://wa.me/5511911009793" target="_blank" rel="noopener"><span>WhatsApp</span><strong>+55 11 91100-9793</strong><i>↗</i></a>
-          <a class="contact-card reveal" href="https://instagram.com/amplexoedu" target="_blank" rel="noopener"><span>Instagram</span><strong>@amplexoedu</strong><i>↗</i></a>
-          <a class="contact-card reveal" href="mailto:pedagogico@amplexoedu.com"><span>Email</span><strong>pedagogico@amplexoedu.com</strong><i>↗</i></a>
+      </div>
+    </section>
+
+    <!-- ============ RECURSOS E HORÁRIOS ============ -->
+    <section class="section recursos" id="recursos" aria-label="Resources and schedule">
+      <div class="shell recursos-grid">
+        <div class="recursos-col" data-reveal>
+          <p class="kicker">Between classes</p>
+          <h2 class="h2 h2-sm">Learning between classes</h2>
+          <dl class="resources">
+            <div><dt>Amplexo Educação platform</dt><dd>Courses and study materials.</dd></div>
+            <div><dt>Amplexo practice tests</dt><dd>Practice tests with performance reports.</dd></div>
+            <div><dt>Kahoot</dt><dd>Access to custom games.</dd></div>
+            <div><dt>Elementary School (grades 1–5)</dt><dd>Super Autor project.</dd></div>
+            <div><dt>Middle School (grades 6–9)</dt><dd>Medalhei platform, with science olympiads.</dd></div>
+          </dl>
+          <p class="notice"><strong>Live classes are not recorded.</strong> The platform offers its own courses and study content.</p>
         </div>
+
+        <div class="horarios-col" data-reveal>
+          <p class="kicker">Schedule</p>
+          <h2 class="h2 h2-sm">A schedule that fits students' routines.</h2>
+          <div class="schedule">
+            <div class="schedule-block schedule-block-infantil">
+              <h3>Early Childhood Education (Preschool)</h3>
+              <dl>
+                <div><dt>Live classes</dt><dd>Weekends only</dd></div>
+                <div><dt>Weekdays</dt><dd>Asynchronous activities</dd></div>
+              </dl>
+            </div>
+            <div class="schedule-block">
+              <h3>On weekdays · Elementary & Middle School</h3>
+              <dl>
+                <div class="segment-row"><dt><span class="segment-tag">Elementary</span>Grades 1–5</dt><dd>usually 7–8 p.m.</dd></div>
+                <div class="segment-row"><dt><span class="segment-tag">Middle</span>Grades 6–9</dt><dd>usually 7:30–8:30 p.m.</dd></div>
+              </dl>
+            </div>
+            <div class="schedule-block">
+              <h3>On weekends</h3>
+              <dl>
+                <div><dt>Saturdays</dt><dd>9 a.m.–12 p.m. and 2–5 p.m., depending on level</dd></div>
+                <div><dt>Sundays</dt><dd>2–6 p.m., depending on level</dd></div>
+              </dl>
+            </div>
+          </div>
+          <p class="notice"><strong>Flexible calendar:</strong> classes may change from month to month, based on demand and students' preferences.</p>
+          <p class="small-note">These are the club's general time ranges, in Brasília time (UTC−3). Each group has its own days and times within them.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CAMPANHA ============ -->
+    <section class="section campanha" id="campanha" aria-labelledby="campanha-title">
+      <div class="shell">
+        <div class="campanha-panel">
+          <div class="section-head" data-reveal>
+            <div>
+              <p class="kicker kicker-light">2027 enrollment and re-enrollment</p>
+              <h2 class="h2" id="campanha-title">Special terms until <em>November 30, 2026</em>.</h2>
+            </div>
+            <p class="lead">Every family arrives in its own way. Whether you are new or already part of Amplexo, our team explains the terms when you get in touch.</p>
+          </div>
+
+          <div class="audiences">
+            <article class="audience" data-reveal aria-labelledby="aud-novos">
+              <p class="audience-tag">New students</p>
+              <h3 id="aud-novos">Come and get to know Amplexo.</h3>
+              <p>Tell our team about the student and their interests. On WhatsApp, we explain the campaign terms and the next steps for enrollment.</p>
+              <a class="btn btn-gold" href="https://wa.me/5511911009793?text=Hi!%20I'd%20like%20to%20learn%20about%20Clube%20Amplexo%20Educa%C3%A7%C3%A3o%20and%20get%20information%20about%20enrollment%20for%202027." target="_blank" rel="noopener">
+                <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>Talk about enrollment<span class="sr-only"> (opens WhatsApp in a new tab)</span>
+              </a>
+            </article>
+            <article class="audience" data-reveal aria-labelledby="aud-atuais">
+              <p class="audience-tag">Current students</p>
+              <h3 id="aud-atuais">Stay with us in 2027.</h3>
+              <p>If you're already part of Amplexo, our team will guide you through re-enrollment and explain the campaign terms on WhatsApp.</p>
+              <p>With re-enrollment, the journey continues in 2027.</p>
+              <a class="btn btn-line-light" href="https://wa.me/5511911009793?text=Hi!%20We're%20already%20part%20of%20Amplexo%20and%20would%20like%20guidance%20on%20re-enrolling%20for%202027." target="_blank" rel="noopener">
+                <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>Renew for 2027<span class="sr-only"> (opens WhatsApp in a new tab)</span>
+              </a>
+            </article>
+          </div>
+
+          <div class="arrival" data-reveal>
+            <h3>Getting started at the club</h3>
+            <ol class="arrival-list">
+              <li><span>December 5</span>First meeting with enrolled students.</li>
+              <li><span>January 9</span>Welcome meeting.</li>
+              <li><span>January 10</span>2027 classes begin.</li>
+            </ol>
+          </div>
+
+          <div class="campanha-foot" data-reveal>
+            <p>Special terms are available for siblings and for students who are active members of Mensa Brasil. Fees and terms are presented when you get in touch: ask our team how they apply to your family.</p>
+            <a class="btn btn-line-gold" href="https://wa.me/5511911009793?text=Hi!%20I'd%20like%20to%20know%20the%20fees%20and%20enrollment%20terms%20of%20Clube%20Amplexo%20Educa%C3%A7%C3%A3o%20for%202027." target="_blank" rel="noopener">
+              <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>See fees and terms<span class="sr-only"> (opens WhatsApp in a new tab)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DÚVIDAS ============ -->
+    <section class="section duvidas" id="duvidas" aria-labelledby="duvidas-title">
+      <div class="shell duvidas-grid">
+        <div class="duvidas-head" data-reveal>
+          <p class="kicker">FAQ</p>
+          <h2 class="h2" id="duvidas-title">Frequently asked questions</h2>
+          <p class="lead">Didn't find what you were looking for? Our team will talk with you on WhatsApp.</p>
+          <a class="btn btn-navy" href="https://wa.me/5511911009793?text=Hi!%20I'd%20like%20to%20learn%20about%20Clube%20Amplexo%20Educa%C3%A7%C3%A3o%20and%20get%20information%20about%20enrollment%20for%202027." target="_blank" rel="noopener">
+            <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>Talk about enrollment<span class="sr-only"> (opens WhatsApp in a new tab)</span>
+          </a>
+        </div>
+
+        <div class="faq" data-reveal>
+          <details>
+            <summary><span>Does my child need to take part in every activity?</span></summary>
+            <div class="faq-body">
+              <p>No. Having access to everything doesn't mean having to do everything. The family picks the activities they're most interested in, with no minimum or maximum, and plans participation around the child's availability and current stage.</p>
+            </div>
+          </details>
+          <details>
+            <summary><span>Does my child need to be a Mensa member or gifted?</span></summary>
+            <div class="faq-body">
+              <p>No. We have experience with neurodivergent students, including gifted and talented students, but the club is not only for them. No diagnosis, Mensa membership or previous medals are required.</p>
+            </div>
+          </details>
+          <details>
+            <summary><span>How are groups formed?</span></summary>
+            <div class="faq-body">
+              <p>Based on the information in the enrollment form, the coordinators consider age, school grade, knowledge and interests. Advanced courses may include an assessment of the required foundation. If a student is beyond the planned content, the coordinators consider placing them in more advanced classes.</p>
+              <p>Choosing an activity doesn't guarantee automatic access to any class, and there may be time conflicts.</p>
+            </div>
+          </details>
+          <details>
+            <summary><span>Are classes online? Are they recorded?</span></summary>
+            <div class="faq-body">
+              <p>Classes are online and live, and they are not recorded. For studying between classes, the Amplexo Educação platform offers its own courses and content.</p>
+            </div>
+          </details>
+          <details>
+            <summary><span>Is there academic follow-up?</span></summary>
+            <div class="faq-body">
+              <p>Yes. Students' progress is tracked through reports, practice tests, meetings and conversations with the coordinators.</p>
+            </div>
+          </details>
+          <details>
+            <summary><span>Are all olympiad registrations included?</span></summary>
+            <div class="faq-body">
+              <p>No. For 2027, the Medalhei Olympiads and the Singapore Math Olympiad Preliminary Round have no extra cost, and other olympiads have discounted registration. Some opportunities may be paid separately.</p>
+              <p>To use these benefits, the student must be active and in good standing with the club in the month of the exam.</p>
+            </div>
+          </details>
+          <details>
+            <summary><span>Where can I find fees and terms?</span></summary>
+            <div class="faq-body">
+              <p>Fees and terms are presented when you get in touch, so our team can get to know your family and go over each point calmly. Just message us on WhatsApp.</p>
+              <a class="btn btn-wine btn-small" href="https://wa.me/5511911009793?text=Hi!%20I'd%20like%20to%20know%20the%20fees%20and%20enrollment%20terms%20of%20Clube%20Amplexo%20Educa%C3%A7%C3%A3o%20for%202027." target="_blank" rel="noopener">
+                <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>See fees and terms<span class="sr-only"> (opens WhatsApp in a new tab)</span>
+              </a>
+            </div>
+          </details>
+          <details>
+            <summary><span>I'm already a student: how do I re-enroll?</span></summary>
+            <div class="faq-body">
+              <p>Talk to our team on WhatsApp for guidance on re-enrolling for 2027. The special campaign terms are valid until November 30, 2026.</p>
+              <a class="btn btn-wine btn-small" href="https://wa.me/5511911009793?text=Hi!%20We're%20already%20part%20of%20Amplexo%20and%20would%20like%20guidance%20on%20re-enrolling%20for%202027." target="_blank" rel="noopener">
+                <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>Renew for 2027<span class="sr-only"> (opens WhatsApp in a new tab)</span>
+              </a>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONVITE FINAL ============ -->
+    <section class="final" aria-labelledby="final-title">
+      <div class="shell final-inner" data-reveal>
+        <span class="final-rule" aria-hidden="true"></span>
+        <h2 class="final-title" id="final-title">Your child has questions, ideas and paths to discover. <em>Your family can share this journey with us.</em></h2>
+        <div class="final-actions">
+          <a class="btn btn-gold" href="https://wa.me/5511911009793?text=Hi!%20I'd%20like%20to%20learn%20about%20Clube%20Amplexo%20Educa%C3%A7%C3%A3o%20and%20get%20information%20about%20enrollment%20for%202027." target="_blank" rel="noopener">
+            <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>I want to join Amplexo<span class="sr-only"> (opens WhatsApp in a new tab)</span>
+          </a>
+          <a class="btn btn-line-light" href="https://wa.me/5511911009793?text=Hi!%20We're%20already%20part%20of%20Amplexo%20and%20would%20like%20guidance%20on%20re-enrolling%20for%202027." target="_blank" rel="noopener">
+            <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>I want to stay at Amplexo<span class="sr-only"> (opens WhatsApp in a new tab)</span>
+          </a>
+        </div>
+        <p class="signature">Clube Amplexo Educação. <span>Transform the present. Impact forever.</span></p>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="shell footer-grid">
-      <div><strong>Amplexo Educação</strong><p>Academic excellence, educating for good.</p></div>
-      <p class="footer-legal-links">
-        <a href="privacy/">Privacy Policy</a> ·
-        <a href="terms/">Terms</a> ·
-        <a href="accessibility/">Accessibility</a>
-      </p>
+    <div class="shell footer-inner">
+      <div class="footer-brand">
+        <img src="../assets/brand/android-chrome_192px.png" alt="" width="192" height="192" loading="lazy">
+        <div>
+          <strong>Amplexo Educação</strong>
+          <p>Transform the present. Impact forever.</p>
+        </div>
+      </div>
+      <ul class="footer-contact">
+        <li><a href="https://wa.me/5511911009793" target="_blank" rel="noopener">WhatsApp +55 11 91100-9793<span class="sr-only"> (opens in a new tab)</span></a></li>
+        <li><a href="mailto:pedagogico@amplexoedu.com">pedagogico@amplexoedu.com</a></li>
+        <li><a href="https://instagram.com/amplexoedu" target="_blank" rel="noopener">Instagram @amplexoedu<span class="sr-only"> (opens in a new tab)</span></a></li>
+      </ul>
+      <nav class="footer-links" aria-label="Site links">
+        <a href="./">Home</a>
+        <a href="home-institucional/">About Amplexo</a>
+        <a href="../en/jornal-amplexo/">Jornal Amplexo</a>
+        <a href="../en/privacy/">Privacy</a>
+        <a href="../en/terms/">Terms</a>
+        <a href="../en/accessibility/">Accessibility</a>
+      </nav>
     </div>
   </footer>
-
-  <script>
-    const observer = new IntersectionObserver(entries => entries.forEach(entry => {
-      if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
-    }), { threshold: .12 });
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-  </script>
 </body>
 </html>
