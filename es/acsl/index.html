@@ -50,7 +50,7 @@
 
 
   <link rel="stylesheet" href="../../css/styles.css" />
-  <link rel="stylesheet" href="../../css/acsl.css?v=20261026g" />
+  <link rel="stylesheet" href="../../css/acsl.css?v=20261116a" />
 </head>
 <body>
   <a href="#main" class="skip-link">Ir al contenido principal</a>
@@ -92,22 +92,23 @@
   <main id="main">
     <section class="hero acsl-hero" aria-label="American Computer Science League">
       <div class="hero-inner acsl-hero-inner">
-        <div>
+        <div class="acsl-hero-copy">
           <div class="hero-label">
             <span class="hero-badge">Computación Internacional</span>
-            <span class="hero-badge">Temporada 2026-2027</span>
-            <span class="hero-badge">49.º Año de Operación</span>
+            <span class="hero-badge">Temporada 2026–2027</span>
           </div>
-          <h1 class="hero-title glitch" data-text="ACSL: American Computer Science League.">
-            ACSL: <span class="highlight">American Computer Science League.</span>
+          <h1 class="hero-title acsl-hero-title">
+            <span class="acsl-title-mark">ACSL</span>
+            <span class="highlight">American Computer Science League</span>
           </h1>
           <p class="hero-sub">
-            La American Computer Science League (ACSL) es una de las competencias de ciencias de la computación más antiguas y prestigiosas del mundo, ahora en su <strong>49.º año de operación ininterrumpida</strong> (1978–2027). Reúne anualmente a más de 7.000 estudiantes de 21 países en 6 continentes, es miembro institucional de la Computer Science Teachers Association (CSTA) y cuenta con el apoyo de HackerRank y Google.
+            Una de las competencias de ciencias de la computación más antiguas y prestigiosas del mundo, en su <strong>49.º año de operación ininterrumpida</strong> (1978–2027). Reúne a más de 7.000 estudiantes de 21 países en 6 continentes, es miembro de la Computer Science Teachers Association (CSTA) y cuenta con el apoyo de HackerRank y Google. En Brasil, la inscripción se realiza con el <strong>Clube Amplexo</strong>, organizador oficial.
           </p>
-          <div class="hero-cta">
-            <a href="#cronograma" class="btn large">Ver cronograma</a>
+          <div class="hero-cta acsl-hero-cta">
+            <a href="https://forms.gle/ysVEQc1TwdxP4QbE8" target="_blank" rel="noopener noreferrer" class="btn large">Inscribirse</a>
             <a href="https://wa.me/5585986794831?text=%C2%A1Hola!+Quero+informaci%C3%B3n+sobre+la+ACSL+con+el+Clube+Amplexo" target="_blank" rel="noopener noreferrer" class="btn-ghost large">Hablar con el equipo</a>
           </div>
+          <p class="acsl-hero-note" data-acsl-aberto>Inscripciones hasta el <strong>20 de diciembre de 2026</strong> · <a href="#cronograma">ver cronograma</a></p>
         </div>
 
         <div class="hero-visual acsl-hero-media">
@@ -173,6 +174,7 @@
                 <span class="acsl-cd-unit">Seg</span>
               </div>
             </div>
+            <p class="acsl-countdown-foot" data-acsl-aberto>Fecha límite: <strong>20/12/2026, 23:59</strong> (hora de Brasilia)</p>
           </div>
         </div>
       </div>
@@ -229,8 +231,26 @@
         <div class="reveal tc" style="margin-top:28px">
           <div class="section-label">✦ Visión general</div>
           <h2 class="section-title">Cómo funciona la competencia ACSL</h2>
-          <p class="section-sub" style="margin:0 auto">Explicaciones y todos los detalles de la temporada regular y de las finales.</p>
+          <p class="section-sub" style="margin:0 auto">De la inscripción a las finales globales, en tres pasos.</p>
         </div>
+
+        <ol class="acsl-steps">
+          <li class="acsl-step reveal">
+            <span class="acsl-step-n" aria-hidden="true">1</span>
+            <h3>Inscripción con el Clube Amplexo</h3>
+            <p>Hasta el <strong>20 de diciembre de 2026</strong>, mediante el formulario oficial. Los estudiantes matriculados en el Clube Amplexo cuentan con descuento especial.</p>
+          </li>
+          <li class="acsl-step reveal">
+            <span class="acsl-step-n" aria-hidden="true">2</span>
+            <h3>Cuatro etapas en línea</h3>
+            <p>Pruebas en inglés en HackerRank, de octubre de 2026 a mayo de 2027, cada una con su propia ventana y fecha límite.</p>
+          </li>
+          <li class="acsl-step reveal">
+            <span class="acsl-step-n" aria-hidden="true">3</span>
+            <h3>Finales globales</h3>
+            <p>Los mejores puntajes de la temporada reciben una invitación a la final en línea del 29 de mayo de 2027.</p>
+          </li>
+        </ol>
 
         <div class="info-grid" style="margin-top:24px">
           <article class="info-block reveal-left">
@@ -257,348 +277,6 @@
       </div>
     </section>
 
-    <section class="alt-bg" id="divisoes">
-      <div class="container">
-        <div class="reveal tc">
-          <div class="section-label">✦ Divisiones</div>
-          <h2 class="section-title">Perfiles de participación en la ACSL</h2>
-          <p class="section-sub" style="margin:0 auto">Cada división tiene un formato y un nivel de desafío específicos, acordes con la madurez académica de los estudiantes.</p>
-        </div>
-
-        <!-- Matriz Comparativa Rápida de las 5 Divisiones -->
-        <div class="acsl-matrix-wrapper reveal" role="region" aria-label="Tabla comparativa de las 5 divisiones de la ACSL">
-          <table class="acsl-matrix-table">
-            <thead>
-              <tr>
-                <th scope="col">División</th>
-                <th scope="col">Escolaridad / Público</th>
-                <th scope="col">Estructura</th>
-                <th scope="col">Teoría (Preguntas)</th>
-                <th scope="col">Programación</th>
-                <th scope="col">Lenguajes</th>
-                <th scope="col">Duración</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <span class="acsl-matrix-div-name">✏️ Elemental (Elementary)</span>
-                </td>
-                <td>3.º a 6.º grado</td>
-                <td><span class="acsl-matrix-badge acsl-matrix-badge-green">100% Teórica</span></td>
-                <td>6 preguntas cortas (1 tema por etapa)</td>
-                <td><small style="color:var(--text-muted)">Sin programación</small></td>
-                <td><em>Ninguno</em></td>
-                <td><strong>30 min</strong></td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="acsl-matrix-div-name">🏫 Aula (Classroom)</span>
-                </td>
-                <td>Todos los grados (ideal para AP CS Principles)</td>
-                <td><span class="acsl-matrix-badge acsl-matrix-badge-green">100% Teórica</span></td>
-                <td>10 preguntas (temas combinados)</td>
-                <td><small style="color:var(--text-muted)">Sin programación</small></td>
-                <td><em>Ninguno</em></td>
-                <td><strong>50 min</strong></td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="acsl-matrix-div-name">⚡ Júnior (Junior)</span>
-                </td>
-                <td>Hasta 9.º grado (máx. 9.º grado)</td>
-                <td><span class="acsl-matrix-badge acsl-matrix-badge-blue">Teoría + Código</span></td>
-                <td>5 preguntas conceptuales</td>
-                <td>1 problema en HackerRank</td>
-                <td>
-                  <div class="acsl-matrix-langs">
-                    <span class="acsl-matrix-lang-tag">Python</span>
-                    <span class="acsl-matrix-lang-tag">C++</span>
-                    <span class="acsl-matrix-lang-tag">Java</span>
-                  </div>
-                </td>
-                <td><strong>30m teo + 72h code</strong></td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="acsl-matrix-div-name">🔬 Intermedia (Intermediate)</span>
-                </td>
-                <td>Secundaria (poca exp.) e intermedia avanzada</td>
-                <td><span class="acsl-matrix-badge acsl-matrix-badge-purple">Teoría + Código</span></td>
-                <td>5 preguntas conceptuales</td>
-                <td>1 problema en HackerRank</td>
-                <td>
-                  <div class="acsl-matrix-langs">
-                    <span class="acsl-matrix-lang-tag">Python</span>
-                    <span class="acsl-matrix-lang-tag">C++</span>
-                    <span class="acsl-matrix-lang-tag">Java</span>
-                  </div>
-                </td>
-                <td><strong>30m teo + 72h code</strong></td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="acsl-matrix-div-name">🏆 Sénior (Senior)</span>
-                </td>
-                <td>Secundaria con exp. en programación (AP CS)</td>
-                <td><span class="acsl-matrix-badge acsl-matrix-badge-red">Teoría Avanzada + Código</span></td>
-                <td>5 preguntas complejas</td>
-                <td>1 problema algorítmico avanzado</td>
-                <td>
-                  <div class="acsl-matrix-langs">
-                    <span class="acsl-matrix-lang-tag">Python</span>
-                    <span class="acsl-matrix-lang-tag">C++</span>
-                    <span class="acsl-matrix-lang-tag">Java</span>
-                  </div>
-                </td>
-                <td><strong>30m teo + 72h code</strong></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="acsl-matrix-scroll-hint">← Deslice lateralmente para comparar todas las columnas →</div>
-
-        <div class="cards-grid acsl-division-grid">
-          <article class="feature-card reveal">
-            <h3 class="card-title">✏️ División Elemental</h3>
-            <p class="card-text"><strong>Para quién:</strong> estudiantes de escuela primaria y secundaria básica de 3.º a 6.º grado.</p>
-            <ul class="acsl-list">
-              <li><strong>Formato:</strong> prueba en línea de 30 minutos con 6 preguntas teóricas (sin programación), enfocada en un tema por etapa.</li>
-              <li><strong>Etapa 1:</strong> Sistemas Numéricos Computacionales - <a class="acsl-link" href="http://datafiles.acsl.org/samples/contest1/1elementary.pdf" target="_blank" rel="noopener noreferrer">Ejemplo</a></li>
-              <li><strong>Etapa 2:</strong> Notación Prefija/Postfija/Infija - <a class="acsl-link" href="http://datafiles.acsl.org/samples/contest2/2elementary.pdf" target="_blank" rel="noopener noreferrer">Ejemplo</a></li>
-              <li><strong>Etapa 3:</strong> Álgebra Booleana - <a class="acsl-link" href="http://datafiles.acsl.org/samples/contest3/3elementary.pdf" target="_blank" rel="noopener noreferrer">Ejemplo</a></li>
-              <li><strong>Etapa 4:</strong> Teoría de Grafos - <a class="acsl-link" href="http://datafiles.acsl.org/samples/contest4/4elementary.pdf" target="_blank" rel="noopener noreferrer">Ejemplo</a></li>
-            </ul>
-          </article>
-
-          <article class="feature-card reveal">
-            <h3 class="card-title">🏫 División de Aula (Classroom)</h3>
-            <p class="card-text"><strong>Para quién:</strong> abierta a estudiantes de todos los grados. Ideal para estudiantes que cursan AP Computer Science Principles y otras clases de ciencias de la computación sin un componente principal de programación.</p>
-            <ul class="acsl-list">
-              <li><strong>Formato:</strong> prueba en línea de 50 minutos con 10 preguntas teóricas (sin programación).</li>
-              <li><strong>Etapa 1:</strong>
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Computer_Number_Systems" target="_blank" rel="noopener noreferrer">Computer Number Systems</a>,
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Recursive_Functions" target="_blank" rel="noopener noreferrer">Recursive Functions</a> y
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=What_Does_This_Program_Do%3F" target="_blank" rel="noopener noreferrer">What Does This Program Do?</a>
-                <div class="acsl-sample-row">
-                  <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest1/1classroom.pdf" target="_blank" rel="noopener noreferrer">📄 Ejemplo Etapa #1</a>
-                </div>
-              </li>
-              <li><strong>Etapa 2:</strong>
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Prefix/Infix/Postfix_Notation" target="_blank" rel="noopener noreferrer">Prefix/Infix/Postfix Notation</a>,
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Bit-String_Flicking" target="_blank" rel="noopener noreferrer">Bit-String Flicking</a> y
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=LISP" target="_blank" rel="noopener noreferrer">LISP</a>
-                <div class="acsl-sample-row">
-                  <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest2/2classroom.pdf" target="_blank" rel="noopener noreferrer">📄 Ejemplo Etapa #2</a>
-                </div>
-              </li>
-              <li><strong>Etapa 3:</strong>
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Boolean_Algebra" target="_blank" rel="noopener noreferrer">Boolean Algebra</a>,
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=FSAs_and_Regular_Expressions" target="_blank" rel="noopener noreferrer">FSAs and Regular Expressions</a> y
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Data_Structures" target="_blank" rel="noopener noreferrer">Data Structures</a>
-                <div class="acsl-sample-row">
-                  <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest3/3classroom.pdf" target="_blank" rel="noopener noreferrer">📄 Ejemplo Etapa #3</a>
-                </div>
-              </li>
-              <li><strong>Etapa 4:</strong>
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Graph_Theory" target="_blank" rel="noopener noreferrer">Graph Theory</a>,
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Digital_Electronics" target="_blank" rel="noopener noreferrer">Digital Electronics</a> y
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Assembly_Language_Programming" target="_blank" rel="noopener noreferrer">Assembly Language</a>
-                <div class="acsl-sample-row">
-                  <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest4/4classroom.pdf" target="_blank" rel="noopener noreferrer">📄 Ejemplo Etapa #4</a>
-                </div>
-              </li>
-            </ul>
-          </article>
-
-          <article class="feature-card reveal">
-            <h3 class="card-title">💻 División Junior</h3>
-            <p class="card-text"><strong>Para quién:</strong> ideal para estudiantes de escuela intermedia / secundaria básica que están aprendiendo programación o que tienen experiencia programando. <em>Ningún estudiante más allá del 9.º grado puede competir en la División Junior.</em></p>
-            <ul class="acsl-list">
-              <li><strong>Formato:</strong> prueba teórica de 30 minutos (6 preguntas) + 1 problema de programación para resolver en línea en un plazo de hasta 72 horas.</li>
-              <li><strong>Etapa 1:</strong>
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Computer_Number_Systems" target="_blank" rel="noopener noreferrer">Computer Number Systems</a>,
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Recursive_Functions" target="_blank" rel="noopener noreferrer">Recursive Functions</a> y
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=What_Does_This_Program_Do%3F" target="_blank" rel="noopener noreferrer">What Does This Program Do?</a> (Branching)
-                <div class="acsl-sample-row">
-                  <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest1/1junior.pdf" target="_blank" rel="noopener noreferrer">📄 Problemas Cortos</a>
-                  <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest1/C_1_JR_Transform.pdf" target="_blank" rel="noopener noreferrer">💻 Problema de Programación</a>
-                </div>
-              </li>
-              <li><strong>Etapa 2:</strong>
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Prefix/Infix/Postfix_Notation" target="_blank" rel="noopener noreferrer">Prefix/Infix/Postfix Notation</a>,
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Bit-String_Flicking" target="_blank" rel="noopener noreferrer">Bit-String Flicking</a> y
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=LISP" target="_blank" rel="noopener noreferrer">LISP</a>
-                <div class="acsl-sample-row">
-                  <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest2/2junior.pdf" target="_blank" rel="noopener noreferrer">📄 Problemas Cortos</a>
-                  <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest2/c2-jr-prog.pdf" target="_blank" rel="noopener noreferrer">💻 Problema de Programación</a>
-                </div>
-              </li>
-              <li><strong>Etapa 3:</strong>
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Boolean_Algebra" target="_blank" rel="noopener noreferrer">Boolean Algebra</a>,
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=FSAs_and_Regular_Expressions" target="_blank" rel="noopener noreferrer">FSAs and Regular Expressions</a> y
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Data_Structures" target="_blank" rel="noopener noreferrer">Data Structures</a>
-                <div class="acsl-sample-row">
-                  <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest3/3junior.pdf" target="_blank" rel="noopener noreferrer">📄 Problemas Cortos</a>
-                  <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest3/abc_3_jr.pdf" target="_blank" rel="noopener noreferrer">💻 Problema de Programación</a>
-                </div>
-              </li>
-              <li><strong>Etapa 4:</strong>
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Graph_Theory" target="_blank" rel="noopener noreferrer">Graph Theory</a>,
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Digital_Electronics" target="_blank" rel="noopener noreferrer">Digital Electronics</a> y
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Assembly_Language_Programming" target="_blank" rel="noopener noreferrer">Assembly Language</a>
-                <div class="acsl-sample-row">
-                  <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest4/4junior.pdf" target="_blank" rel="noopener noreferrer">📄 Problemas Cortos</a>
-                  <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest4/c_4_duplicates_jr.pdf" target="_blank" rel="noopener noreferrer">💻 Problema de Programación</a>
-                </div>
-              </li>
-            </ul>
-          </article>
-
-          <article class="feature-card reveal">
-            <h3 class="card-title">📈 División Intermedia</h3>
-            <p class="card-text"><strong>Para quién:</strong> ideal para estudiantes de educación media con poca o ninguna experiencia en programación y para estudiantes avanzados de escuela intermedia.</p>
-            <ul class="acsl-list">
-              <li><strong>Formato:</strong> prueba teórica de 30 minutos (6 preguntas cortas: dos preguntas de cada uno de los 3 temas) + 1 problema de programación para resolver en línea en un plazo de hasta 72 horas en HackerRank.</li>
-              <li>Los temas de los problemas cortos son los mismos de la División Senior. Los problemas de la División Senior son más desafiantes que los de la División Intermedia. Cada etapa tiene 6 problemas: dos problemas de cada uno de los 3 temas.</li>
-              <li><strong>Etapa 1:</strong>
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Computer_Number_Systems" target="_blank" rel="noopener noreferrer">Computer Number Systems</a>,
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Recursive_Functions" target="_blank" rel="noopener noreferrer">Recursive Functions</a> y
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=What_Does_This_Program_Do%3F" target="_blank" rel="noopener noreferrer">What Does This Program Do?</a>
-                <div class="acsl-sample-row">
-                  <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest1/1intermediate.pdf" target="_blank" rel="noopener noreferrer">📄 Problemas Cortos</a>
-                  <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest1/C_1_INT_Transform.pdf" target="_blank" rel="noopener noreferrer">💻 Problema de Programación</a>
-                </div>
-              </li>
-              <li><strong>Etapa 2:</strong>
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Prefix/Infix/Postfix_Notation" target="_blank" rel="noopener noreferrer">Prefix/Infix/Postfix Notation</a>,
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Bit-String_Flicking" target="_blank" rel="noopener noreferrer">Bit-String Flicking</a> y
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=LISP" target="_blank" rel="noopener noreferrer">LISP</a>
-                <div class="acsl-sample-row">
-                  <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest2/2intermediate.pdf" target="_blank" rel="noopener noreferrer">📄 Problemas Cortos</a>
-                  <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest2/c2-int-prog.pdf" target="_blank" rel="noopener noreferrer">💻 Problema de Programación</a>
-                </div>
-              </li>
-              <li><strong>Etapa 3:</strong>
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Boolean_Algebra" target="_blank" rel="noopener noreferrer">Boolean Algebra</a>,
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Data_Structures" target="_blank" rel="noopener noreferrer">Data Structures</a> y
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=FSAs_and_Regular_Expressions" target="_blank" rel="noopener noreferrer">FSAs and Regular Expressions</a>
-                <div class="acsl-sample-row">
-                  <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest3/3intermediate.pdf" target="_blank" rel="noopener noreferrer">📄 Problemas Cortos</a>
-                  <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest3/abc_3_int.pdf" target="_blank" rel="noopener noreferrer">💻 Problema de Programación</a>
-                </div>
-              </li>
-              <li><strong>Etapa 4:</strong>
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Graph_Theory" target="_blank" rel="noopener noreferrer">Graph Theory</a>,
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Digital_Electronics" target="_blank" rel="noopener noreferrer">Digital Electronics</a> y
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Assembly_Language_Programming" target="_blank" rel="noopener noreferrer">Assembly Language</a>
-                <div class="acsl-sample-row">
-                  <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest4/4intermediate.pdf" target="_blank" rel="noopener noreferrer">📄 Problemas Cortos</a>
-                  <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest4/c_4_duplicates_int.pdf" target="_blank" rel="noopener noreferrer">💻 Problema de Programación</a>
-                </div>
-              </li>
-            </ul>
-          </article>
-
-          <article class="feature-card reveal">
-            <h3 class="card-title">🥇 División Senior</h3>
-            <p class="card-text"><strong>Para quién:</strong> ideal para estudiantes de educación media con experiencia en programación, especialmente aquellos que cursan AP Computer Science.</p>
-            <ul class="acsl-list">
-              <li><strong>Formato:</strong> prueba teórica de 30 minutos (6 preguntas cortas: dos preguntas de cada uno de los 3 temas) + 1 problema algorítmico avanzado en línea en HackerRank (hasta 72 horas).</li>
-              <li>Los temas de problemas cortos son los mismos que en la División Intermedia, pero los problemas son significativamente más desafiantes. Cada etapa tiene 6 problemas: dos problemas de cada uno de los 3 temas.</li>
-              <li><strong>Etapa 1:</strong>
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Computer_Number_Systems" target="_blank" rel="noopener noreferrer">Computer Number Systems</a>,
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Recursive_Functions" target="_blank" rel="noopener noreferrer">Recursive Functions</a> y
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=What_Does_This_Program_Do%3F" target="_blank" rel="noopener noreferrer">What Does This Program Do?</a>
-              </li>
-              <li><strong>Etapa 2:</strong>
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Prefix/Infix/Postfix_Notation" target="_blank" rel="noopener noreferrer">Prefix/Infix/Postfix Notation</a>,
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Bit-String_Flicking" target="_blank" rel="noopener noreferrer">Bit-String Flicking</a> y
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=LISP" target="_blank" rel="noopener noreferrer">LISP</a>
-              </li>
-              <li><strong>Etapa 3:</strong>
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Boolean_Algebra" target="_blank" rel="noopener noreferrer">Boolean Algebra</a>,
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Data_Structures" target="_blank" rel="noopener noreferrer">Data Structures</a> y
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=FSAs_and_Regular_Expressions" target="_blank" rel="noopener noreferrer">FSAs and Regular Expressions</a>
-              </li>
-              <li><strong>Etapa 4:</strong>
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Graph_Theory" target="_blank" rel="noopener noreferrer">Graph Theory</a>,
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Digital_Electronics" target="_blank" rel="noopener noreferrer">Digital Electronics</a> y
-                <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Assembly_Language_Programming" target="_blank" rel="noopener noreferrer">Assembly Language</a>
-                <div class="acsl-sample-row">
-                  <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest4/4senior.pdf" target="_blank" rel="noopener noreferrer">📄 Problemas Cortos</a>
-                  <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest4/c_4_duplicates_sr.pdf" target="_blank" rel="noopener noreferrer">💻 Problema de Programación</a>
-                </div>
-              </li>
-            </ul>
-          </article>
-        </div>
-
-        <div class="info-grid" style="margin-top:22px">
-          <article class="info-block reveal-left">
-            <h3>📘 Nota sobre AP (Advanced Placement)</h3>
-            <ul class="acsl-list">
-              <li>Programa común en EE. UU. y Canadá, con cursos de nivel universitario para estudiantes de educación media.</li>
-              <li><strong>Nivel avanzado:</strong> clases más difíciles y profundas que las del currículo regular.</li>
-              <li><strong>Examen final:</strong> al terminar el curso, el estudiante puede presentar un examen estandarizado.</li>
-              <li><strong>Créditos universitarios:</strong> las calificaciones altas pueden permitir convalidar materias introductorias en la universidad.</li>
-            </ul>
-          </article>
-
-          <article class="info-block reveal-right">
-            <h3>📌 Resumen técnico de las divisiones con programación</h3>
-            <ul class="acsl-list">
-              <li>Junior, Intermedia y Senior tienen prueba teórica + programación.</li>
-              <li>El problema de programación se resuelve en línea en HackerRank.</li>
-              <li>Plazo habitual para la programación: hasta 72 horas después de su publicación.</li>
-              <li>Cada competencia de las divisiones Intermedia/Senior tiene 6 problemas cortos (2 por tema).</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="regras">
-      <div class="container">
-        <div class="reveal tc">
-          <div class="section-label">✦ Integridad Académica</div>
-          <h2 class="section-title">Reglas de conducta y honestidad</h2>
-          <p class="section-sub" style="margin:0 auto">La ACSL exige una competencia individual justa en todas las etapas.</p>
-        </div>
-
-        <div class="info-grid" style="margin-top:24px">
-          <article class="info-block reveal-left">
-            <h3>✅ Materiales permitidos (y prohibidos)</h3>
-            <ul class="acsl-list">
-              <li><strong>Lo que SÍ puedes usar:</strong> papel, lápiz o bolígrafo.</li>
-              <li><strong>Lo que NO puedes usar:</strong> calculadoras.</li>
-              <li><strong>Durante la prueba:</strong> está prohibido buscar en internet o recibir ayuda de otra persona.</li>
-            </ul>
-          </article>
-
-          <article class="info-block reveal-right">
-            <h3>🤝 Colaboración: antes, durante y después</h3>
-            <ul class="acsl-list">
-              <li><strong>Durante la prueba:</strong> está prohibido colaborar. La resolución debe ser individual.</li>
-              <li><strong>Después de la prueba:</strong> se recomienda revisar en equipo, aprender de los errores y comparar soluciones.</li>
-              <li>El trabajo colaborativo después de la prueba ayuda a construir soluciones más completas.</li>
-            </ul>
-          </article>
-        </div>
-
-        <article class="info-block reveal" style="margin-top:22px">
-          <h3>✍️ Declaración de honestidad de HackerRank</h3>
-          <p class="acsl-quote">"No consultaré ni copiaré código de ninguna fuente, incluidos sitios web, libros o amigos/compañeros, para completar estas pruebas. Sin embargo, puedo consultar la documentación oficial del lenguaje de programación o usar un IDE con funciones de autocompletado."</p>
-          <h3 style="margin-top:14px">⚠️ Consecuencias del plagio</h3>
-          <ul class="acsl-list">
-            <li>HackerRank cuenta con algoritmos sofisticados para detectar plagio en el código enviado.</li>
-            <li><strong>Primera infracción:</strong> puntaje 0 (cero) en la pregunta señalada.</li>
-            <li><strong>Segunda infracción:</strong> descalificación inmediata de la participación en las finales.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
     <section class="alt-bg" id="cronograma">
       <div class="container">
         <div class="reveal tc">
@@ -607,8 +285,17 @@
           <p class="section-sub" style="margin:0 auto">La temporada regular de la ACSL opera por ventanas de prueba en HackerRank. Consulta los períodos y las fechas límite de envío.</p>
         </div>
 
-        <div class="acsl-time-grid">
-          <article class="acsl-time-card reveal">
+        <div class="acsl-deadline-banner reveal">
+          <div class="acsl-deadline-date" aria-hidden="true"><span class="d">20</span><span class="m">dic</span></div>
+          <div class="acsl-deadline-text">
+            <strong>Fecha límite de inscripción (Temporada 2026-2027): 20 de diciembre de 2026.</strong>
+            <span>La inscripción en Brasil se realiza directamente a través del Clube Amplexo Educação. Los estudiantes matriculados en el Clube Amplexo cuentan con descuento especial.</span>
+          </div>
+          <a href="https://forms.gle/ysVEQc1TwdxP4QbE8" target="_blank" rel="noopener noreferrer" class="btn">Inscribirse</a>
+        </div>
+
+        <div class="acsl-time-grid acsl-timeline">
+          <article class="acsl-time-card is-current reveal">
             <div class="acsl-time-card-header">
               <span class="acsl-time-tag">Etapa 1</span>
               <span class="acsl-time-tag-pulse" title="Ventana de prueba activa"><span class="acsl-pulse-dot"></span> <small style="font-size:0.75rem;font-weight:700;color:#10b981">Disponible</small></span>
@@ -646,49 +333,469 @@
           </article>
         </div>
 
-        <div class="info-grid acsl-extra-grid">
+        <div class="acsl-awards">
           <article class="info-block reveal-left">
-            <h3>🗓️ Plazos y observaciones</h3>
-            <ul class="acsl-list">
-              <li><strong>Fecha límite de inscripción (Temporada 2026-2027):</strong> 20 de diciembre de 2026.</li>
-              <li>La inscripción en Brasil se realiza directamente a través del Clube Amplexo Educação.</li>
-              <li>Los estudiantes matriculados en el Clube Amplexo cuentan con descuento especial.</li>
-            </ul>
-          </article>
-
-          <article class="info-block reveal-right">
             <h3>🏅 Premios nacionales (Brasil) - Individual</h3>
-            <ul class="acsl-list">
-              <li>Clasificación individual definida por el percentil de desempeño en el ranking general.</li>
-              <li><strong>Oro:</strong> entre el 95% y el 100% del ranking.</li>
-              <li><strong>Plata:</strong> entre el 85% y el 95% del ranking.</li>
-              <li><strong>Bronce:</strong> entre el 70% y el 80% del ranking.</li>
-              <li><strong>Mención Honorífica:</strong> entre el 50% y el 70% del ranking.</li>
-            </ul>
+            <p>Clasificación individual definida por el percentil de desempeño en el ranking general.</p>
+            <div class="acsl-medals">
+              <div class="acsl-medal gold"><span class="acsl-medal-name">Oro</span><span class="acsl-medal-range">Entre el 95% y el 100% del ranking</span></div>
+              <div class="acsl-medal silver"><span class="acsl-medal-name">Plata</span><span class="acsl-medal-range">Entre el 85% y el 95% del ranking</span></div>
+              <div class="acsl-medal bronze"><span class="acsl-medal-name">Bronce</span><span class="acsl-medal-range">Entre el 70% y el 80% del ranking</span></div>
+              <div class="acsl-medal honor"><span class="acsl-medal-name">Mención Honorífica</span><span class="acsl-medal-range">Entre el 50% y el 70% del ranking</span></div>
+            </div>
+          </article>
+
+          <article class="info-block reveal-right">
+            <h3>🥇 Premiación por equipo (Brasil)</h3>
+            <p>Los tres equipos mejor ubicados en el ranking brasileño.</p>
+            <div class="acsl-medals acsl-medals-3">
+              <div class="acsl-medal gold"><span class="acsl-medal-name">Oro</span><span class="acsl-medal-range">1.er equipo del ranking</span></div>
+              <div class="acsl-medal silver"><span class="acsl-medal-name">Plata</span><span class="acsl-medal-range">2.º equipo del ranking</span></div>
+              <div class="acsl-medal bronze"><span class="acsl-medal-name">Bronce</span><span class="acsl-medal-range">3.er equipo del ranking</span></div>
+            </div>
+            <p class="acsl-note">Los certificados son gratuitos, pero las medallas pueden ser solicitadas por las familias.</p>
           </article>
         </div>
+      </div>
+    </section>
 
-        <div class="info-grid" style="margin-top:18px">
+    <section id="divisoes">
+      <div class="container">
+        <div class="reveal tc">
+          <div class="section-label">✦ Divisiones</div>
+          <h2 class="section-title">Perfiles de participación en la ACSL</h2>
+          <p class="section-sub" style="margin:0 auto">Cada división tiene un formato y un nivel de desafío específicos, acordes con la madurez académica de los estudiantes.</p>
+        </div>
+
+        <!-- Matriz Comparativa Rápida de las 5 Divisiones -->
+        <div class="acsl-matrix-wrapper reveal" role="region" aria-label="Tabla comparativa de las 5 divisiones de la ACSL">
+          <table class="acsl-matrix-table">
+            <thead>
+              <tr>
+                <th scope="col">División</th>
+                <th scope="col">Escolaridad / Público</th>
+                <th scope="col">Estructura</th>
+                <th scope="col">Teoría (Preguntas)</th>
+                <th scope="col">Programación</th>
+                <th scope="col">Lenguajes</th>
+                <th scope="col">Duración</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="División"><span class="acsl-matrix-div-name">✏️ Elemental (Elementary)</span></td>
+                <td data-label="Público">3.º a 6.º grado</td>
+                <td data-label="Estructura"><span class="acsl-matrix-badge acsl-matrix-badge-green">100% Teórica</span></td>
+                <td data-label="Teoría">6 preguntas cortas (1 tema por etapa)</td>
+                <td data-label="Programación"><small style="color:var(--text-muted)">Sin programación</small></td>
+                <td data-label="Lenguajes"><em>Ninguno</em></td>
+                <td data-label="Duración"><strong>30 min</strong></td>
+              </tr>
+              <tr>
+                <td data-label="División"><span class="acsl-matrix-div-name">🏫 Aula (Classroom)</span></td>
+                <td data-label="Público">Todos los grados (ideal para AP CS Principles)</td>
+                <td data-label="Estructura"><span class="acsl-matrix-badge acsl-matrix-badge-green">100% Teórica</span></td>
+                <td data-label="Teoría">10 preguntas (temas combinados)</td>
+                <td data-label="Programación"><small style="color:var(--text-muted)">Sin programación</small></td>
+                <td data-label="Lenguajes"><em>Ninguno</em></td>
+                <td data-label="Duración"><strong>50 min</strong></td>
+              </tr>
+              <tr>
+                <td data-label="División"><span class="acsl-matrix-div-name">⚡ Júnior (Junior)</span></td>
+                <td data-label="Público">Hasta 9.º grado (máx. 9.º grado)</td>
+                <td data-label="Estructura"><span class="acsl-matrix-badge acsl-matrix-badge-blue">Teoría + Código</span></td>
+                <td data-label="Teoría">5 preguntas conceptuales</td>
+                <td data-label="Programación">1 problema en HackerRank</td>
+                <td data-label="Lenguajes">
+                  <div class="acsl-matrix-langs">
+                    <span class="acsl-matrix-lang-tag">Python</span>
+                    <span class="acsl-matrix-lang-tag">C++</span>
+                    <span class="acsl-matrix-lang-tag">Java</span>
+                  </div>
+                </td>
+                <td data-label="Duración"><strong>30m teo + 72h code</strong></td>
+              </tr>
+              <tr>
+                <td data-label="División"><span class="acsl-matrix-div-name">🔬 Intermedia (Intermediate)</span></td>
+                <td data-label="Público">Secundaria (poca exp.) e intermedia avanzada</td>
+                <td data-label="Estructura"><span class="acsl-matrix-badge acsl-matrix-badge-purple">Teoría + Código</span></td>
+                <td data-label="Teoría">5 preguntas conceptuales</td>
+                <td data-label="Programación">1 problema en HackerRank</td>
+                <td data-label="Lenguajes">
+                  <div class="acsl-matrix-langs">
+                    <span class="acsl-matrix-lang-tag">Python</span>
+                    <span class="acsl-matrix-lang-tag">C++</span>
+                    <span class="acsl-matrix-lang-tag">Java</span>
+                  </div>
+                </td>
+                <td data-label="Duración"><strong>30m teo + 72h code</strong></td>
+              </tr>
+              <tr>
+                <td data-label="División"><span class="acsl-matrix-div-name">🏆 Sénior (Senior)</span></td>
+                <td data-label="Público">Secundaria con exp. en programación (AP CS)</td>
+                <td data-label="Estructura"><span class="acsl-matrix-badge acsl-matrix-badge-red">Teoría Avanzada + Código</span></td>
+                <td data-label="Teoría">5 preguntas complejas</td>
+                <td data-label="Programación">1 problema algorítmico avanzado</td>
+                <td data-label="Lenguajes">
+                  <div class="acsl-matrix-langs">
+                    <span class="acsl-matrix-lang-tag">Python</span>
+                    <span class="acsl-matrix-lang-tag">C++</span>
+                    <span class="acsl-matrix-lang-tag">Java</span>
+                  </div>
+                </td>
+                <td data-label="Duración"><strong>30m teo + 72h code</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="acsl-div-hint reveal">Toca una división para ver los temas de cada etapa y las pruebas de ejemplo.</p>
+
+        <div class="acsl-div-list">
+          <details class="acsl-div reveal">
+            <summary>
+              <span class="acsl-div-icon" aria-hidden="true">✏️</span>
+              <span class="acsl-div-head">
+                <span class="acsl-div-name">División Elemental</span>
+                <span class="acsl-div-meta"><span class="acsl-pill acsl-pill-green">Sin programación</span> 3.º a 6.º grado · 30 min · 6 preguntas</span>
+              </span>
+              <span class="acsl-div-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="acsl-div-body">
+              <p><strong>Para quién:</strong> estudiantes de escuela primaria y secundaria básica de 3.º a 6.º grado.</p>
+              <p><strong>Formato:</strong> prueba en línea de 30 minutos con 6 preguntas teóricas (sin programación), enfocada en un tema por etapa.</p>
+              <div class="acsl-stage-grid">
+                <div class="acsl-stage">
+                  <span class="acsl-stage-num">Etapa 1</span>
+                  <p>Sistemas Numéricos Computacionales</p>
+                  <div class="acsl-sample-row"><a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest1/1elementary.pdf" target="_blank" rel="noopener noreferrer">📄 Ejemplo</a></div>
+                </div>
+                <div class="acsl-stage">
+                  <span class="acsl-stage-num">Etapa 2</span>
+                  <p>Notación Prefija/Postfija/Infija</p>
+                  <div class="acsl-sample-row"><a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest2/2elementary.pdf" target="_blank" rel="noopener noreferrer">📄 Ejemplo</a></div>
+                </div>
+                <div class="acsl-stage">
+                  <span class="acsl-stage-num">Etapa 3</span>
+                  <p>Álgebra Booleana</p>
+                  <div class="acsl-sample-row"><a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest3/3elementary.pdf" target="_blank" rel="noopener noreferrer">📄 Ejemplo</a></div>
+                </div>
+                <div class="acsl-stage">
+                  <span class="acsl-stage-num">Etapa 4</span>
+                  <p>Teoría de Grafos</p>
+                  <div class="acsl-sample-row"><a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest4/4elementary.pdf" target="_blank" rel="noopener noreferrer">📄 Ejemplo</a></div>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <details class="acsl-div reveal">
+            <summary>
+              <span class="acsl-div-icon" aria-hidden="true">🏫</span>
+              <span class="acsl-div-head">
+                <span class="acsl-div-name">División de Aula <small>(Classroom)</small></span>
+                <span class="acsl-div-meta"><span class="acsl-pill acsl-pill-green">Sin programación</span> Todos los grados · 50 min · 10 preguntas</span>
+              </span>
+              <span class="acsl-div-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="acsl-div-body">
+              <p><strong>Para quién:</strong> abierta a estudiantes de todos los grados. Ideal para estudiantes que cursan AP Computer Science Principles y otras clases de ciencias de la computación sin un componente principal de programación.</p>
+              <p><strong>Formato:</strong> prueba en línea de 50 minutos con 10 preguntas teóricas (sin programación).</p>
+              <div class="acsl-stage-grid">
+                <div class="acsl-stage">
+                  <span class="acsl-stage-num">Etapa 1</span>
+                  <p>
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Computer_Number_Systems" target="_blank" rel="noopener noreferrer">Computer Number Systems</a>,
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Recursive_Functions" target="_blank" rel="noopener noreferrer">Recursive Functions</a> y
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=What_Does_This_Program_Do%3F" target="_blank" rel="noopener noreferrer">What Does This Program Do?</a>
+                  </p>
+                  <div class="acsl-sample-row">
+                    <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest1/1classroom.pdf" target="_blank" rel="noopener noreferrer">📄 Ejemplo Etapa #1</a>
+                  </div>
+                </div>
+                <div class="acsl-stage">
+                  <span class="acsl-stage-num">Etapa 2</span>
+                  <p>
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Prefix/Infix/Postfix_Notation" target="_blank" rel="noopener noreferrer">Prefix/Infix/Postfix Notation</a>,
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Bit-String_Flicking" target="_blank" rel="noopener noreferrer">Bit-String Flicking</a> y
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=LISP" target="_blank" rel="noopener noreferrer">LISP</a>
+                  </p>
+                  <div class="acsl-sample-row">
+                    <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest2/2classroom.pdf" target="_blank" rel="noopener noreferrer">📄 Ejemplo Etapa #2</a>
+                  </div>
+                </div>
+                <div class="acsl-stage">
+                  <span class="acsl-stage-num">Etapa 3</span>
+                  <p>
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Boolean_Algebra" target="_blank" rel="noopener noreferrer">Boolean Algebra</a>,
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=FSAs_and_Regular_Expressions" target="_blank" rel="noopener noreferrer">FSAs and Regular Expressions</a> y
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Data_Structures" target="_blank" rel="noopener noreferrer">Data Structures</a>
+                  </p>
+                  <div class="acsl-sample-row">
+                    <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest3/3classroom.pdf" target="_blank" rel="noopener noreferrer">📄 Ejemplo Etapa #3</a>
+                  </div>
+                </div>
+                <div class="acsl-stage">
+                  <span class="acsl-stage-num">Etapa 4</span>
+                  <p>
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Graph_Theory" target="_blank" rel="noopener noreferrer">Graph Theory</a>,
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Digital_Electronics" target="_blank" rel="noopener noreferrer">Digital Electronics</a> y
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Assembly_Language_Programming" target="_blank" rel="noopener noreferrer">Assembly Language</a>
+                  </p>
+                  <div class="acsl-sample-row">
+                    <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest4/4classroom.pdf" target="_blank" rel="noopener noreferrer">📄 Ejemplo Etapa #4</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <details class="acsl-div reveal">
+            <summary>
+              <span class="acsl-div-icon" aria-hidden="true">💻</span>
+              <span class="acsl-div-head">
+                <span class="acsl-div-name">División Junior</span>
+                <span class="acsl-div-meta"><span class="acsl-pill acsl-pill-blue">Con programación</span> Hasta 9.º grado · Python • C++ • Java</span>
+              </span>
+              <span class="acsl-div-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="acsl-div-body">
+              <p><strong>Para quién:</strong> ideal para estudiantes de escuela intermedia / secundaria básica que están aprendiendo programación o que tienen experiencia programando. <em>Ningún estudiante más allá del 9.º grado puede competir en la División Junior.</em></p>
+              <p><strong>Formato:</strong> prueba teórica de 30 minutos (6 preguntas) + 1 problema de programación para resolver en línea en un plazo de hasta 72 horas.</p>
+              <div class="acsl-stage-grid">
+                <div class="acsl-stage">
+                  <span class="acsl-stage-num">Etapa 1</span>
+                  <p>
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Computer_Number_Systems" target="_blank" rel="noopener noreferrer">Computer Number Systems</a>,
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Recursive_Functions" target="_blank" rel="noopener noreferrer">Recursive Functions</a> y
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=What_Does_This_Program_Do%3F" target="_blank" rel="noopener noreferrer">What Does This Program Do?</a> (Branching)
+                  </p>
+                  <div class="acsl-sample-row">
+                    <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest1/1junior.pdf" target="_blank" rel="noopener noreferrer">📄 Problemas Cortos</a>
+                    <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest1/C_1_JR_Transform.pdf" target="_blank" rel="noopener noreferrer">💻 Problema de Programación</a>
+                  </div>
+                </div>
+                <div class="acsl-stage">
+                  <span class="acsl-stage-num">Etapa 2</span>
+                  <p>
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Prefix/Infix/Postfix_Notation" target="_blank" rel="noopener noreferrer">Prefix/Infix/Postfix Notation</a>,
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Bit-String_Flicking" target="_blank" rel="noopener noreferrer">Bit-String Flicking</a> y
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=LISP" target="_blank" rel="noopener noreferrer">LISP</a>
+                  </p>
+                  <div class="acsl-sample-row">
+                    <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest2/2junior.pdf" target="_blank" rel="noopener noreferrer">📄 Problemas Cortos</a>
+                    <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest2/c2-jr-prog.pdf" target="_blank" rel="noopener noreferrer">💻 Problema de Programación</a>
+                  </div>
+                </div>
+                <div class="acsl-stage">
+                  <span class="acsl-stage-num">Etapa 3</span>
+                  <p>
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Boolean_Algebra" target="_blank" rel="noopener noreferrer">Boolean Algebra</a>,
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=FSAs_and_Regular_Expressions" target="_blank" rel="noopener noreferrer">FSAs and Regular Expressions</a> y
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Data_Structures" target="_blank" rel="noopener noreferrer">Data Structures</a>
+                  </p>
+                  <div class="acsl-sample-row">
+                    <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest3/3junior.pdf" target="_blank" rel="noopener noreferrer">📄 Problemas Cortos</a>
+                    <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest3/abc_3_jr.pdf" target="_blank" rel="noopener noreferrer">💻 Problema de Programación</a>
+                  </div>
+                </div>
+                <div class="acsl-stage">
+                  <span class="acsl-stage-num">Etapa 4</span>
+                  <p>
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Graph_Theory" target="_blank" rel="noopener noreferrer">Graph Theory</a>,
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Digital_Electronics" target="_blank" rel="noopener noreferrer">Digital Electronics</a> y
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Assembly_Language_Programming" target="_blank" rel="noopener noreferrer">Assembly Language</a>
+                  </p>
+                  <div class="acsl-sample-row">
+                    <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest4/4junior.pdf" target="_blank" rel="noopener noreferrer">📄 Problemas Cortos</a>
+                    <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest4/c_4_duplicates_jr.pdf" target="_blank" rel="noopener noreferrer">💻 Problema de Programación</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <details class="acsl-div reveal">
+            <summary>
+              <span class="acsl-div-icon" aria-hidden="true">📈</span>
+              <span class="acsl-div-head">
+                <span class="acsl-div-name">División Intermedia</span>
+                <span class="acsl-div-meta"><span class="acsl-pill acsl-pill-blue">Con programación</span> Secundaria / Avanzados · Python • C++ • Java</span>
+              </span>
+              <span class="acsl-div-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="acsl-div-body">
+              <p><strong>Para quién:</strong> ideal para estudiantes de educación media con poca o ninguna experiencia en programación y para estudiantes avanzados de escuela intermedia.</p>
+              <p><strong>Formato:</strong> prueba teórica de 30 minutos (6 preguntas cortas: dos preguntas de cada uno de los 3 temas) + 1 problema de programación para resolver en línea en un plazo de hasta 72 horas en HackerRank. Los temas de los problemas cortos son los mismos de la División Senior. Los problemas de la División Senior son más desafiantes que los de la División Intermedia. Cada etapa tiene 6 problemas: dos problemas de cada uno de los 3 temas.</p>
+              <div class="acsl-stage-grid">
+                <div class="acsl-stage">
+                  <span class="acsl-stage-num">Etapa 1</span>
+                  <p>
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Computer_Number_Systems" target="_blank" rel="noopener noreferrer">Computer Number Systems</a>,
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Recursive_Functions" target="_blank" rel="noopener noreferrer">Recursive Functions</a> y
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=What_Does_This_Program_Do%3F" target="_blank" rel="noopener noreferrer">What Does This Program Do?</a>
+                  </p>
+                  <div class="acsl-sample-row">
+                    <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest1/1intermediate.pdf" target="_blank" rel="noopener noreferrer">📄 Problemas Cortos</a>
+                    <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest1/C_1_INT_Transform.pdf" target="_blank" rel="noopener noreferrer">💻 Problema de Programación</a>
+                  </div>
+                </div>
+                <div class="acsl-stage">
+                  <span class="acsl-stage-num">Etapa 2</span>
+                  <p>
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Prefix/Infix/Postfix_Notation" target="_blank" rel="noopener noreferrer">Prefix/Infix/Postfix Notation</a>,
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Bit-String_Flicking" target="_blank" rel="noopener noreferrer">Bit-String Flicking</a> y
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=LISP" target="_blank" rel="noopener noreferrer">LISP</a>
+                  </p>
+                  <div class="acsl-sample-row">
+                    <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest2/2intermediate.pdf" target="_blank" rel="noopener noreferrer">📄 Problemas Cortos</a>
+                    <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest2/c2-int-prog.pdf" target="_blank" rel="noopener noreferrer">💻 Problema de Programación</a>
+                  </div>
+                </div>
+                <div class="acsl-stage">
+                  <span class="acsl-stage-num">Etapa 3</span>
+                  <p>
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Boolean_Algebra" target="_blank" rel="noopener noreferrer">Boolean Algebra</a>,
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Data_Structures" target="_blank" rel="noopener noreferrer">Data Structures</a> y
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=FSAs_and_Regular_Expressions" target="_blank" rel="noopener noreferrer">FSAs and Regular Expressions</a>
+                  </p>
+                  <div class="acsl-sample-row">
+                    <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest3/3intermediate.pdf" target="_blank" rel="noopener noreferrer">📄 Problemas Cortos</a>
+                    <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest3/abc_3_int.pdf" target="_blank" rel="noopener noreferrer">💻 Problema de Programación</a>
+                  </div>
+                </div>
+                <div class="acsl-stage">
+                  <span class="acsl-stage-num">Etapa 4</span>
+                  <p>
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Graph_Theory" target="_blank" rel="noopener noreferrer">Graph Theory</a>,
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Digital_Electronics" target="_blank" rel="noopener noreferrer">Digital Electronics</a> y
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Assembly_Language_Programming" target="_blank" rel="noopener noreferrer">Assembly Language</a>
+                  </p>
+                  <div class="acsl-sample-row">
+                    <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest4/4intermediate.pdf" target="_blank" rel="noopener noreferrer">📄 Problemas Cortos</a>
+                    <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest4/c_4_duplicates_int.pdf" target="_blank" rel="noopener noreferrer">💻 Problema de Programación</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <details class="acsl-div reveal">
+            <summary>
+              <span class="acsl-div-icon" aria-hidden="true">🥇</span>
+              <span class="acsl-div-head">
+                <span class="acsl-div-name">División Senior</span>
+                <span class="acsl-div-meta"><span class="acsl-pill acsl-pill-red">Nivel avanzado</span> Secundaria / AP · Python • C++ • Java</span>
+              </span>
+              <span class="acsl-div-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="acsl-div-body">
+              <p><strong>Para quién:</strong> ideal para estudiantes de educación media con experiencia en programación, especialmente aquellos que cursan AP Computer Science.</p>
+              <p><strong>Formato:</strong> prueba teórica de 30 minutos (6 preguntas cortas: dos preguntas de cada uno de los 3 temas) + 1 problema algorítmico avanzado en línea en HackerRank (hasta 72 horas). Los temas de problemas cortos son los mismos que en la División Intermedia, pero los problemas son significativamente más desafiantes. Cada etapa tiene 6 problemas: dos problemas de cada uno de los 3 temas.</p>
+              <div class="acsl-stage-grid">
+                <div class="acsl-stage">
+                  <span class="acsl-stage-num">Etapa 1</span>
+                  <p>
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Computer_Number_Systems" target="_blank" rel="noopener noreferrer">Computer Number Systems</a>,
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Recursive_Functions" target="_blank" rel="noopener noreferrer">Recursive Functions</a> y
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=What_Does_This_Program_Do%3F" target="_blank" rel="noopener noreferrer">What Does This Program Do?</a>
+                  </p>
+                </div>
+                <div class="acsl-stage">
+                  <span class="acsl-stage-num">Etapa 2</span>
+                  <p>
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Prefix/Infix/Postfix_Notation" target="_blank" rel="noopener noreferrer">Prefix/Infix/Postfix Notation</a>,
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Bit-String_Flicking" target="_blank" rel="noopener noreferrer">Bit-String Flicking</a> y
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=LISP" target="_blank" rel="noopener noreferrer">LISP</a>
+                  </p>
+                </div>
+                <div class="acsl-stage">
+                  <span class="acsl-stage-num">Etapa 3</span>
+                  <p>
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Boolean_Algebra" target="_blank" rel="noopener noreferrer">Boolean Algebra</a>,
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Data_Structures" target="_blank" rel="noopener noreferrer">Data Structures</a> y
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=FSAs_and_Regular_Expressions" target="_blank" rel="noopener noreferrer">FSAs and Regular Expressions</a>
+                  </p>
+                </div>
+                <div class="acsl-stage">
+                  <span class="acsl-stage-num">Etapa 4</span>
+                  <p>
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Graph_Theory" target="_blank" rel="noopener noreferrer">Graph Theory</a>,
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Digital_Electronics" target="_blank" rel="noopener noreferrer">Digital Electronics</a> y
+                    <a class="acsl-link" href="http://www.categories.acsl.org/wiki/index.php?title=Assembly_Language_Programming" target="_blank" rel="noopener noreferrer">Assembly Language</a>
+                  </p>
+                  <div class="acsl-sample-row">
+                    <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest4/4senior.pdf" target="_blank" rel="noopener noreferrer">📄 Problemas Cortos</a>
+                    <a class="acsl-sample-btn" href="http://datafiles.acsl.org/samples/contest4/c_4_duplicates_sr.pdf" target="_blank" rel="noopener noreferrer">💻 Problema de Programación</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <div class="info-grid" style="margin-top:28px">
           <article class="info-block reveal-left">
-            <h3>🥇 Premiación por equipo (Brasil)</h3>
+            <h3>📘 Nota sobre AP (Advanced Placement)</h3>
             <ul class="acsl-list">
-              <li><strong>Oro:</strong> 1.er equipo del ranking brasileño.</li>
-              <li><strong>Plata:</strong> 2.º equipo del ranking.</li>
-              <li><strong>Bronce:</strong> 3.er equipo del ranking.</li>
-              <li>Los certificados son gratuitos, pero las medallas pueden ser solicitadas por las familias.</li>
+              <li>Programa común en EE. UU. y Canadá, con cursos de nivel universitario para estudiantes de educación media.</li>
+              <li><strong>Nivel avanzado:</strong> clases más difíciles y profundas que las del currículo regular.</li>
+              <li><strong>Examen final:</strong> al terminar el curso, el estudiante puede presentar un examen estandarizado.</li>
+              <li><strong>Créditos universitarios:</strong> las calificaciones altas pueden permitir convalidar materias introductorias en la universidad.</li>
             </ul>
           </article>
 
           <article class="info-block reveal-right">
-            <h3>🎟️ Invitaciones e inscripción para las finales</h3>
+            <h3>📌 Resumen técnico de las divisiones con programación</h3>
             <ul class="acsl-list">
-              <li><strong>Criterios de convocatoria:</strong> puntajes acumulados en las 4 etapas (ej.: 28 pts Jr/Int/Sr, 24 pts Aula, 14 pts Elemental).</li>
-              <li><strong>Invitaciones:</strong> correos electrónicos enviados del 1.º al 28 de mayo de 2027.</li>
-              <li><strong>Tarifa de participación en la final:</strong> US$ 35 por estudiante invitado (tarifa oficial de la ACSL).</li>
-              <li>El correo de invitación incluye el enlace de pago y el acceso a la prueba en línea en HackerRank.</li>
+              <li>Junior, Intermedia y Senior tienen prueba teórica + programación.</li>
+              <li>El problema de programación se resuelve en línea en HackerRank.</li>
+              <li>Plazo habitual para la programación: hasta 72 horas después de su publicación.</li>
+              <li>Cada competencia de las divisiones Intermedia/Senior tiene 6 problemas cortos (2 por tema).</li>
             </ul>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section class="alt-bg" id="regras">
+      <div class="container">
+        <div class="reveal tc">
+          <div class="section-label">✦ Integridad Académica</div>
+          <h2 class="section-title">Reglas de conducta y honestidad</h2>
+          <p class="section-sub" style="margin:0 auto">La ACSL exige una competencia individual justa en todas las etapas.</p>
+        </div>
+
+        <div class="acsl-rules-grid">
+          <article class="acsl-rule-card acsl-rule-yes reveal-left">
+            <h3><span class="acsl-rule-badge" aria-hidden="true">✓</span> Lo que está permitido</h3>
+            <ul>
+              <li>Papel, lápiz o bolígrafo.</li>
+              <li>En la programación: la documentación oficial del lenguaje y un IDE con funciones de autocompletado.</li>
+              <li><strong>Después de la prueba:</strong> revisar en equipo, aprender de los errores y comparar soluciones. El trabajo colaborativo después de la prueba ayuda a construir soluciones más completas.</li>
+            </ul>
+          </article>
+
+          <article class="acsl-rule-card acsl-rule-no reveal-right">
+            <h3><span class="acsl-rule-badge" aria-hidden="true">✕</span> Lo que no está permitido</h3>
+            <ul>
+              <li>Calculadoras.</li>
+              <li><strong>Durante la prueba:</strong> buscar en internet, colaborar o recibir ayuda de otra persona. La resolución debe ser individual.</li>
+              <li>Consultar o copiar código de cualquier fuente, incluidos sitios web, libros o amigos/compañeros.</li>
+            </ul>
+          </article>
+        </div>
+
+        <article class="info-block acsl-honesty reveal">
+          <h3>✍️ Declaración de honestidad de HackerRank</h3>
+          <p class="acsl-quote">"No consultaré ni copiaré código de ninguna fuente, incluidos sitios web, libros o amigos/compañeros, para completar estas pruebas. Sin embargo, puedo consultar la documentación oficial del lenguaje de programación o usar un IDE con funciones de autocompletado."</p>
+          <h3 style="margin-top:18px">⚠️ Consecuencias del plagio</h3>
+          <p>HackerRank cuenta con algoritmos sofisticados para detectar plagio en el código enviado.</p>
+          <div class="acsl-strikes">
+            <div class="acsl-strike"><span class="acsl-strike-n">Primera infracción</span><span>Puntaje 0 (cero) en la pregunta señalada.</span></div>
+            <div class="acsl-strike"><span class="acsl-strike-n">Segunda infracción</span><span>Descalificación inmediata de la participación en las finales.</span></div>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -696,71 +803,94 @@
       <div class="container">
         <div class="reveal tc">
           <div class="section-label">✦ Finales globales</div>
-          <h2 class="section-title">Finales de la ACSL - Sábado, 29 de mayo de 2027 (Final Global)</h2>
+          <h2 class="section-title">Finales de la ACSL</h2>
+          <div class="acsl-final-meta">
+            <span class="acsl-final-chip">📅 Sábado, 29 de mayo de 2027</span>
+            <span class="acsl-final-chip">💻 100% en línea en HackerRank</span>
+          </div>
           <p class="section-sub" style="margin:0 auto">La fase final incluye transmisión en vivo, prueba de programación, prueba de problemas cortos y anuncio oficial de los ganadores.</p>
         </div>
 
-        <div class="info-grid" style="margin-top:24px">
-          <article class="info-block reveal-left">
-            <h3>📺 Transmisión en vivo (livestream)</h3>
-            <ul class="acsl-list">
-              <li><strong>Senior, Intermedia y Junior:</strong> inicio a las 10:00 EDT (11:00 BRT).</li>
-              <li><strong>Elemental y Aula:</strong> ingreso a las 14:00 EDT (15:00 BRT).</li>
-              <li><strong>Enlace de la transmisión:</strong> se compartirá directamente con los alumnos clasificados y orientadores.</li>
-            </ul>
+        <div class="acsl-final-layout">
+          <article class="feature-card acsl-schedule reveal-left">
+            <h3 class="card-title">🗓️ Cronograma del día</h3>
+            <p class="card-text">Horario de Brasilia. Atención: BRT = EDT + 1 hora.</p>
+            <ol class="acsl-schedule-list">
+              <li><time>11:00<small>10:00 EDT</small></time>
+                <div><strong>Inicio de la transmisión en vivo</strong> para Senior, Intermedia y Junior.</div>
+              </li>
+              <li><time>11:15</time>
+                <div>Se habilita el acceso a la <strong>prueba de programación</strong> en HackerRank.</div>
+              </li>
+              <li><time>hasta 11:30<small>10:30 EDT</small></time>
+                <div>El estudiante debe iniciar la prueba de programación: 2 problemas, 20 puntos en total, duración de 3 horas a partir del inicio.</div>
+              </li>
+              <li><time>12:00<small>11:00 EDT</small></time>
+                <div>Reunión de orientadores (Zoom), hasta las 13:00.</div>
+              </li>
+              <li><time>15:00<small>14:00 EDT</small></time>
+                <div><strong>Continuación de la transmisión en vivo</strong> para todas las divisiones (ingreso de Elemental y Aula).</div>
+              </li>
+              <li><time>15:15</time>
+                <div>Se habilita el acceso a la <strong>prueba de problemas cortos</strong> en HackerRank.</div>
+              </li>
+              <li><time>hasta 15:30<small>14:30 EDT</small></time>
+                <div>El estudiante debe iniciar la prueba de problemas cortos: 20 preguntas que abarcan todas las categorías del año, duración de 1 hora.</div>
+              </li>
+              <li><time>16:45<small>15:45 EDT</small></time>
+                <div>Salas de discusión (Zoom) moderadas por exparticipantes.</div>
+              </li>
+              <li class="is-key"><time>18:00<small>17:00 EDT</small></time>
+                <div><strong>Anuncio en vivo de los resultados y los ganadores.</strong></div>
+              </li>
+            </ol>
+            <p class="acsl-note">Enlace de la transmisión: se compartirá directamente con los alumnos clasificados y orientadores.</p>
           </article>
 
-          <article class="info-block reveal-right">
-            <h3>📜 Formato y reglas generales</h3>
-            <ul class="acsl-list">
-              <li><strong>Plataforma:</strong> 100% en línea en HackerRank.</li>
-              <li><strong>Premiación de las finales:</strong> solo individual (no hay premio por equipo).</li>
-              <li><strong>Competencia individual y honesta:</strong> cualquier colaboración indebida genera descalificación inmediata.</li>
-            </ul>
-          </article>
-        </div>
+          <div class="acsl-final-side">
+            <article class="info-block reveal-right">
+              <h3>🎟️ Invitaciones e inscripción para las finales</h3>
+              <ul class="acsl-list">
+                <li><strong>Criterios de convocatoria:</strong> puntajes acumulados en las 4 etapas (ej.: 28 pts Jr/Int/Sr, 24 pts Aula, 14 pts Elemental).</li>
+                <li><strong>Invitaciones:</strong> correos electrónicos enviados del 1.º al 28 de mayo de 2027.</li>
+                <li><strong>Tarifa de participación en la final:</strong> US$ 35 por estudiante invitado (tarifa oficial de la ACSL).</li>
+                <li>El correo de invitación incluye el enlace de pago y el acceso a la prueba en línea en HackerRank.</li>
+              </ul>
+            </article>
 
-        <div class="acsl-final-grid">
-          <article class="feature-card reveal-left">
-            <h3 class="card-title">🗓️ Cronograma del día (EDT x BRT)</h3>
-            <p class="card-text">Atención: BRT = EDT + 1 hora.</p>
-            <ul class="acsl-list">
-              <li><strong>11:00 BRT (10:00 EDT):</strong> inicio de la transmisión en vivo para Senior, Intermedia y Junior.</li>
-              <li><strong>11:15 BRT:</strong> se habilita el acceso a la prueba de programación en HackerRank.</li>
-              <li><strong>Hasta las 11:30 BRT (10:30 EDT):</strong> el estudiante debe iniciar la prueba de programación.</li>
-              <li><strong>Formato de la programación:</strong> 2 problemas, 20 puntos en total, duración de 3 horas a partir del inicio.</li>
-              <li><strong>12:00-13:00 BRT (11:00-12:00 EDT):</strong> reunión de orientadores (Zoom).</li>
-              <li><strong>15:00 BRT (14:00 EDT):</strong> continuación de la transmisión en vivo para todas las divisiones.</li>
-              <li><strong>15:15 BRT:</strong> se habilita el acceso a la prueba de problemas cortos en HackerRank.</li>
-              <li><strong>Hasta las 15:30 BRT (14:30 EDT):</strong> el estudiante debe iniciar la prueba de problemas cortos.</li>
-              <li><strong>Formato de los problemas cortos:</strong> 20 preguntas que abarcan todas las categorías del año, duración de 1 hora.</li>
-              <li><strong>16:45 BRT (15:45 EDT):</strong> salas de discusión (Zoom) moderadas por exparticipantes.</li>
-              <li><strong>18:00 BRT (17:00 EDT):</strong> anuncio en vivo de los resultados y los ganadores.</li>
-            </ul>
-          </article>
+            <article class="info-block reveal-right">
+              <h3>📜 Formato y reglas generales</h3>
+              <ul class="acsl-list">
+                <li><strong>Premiación de las finales:</strong> solo individual (no hay premio por equipo).</li>
+                <li><strong>Competencia individual y honesta:</strong> cualquier colaboración indebida genera descalificación inmediata.</li>
+              </ul>
+            </article>
 
-          <article class="feature-card reveal-right">
-            <h3 class="card-title">🏆 Quiénes reciben premios</h3>
-            <ul class="acsl-list">
-              <li><strong>Temporada regular (4 etapas):</strong> los estudiantes y equipos con los puntajes más altos por división, estado de EE. UU. y país reciben un certificado.</li>
-              <li><strong>Finales:</strong> los mejores puntajes por división reciben premio y certificado internacional.</li>
-              <li><strong>Entrega:</strong> certificados digitales emitidos oficialmente; premios físicos enviados a la dirección del estudiante ganador.</li>
-            </ul>
-          </article>
+            <article class="info-block reveal-right">
+              <h3>🏆 Quiénes reciben premios</h3>
+              <ul class="acsl-list">
+                <li><strong>Temporada regular (4 etapas):</strong> los estudiantes y equipos con los puntajes más altos por división, estado de EE. UU. y país reciben un certificado.</li>
+                <li><strong>Finales:</strong> los mejores puntajes por división reciben premio y certificado internacional.</li>
+                <li><strong>Entrega:</strong> certificados digitales emitidos oficialmente; premios físicos enviados a la dirección del estudiante ganador.</li>
+              </ul>
+            </article>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <div class="cta-band">
+  <div class="cta-band acsl-cta">
     <div class="container">
       <div class="reveal">
+        <div class="acsl-cta-eyebrow" data-acsl-aberto><span class="acsl-pulse-dot"></span> Inscripciones abiertas</div>
         <h2 class="section-title">¿Quieres participar en la ACSL con el Clube Amplexo?</h2>
-        <p class="section-sub">Nuestro equipo te guía en la inscripción, la preparación y el acompañamiento durante toda la temporada.<br>WhatsApp: <strong style="color:#fff">+55 (85) 9 8679-4831</strong></p>
+        <p class="section-sub">Inscripciones hasta el <strong style="color:#fff">20 de diciembre de 2026</strong>. Nuestro equipo te guía en la inscripción, la preparación y el acompañamiento durante toda la temporada.</p>
         <div class="cta-btns">
-          <a href="https://wa.me/5585986794831?text=%C2%A1Hola!+Quiero+inscribirme+en+la+ACSL+con+el+Clube+Amplexo" target="_blank" rel="noopener noreferrer" class="btn large">Inscripción ACSL 2026-2027</a>
-          <a href="https://forms.gle/ysVEQc1TwdxP4QbE8" target="_blank" rel="noopener noreferrer" class="btn-outline large" style="border-color:#fff;color:#fff">Inscripciones / Temporada 2026-2027</a>
+          <a href="https://forms.gle/ysVEQc1TwdxP4QbE8" target="_blank" rel="noopener noreferrer" class="btn large">Inscribirse</a>
+          <a href="https://wa.me/5585986794831?text=%C2%A1Hola!+Quiero+inscribirme+en+la+ACSL+con+el+Clube+Amplexo" target="_blank" rel="noopener noreferrer" class="btn-outline large" style="border-color:#fff;color:#fff">Hablar por WhatsApp</a>
         </div>
+        <p class="acsl-cta-phone">WhatsApp: <strong>+55 (85) 9 8679-4831</strong></p>
       </div>
     </div>
   </div>
@@ -836,6 +966,7 @@
           secsEl.textContent = '00';
           const lbl = document.getElementById('acslCountdownLabel');
           if (lbl) lbl.textContent = 'Inscripciones de la temporada cerradas';
+          document.querySelectorAll('[data-acsl-aberto]').forEach(function (el) { el.hidden = true; });
           return;
         }
         const d = Math.floor(diff / (1000 * 60 * 60 * 24));
